@@ -1,12 +1,12 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-
 import './App.css';
+import { Routes } from './routes/routes';
 
 const App = () => (
   <Suspense fallback="Loading...">
     <BrowserRouter>
-      <div>Just new App</div>
+      <Routes/>
     </BrowserRouter>
   </Suspense>
 );
