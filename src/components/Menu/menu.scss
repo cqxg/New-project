@@ -1,45 +1,83 @@
 .menu {
-    display: flex;
-    position: fixed;
-    top: 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  &__container {
+    max-width: 1400px;
     width: 100%;
-    height: 120px;
-    &__container {
-        max-width: 1400px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &-logo {
-            max-width: 225px;
-            width: 100%;
-        }
-        &-list {
-            padding-left: 0;
-            list-style-type: none;
-            display: flex;
-            max-width: 423px;
-            justify-content: space-between;
-            width: 100%;
-            a {
-                text-decoration: none;
-                &.active {
-                    border-bottom: 2px solid #1E2843;
-                }
-            }
-            & li {
-                color: #1E2843;
-            }
-        }
-        &-flags {
-            list-style-type: none;
-            max-width: 225px;
-            width: 100%;
-            display: flex;
-            padding-left: 0;
-            justify-content: space-between;
-            align-items: center;
-        }
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+      max-width: 225px;
+      width: 100%;
     }
+    &-submenu {
+      list-style-type: none;
+      padding-left: 0;
+      background: #fff;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      padding: 13px 28px;
+      left: -50%;
+      top: 30px;
+      transform: translateX(2%);
+      position: absolute;
+      opacity: 1;
+      & li {
+        position: relative;
+        padding: 5px 0;
+      }
+    }
+    &-list {
+      padding-left: 0;
+      list-style-type: none;
+      display: flex;
+      max-width: 423px;
+      justify-content: space-between;
+      width: 100%;
+      a {
+        text-decoration: none;
+        position: relative;
+        &.active {
+          border-bottom: 2px solid #1e2843;
+        }
+      }
+      & li {
+        color: #1e2843;
+        position: relative;
+        & span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -22px;
+        }
+      }
+    }
+    &-flags {
+      list-style-type: none;
+      max-width: 225px;
+      width: 100%;
+      display: flex;
+      padding-left: 0;
+      justify-content: space-between;
+      align-items: center;
+      & li {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid transparent;
+          cursor: pointer;
+          &:hover {
+              border: 2px solid #DFDFDF;
+          }
+      }
+    }
+  }
 }

@@ -1,1 +1,1 @@
-$ project on ReactJS
+$ new project
