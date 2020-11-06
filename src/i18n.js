@@ -1,15 +1,28 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+
 import Backend from 'i18next-xhr-backend';
 
-import { TRANSLATIONS } from './utils/locale';
+import PL from './utils/locale/pl.json';
+import EN from './utils/locale/en.json';
+import DE from './utils/locale/de.json';
+import ES from './utils/locale/es.json';
 
 const resources = {
-  en: {
-    translation: TRANSLATIONS.EN,
+  pl: {
+    translation: PL,
   },
-  ru: {
-    translation: TRANSLATIONS.RU,
+
+  en: {
+    translation: EN,
+  },
+
+  de: {
+    translation: DE,
+  },
+  
+  es: {
+    translation: ES,
   },
 };
 
