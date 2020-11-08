@@ -5,7 +5,7 @@ const Main = () => {
     // const { t, i18n } = useTranslation();
 
     return (
-        <h1></h1>
+        <h1>Main</h1>
     )
 }
 
