@@ -1,5 +1,6 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom';
+
 import Lanzarote from '../pages/Lanzarote';
 import Main from '../pages/Main';
 

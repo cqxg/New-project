@@ -1,3 +1,10 @@
 {
-    "language": "Sprache"
+    "about": "About Island",
+    "catalog": "Catalog",
+    "grandTour": "Grand tour",
+    "northTour": "Nordtour",
+    "southTour": "Südtour",
+    "audiobook": "Hörbuch",
+    "faq": "FAQ",
+    "contacts": "Kontakte"
 }

@@ -1,36 +1,36 @@
 export const menu = [
     {
-        text: 'About Island',
+        text: 'about',
         link: '/about'
     },
     {
-        text: 'Catalog',
+        text: 'catalog',
         link: '/tours',
         subMenu: [
             {
-                text: 'Grand tour',
+                text: 'grandTour',
                 link: '/grand-tour',
             },
             {
-                text: 'North tour',
+                text: 'northTour',
                 link: '/north-tour',
             },
             {
-                text: 'South tour',
+                text: 'southTour',
                 link: '/south-tour',
             },
             {
-                text: 'Audiobook',
+                text: 'audiobook',
                 link: '/audiobook',
             },
         ]
     },
     {
-        text: 'FAQ',
+        text: 'faq',
         link: '/about'
     },
     {
-        text: 'Contacts',
+        text: 'contacts',
         link: '/about'
     },
 ]
