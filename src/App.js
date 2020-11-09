@@ -21,6 +21,8 @@ const App = props => {
     setToggleCookie(false)
   }
 
+  const locationRoute = window.location.href.split('/')[3]
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -31,7 +33,7 @@ const App = props => {
       <BrowserRouter>
         {!loading ? (
           <>
-            <Menu />
+            <Menu locationRoute={locationRoute}/>
             <Routes />
             {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies}/> : null}
           </>

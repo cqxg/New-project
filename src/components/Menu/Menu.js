@@ -14,10 +14,13 @@ import { menu } from "./menuConstructor";
 import "./menu.scss";
 import { useState } from "react";
 
-const Menu = () => {
+const Menu = props => {
+  const { locationRoute } = props;
   const { t, i18n } = useTranslation();
   const setLanguage = (language) => i18n.changeLanguage(language);
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  console.log(locationRoute)
 
   const renderSubMenu = (item, index) => {
     return (
@@ -30,7 +33,7 @@ const Menu = () => {
         <NavLink key={item.text} to={item.link}>
           <li>
             {t(item.text)}
-            <span className={toggleMenu ? 'active' : ''}>
+            <span className={toggleMenu ? "active" : ""}>
               <img src={arrow} alt="arrow" />
             </span>
           </li>
@@ -45,7 +48,7 @@ const Menu = () => {
         >
           {item.subMenu.map((value, index) => (
             <NavLink key={index} to={item.link}>
-              <li>{t(item.text)}</li>
+              <li>{t(value.text)}</li>
             </NavLink>
           ))}
         </ul>
