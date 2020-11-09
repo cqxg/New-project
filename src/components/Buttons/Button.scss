@@ -1,0 +1,46 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    width: 218px;
+    left: 343px;
+    top: 548px;
+    border-radius: 25px;
+}
+
+.btn_text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;    
+}
+
+.primary {
+    color: #ffffff;
+    background: linear-gradient(159.78deg, #17C9FB 6.33%, #1A78E9 86.91%);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(12, 127, 242, 0.50);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(12, 127, 242, 0.54);
+    box-shadow: 0px 7px 10px 0px rgba(12, 127, 242, 0.54);
+}
+
+.success {
+    color: #ffffff;
+    background: linear-gradient(180deg, #15D79D 0%, #00875F 100%);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(19, 118, 13, 0.50);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(19, 118, 13, 0.50);
+    box-shadow: 0px 7px 10px 0px rgba(19, 118, 13, 0.50);
+}
+
+.secondary {
+    color: #ffffff;
+    background: linear-gradient(180deg, rgb(255, 109, 85) 0%, #FF5134 114.71%);
+    -webkit-box-shadow: 0px 7px 10px 0px rgba(255, 109, 85, 0.50);
+    -moz-box-shadow: 0px 7px 10px 0px rgba(255, 109, 85, 0.50);
+    box-shadow: 0px 7px 10px 0px rgba(255, 109, 85, 0.50);
+}
+
+.revert {
+    border: 2px solid #FF5134;
+}
