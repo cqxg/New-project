@@ -27,10 +27,10 @@ export const menu = [
     },
     {
         text: 'faq',
-        link: '/about'
+        link: '/faq'
     },
     {
         text: 'contacts',
-        link: '/about'
+        link: '/contacts'
     },
 ]
