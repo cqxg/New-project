@@ -1,0 +1,28 @@
+.cookies {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    max-width: 1440px;
+    height: 160px;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px 0px #00000045;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 970px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    & p {
+        font-size: 24px;
+        color: #1E2843;
+    }
+    & a {
+        color: #1E2843;
+    }
+}
