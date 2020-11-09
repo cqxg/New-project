@@ -5,7 +5,6 @@ import { Blob } from 'react-blob'
 const Main = () => {
     return (
         <>
-            <h1>Main</h1>
             <Blob
                 size="25vh"
                 style={{
