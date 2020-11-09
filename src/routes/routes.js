@@ -2,7 +2,7 @@ import React from 'react'
 import {Route, Switch} from 'react-router-dom';
 
 import Lanzarote from '../pages/Lanzarote';
-import Main from '../pages/Main';
+import Main from '../pages/Main/Main';
 
 export const Routes = () => (
     <Switch>
