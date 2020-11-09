@@ -7,7 +7,7 @@ import Button from '../../components/Buttons/Button';
 import "./Main.scss";
 
 const Main = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className='main_first__block'>
@@ -19,6 +19,10 @@ const Main = () => {
                 <div className='main_first__block-buttons'>
                     <Button type='primary' text={t('appStoreBtn')} />
                     <Button type='success' text={t('googlePlayBtn')} />
+                </div>
+                <div className='main_first__block-qr'>
+                    <span className='qr__desc'>{t('mainFirstBlockQr')}</span>
+                    <div className='qr__img'></div>
                 </div>
             </div>
             <div className='main_first__block-blob'>
