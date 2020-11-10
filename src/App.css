@@ -12,3 +12,12 @@ P {
   line-height: 28px;
   color: #1E2843;
 }
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+}

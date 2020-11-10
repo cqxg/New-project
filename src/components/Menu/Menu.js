@@ -5,7 +5,6 @@ import { NavLink, Link } from "react-router-dom";
 import germanyFlag from "../../img/svg/germany-flag.svg";
 import polandFlag from "../../img/svg/poland-flag.svg";
 import usaFlag from "../../img/svg/usa-flag.svg";
-import arrow from "../../img/svg/arrow.svg";
 import logo from "../../img/svg/logo.svg";
 import logoLight from "../../img/svg/logoLight.svg";
 import flag from "../../img/svg/flag.svg";
@@ -16,9 +15,12 @@ import "./menu.scss";
 import { useState } from "react";
 
 const Menu = props => {
-  const { theme } = props
+  const { theme, changeLocale, activeLocale } = props
   const { t, i18n } = useTranslation();
-  const setLanguage = (language) => i18n.changeLanguage(language);
+  const setLanguage = (language) => {
+    i18n.changeLanguage(language);
+    changeLocale(language)
+  }
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const renderSubMenu = (item, index) => {
@@ -33,7 +35,9 @@ const Menu = props => {
           <li>
             {t(item.text)}
             <span className={toggleMenu ? "active" : ""}>
-              <img src={arrow} alt="arrow" />
+              <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L7 7L13 1" stroke={theme === 'dark' ? "#1E2843" : "#fff"} stroke-width="2" />
+              </svg>
             </span>
           </li>
         </NavLink>
@@ -77,16 +81,16 @@ const Menu = props => {
         </Link>
         <ul className="menu__container-list">{renderMenu()}</ul>
         <ul className="menu__container-flags">
-          <li onClick={() => setLanguage("pl")}>
+          <li className={activeLocale === 'pl' ? 'active' : ''} onClick={() => setLanguage("pl")}>
             <img src={polandFlag} alt="polandFlag" />
           </li>
-          <li onClick={() => setLanguage("en")}>
+          <li className={activeLocale === 'en' ? 'active' : ''} onClick={() => setLanguage("en")}>
             <img src={usaFlag} alt="usaFlag" />
           </li>
-          <li onClick={() => setLanguage("de")}>
+          <li className={activeLocale === 'de' ? 'active' : ''} onClick={() => setLanguage("de")}>
             <img src={germanyFlag} alt="germanyFlag" />
           </li>
-          <li onClick={() => setLanguage("es")}>
+          <li className={activeLocale === 'es' ? 'active' : ''} onClick={() => setLanguage("es")}>
             <img src={flag} alt="flag" />
           </li>
         </ul>
