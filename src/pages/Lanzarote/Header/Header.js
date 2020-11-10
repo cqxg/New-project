@@ -32,7 +32,7 @@ const Header = () => {
           options={{
             height: 20,
             amplitude: 30,
-            speed: 0.15,
+            speed: 0.25,
             points: 3,
           }}
         />

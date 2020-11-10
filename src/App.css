@@ -1,5 +1,14 @@
 h1 {
-  font-size: 64px;
-  line-height: 115%;
   margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 73.6px;
+  color: #1E2843;
+}
+
+P {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #1E2843;
 }

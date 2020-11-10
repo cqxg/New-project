@@ -1,18 +1,19 @@
 .header {
-  height: 100vh;
   background: url("../../../img/images/Lanzarote/bg.jpg");
   background-size: cover;
-  padding-top: 252px;
+  min-height: 100vh;
   position: relative;
   &__wave {
       position: absolute;
-      bottom: 0;
+      bottom: -4px;
       width: 100%;
   }
   &__container {
     max-width: 1310px;
     width: 100%;
     margin: 0 auto;
+  padding-top: 195px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
