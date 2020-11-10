@@ -29,7 +29,7 @@ const App = props => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1);
   }, []);
 
   return (

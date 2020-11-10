@@ -39,3 +39,27 @@
     height: 150px;
     background-image: url('../../assets/qr.png');
 }
+
+/* ------------------------------------- Second Block ----------------------------------------------------------------- */
+
+.main_second__block {
+    margin-top: 306px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1275px;
+    margin: 306px auto 0 auto;
+    text-align: start;
+}
+
+.main_second__block-cols {
+    width: 690px;
+    position: relative;
+    text-align: start;
+}
+
+.main_second__block-title,
+.main_second__block-desc {
+    position: absolute;
+    z-index: 1;
+}
