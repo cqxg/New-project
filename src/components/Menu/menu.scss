@@ -7,6 +7,11 @@
   z-index: 999;
   &-light {
     .menu__container {
+      &-submenu {
+        li {
+          color: #1e2843!important;
+        }
+      }
       &-list {
         li {
           color: #fff;
@@ -77,11 +82,11 @@
           transform: translateY(-50%);
           right: -22px;
           display: flex;
-          & img {
+          & svg {
             margin-top: 4px;
           }
           &.active {
-            & img {
+            & svg {
               transform: rotate(180deg);
             }
           }
@@ -105,6 +110,10 @@
           justify-content: center;
           border: 2px solid transparent;
           cursor: pointer;
+          &.active {
+            border: 2px solid #DFDFDF;
+            background: #fff;
+          }
           &:hover {
               border: 2px solid #DFDFDF;
           }

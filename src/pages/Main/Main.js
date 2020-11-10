@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Button from '../../components/Buttons/Button';
 
 import appStoreIcon from '../../img/svg/appStore.svg'
+import googlePlay from '../../img/svg/googlePlay.svg'
 
 import "./Main.scss";
 
@@ -20,7 +21,7 @@ const Main = () => {
                 </div>
                 <div className='main_first__block-buttons'>
                     <Button icon={appStoreIcon} type='primary' text={t('appStoreBtn')} />
-                    <Button type='success' text={t('googlePlayBtn')} />
+                    <Button icon={googlePlay} type='success' text={t('googlePlayBtn')} />
                 </div>
                 <div className='main_first__block-qr'>
                     <span className='qr__desc'>{t('mainFirstBlockQr')}</span>
@@ -32,12 +33,11 @@ const Main = () => {
                     size="55vh"
                     style={{
                         zIndex: -1,
-                        backgroundColor: "#21D4FD",
+                        backgroundColor: "#D5EFFB",
                         color: "white",
-                        opacity: 0.5,
                         fontSize: "80vh"
                     }}
-                    animationDuration="20s"
+                    animationDuration="25s"
                 >
                     <i className="fab fa-react"></i>
                 </Blob>
