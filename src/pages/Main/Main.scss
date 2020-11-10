@@ -1,21 +1,10 @@
-h1 {
-    margin: 0;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 73.6px;
-}
-
-P {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 28,25px;
-}
-
 .main_first__block {
     margin-top: 306px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-width: 1275px;
+    margin: 306px auto 0 auto;
 }
 
 .main_first__block-text {

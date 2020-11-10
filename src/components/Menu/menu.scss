@@ -5,6 +5,18 @@
   width: 100%;
   height: 120px;
   z-index: 999;
+  &-light {
+    .menu__container {
+      &-list {
+        li {
+          color: #fff;
+        }
+        a.active {
+          border-bottom: 2px solid #fff;
+        }
+      }
+    }
+  }
   &__container {
     max-width: 1400px;
     width: 100%;

@@ -8,7 +8,7 @@ import Main from '../pages/Main/Main';
 export const Routes = () => (
     <Switch>
         <Route exact path='/' component={Main}/>
-        <Route path='/about' component={Lanzarote}/>
-        <Route path='/faq' component={Faq}/>
+        <Route exact path='/about' component={Lanzarote}/>
+        <Route exact path='/faq' component={Faq}/>
     </Switch>
 )

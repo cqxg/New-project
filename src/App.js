@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, withRouter } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 
 import { Routes } from "./routes/routes";
@@ -21,7 +21,7 @@ const App = props => {
     setToggleCookie(false)
   }
 
-  const locationRoute = window.location.href.split('/')[3]
+  const locationRoute = props.location.pathname
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,16 +30,16 @@ const App = props => {
   }, []);
 
   return (
-      <BrowserRouter>
-        {!loading ? (
-          <>
-            <Menu locationRoute={locationRoute}/>
-            <Routes />
-            {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies}/> : null}
-          </>
-        ) : <Preloader/>}
-      </BrowserRouter>
+    <>
+      {!loading ? (
+        <>
+          <Menu theme={locationRoute === '/about' ? 'light' : 'dark'}/>
+          <Routes />
+          {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
+        </>
+      ) : <Preloader />}
+    </>
   );
 };
 
-export default App;
+export default withRouter(App);
