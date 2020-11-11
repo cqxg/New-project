@@ -6,8 +6,7 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import Wave from "react-wavify";
 
 import "./Header.scss";
-import HeaderConstructor from './HeaderConstructor'
-// import grandTour from "../../../img/images/Lanzarote/grand-tour.png";
+import constructor from '../../../constructors/constructor'
 
 const Header = () => {
   const { t } = useTranslation();
@@ -22,7 +21,7 @@ const Header = () => {
         </div>
         <div className="header__container-tours">
           {
-            HeaderConstructor.lanzarote.tours.map((item) => {
+            constructor.lanzarote.headerTours.map((item) => {
               return (
                 <Flippy flipOnHover={true} flipDirection="horizontal" ref={ref}>
                   <FrontSide style={{ boxShadow: 'none', padding: 0 }}>
