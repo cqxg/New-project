@@ -1,5 +1,5 @@
 import React from "react";
-import parse from 'html-react-parser'
+import parse from "html-react-parser";
 
 import { Blob } from "react-blob";
 import { useTranslation } from "react-i18next";
