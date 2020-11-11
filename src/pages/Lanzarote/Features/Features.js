@@ -1,6 +1,8 @@
 import React from "react";
+import parse from 'html-react-parser'
 
 import { Blob } from "react-blob";
+import { useTranslation } from "react-i18next";
 import Wave from "react-wavify";
 
 import "./Features.scss";
@@ -8,6 +10,7 @@ import "./Features.scss";
 const Features = (props) => {
   const { scheme, constructor } = props;
   const featureConstructor = constructor[scheme];
+  const { t } = useTranslation();
 
   const renderBubbles = () => {
     return featureConstructor.bubbles.map((item) => {
@@ -20,9 +23,9 @@ const Features = (props) => {
             }}
             animationDuration="15s"
           >
-            <img src={item.icon} alt={item.text}/>
+            <img src={item.icon} alt={item.text} />
           </Blob>
-          <p>{item.text}</p>
+          <p>{t(item.text)}</p>
         </div>
       );
     });
@@ -42,9 +45,9 @@ const Features = (props) => {
       />
       <div className="features">
         <div className="container">
-          <h1>{featureConstructor.title}</h1>
+          <h1>{t(featureConstructor.title)}</h1>
           {featureConstructor.subTitle ? (
-            <p className="subTitle">{featureConstructor.subTitle}</p>
+            <p className="subTitle">{parse(t(featureConstructor.subTitle))}</p>
           ) : null}
           <div className="features__items">{renderBubbles()}</div>
         </div>

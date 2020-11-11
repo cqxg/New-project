@@ -34,11 +34,11 @@ const constructor = {
       },
     ],
     features: {
-      title: "Features",
+      title: "features",
       bubbles: [
         {
           icon: sun,
-          text: "300 sunny days",
+          text: "sunnyDays",
         },
         {
           icon: beaches,
@@ -54,35 +54,35 @@ const constructor = {
         },
         {
           icon: specialities,
-          text: "Canarian specialities",
+          text: "Specialities",
         },
       ],
     },
   },
   main: {
     features: {
-      title: "How it works?",
-      subTitle: "Путеводитель, аудиогид, навигатор и твой надёжный друг в одном приложении! Теперь ты сможешь отдыхать комфортнее, имея всё необходимое под рукой.",
+      title: "howItWorks",
+      subTitle: "travelGuide",
       bubbles: [
         {
           icon: device,
-          text: "Download App to your iOS or Android device",
+          text: "download device",
         },
         {
           icon: offline,
-          text: "App work offline",
+          text: "workOffline",
         },
         {
           icon: sound,
-          text: "Listen to interesting stories of islands",
+          text: "listenStories",
         },
         {
           icon: gps,
-          text: "Audio tours play based on your GPS location",
+          text: "gpsLocation",
         },
         {
           icon: restore,
-          text: "Turn-by-turn navigation",
+          text: "turnNavigation",
         },
       ],
     },
