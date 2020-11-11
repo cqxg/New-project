@@ -13,7 +13,7 @@ const Main = () => {
             <FirstBlock t={t} />
             <SecondBlock t={t} />
         </>
-    )
-}
+    );
+};
 
 export default Main;

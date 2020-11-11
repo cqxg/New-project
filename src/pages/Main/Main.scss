@@ -43,23 +43,26 @@
 /* ------------------------------------- Second Block ----------------------------------------------------------------- */
 
 .main_second__block {
-    margin-top: 306px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     max-width: 1275px;
-    margin: 306px auto 0 auto;
+    margin: 200px auto 0 auto;
     text-align: start;
 }
 
 .main_second__block-cols {
     width: 690px;
+    min-height: 550px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
     position: relative;
     text-align: start;
+    justify-content: flex-end;
 }
 
 .main_second__block-title,
 .main_second__block-desc {
-    position: absolute;
     z-index: 1;
 }
