@@ -1,42 +1,51 @@
-import React from 'react';
-import { Blob } from 'react-blob'
+import React from "react";
+import { Blob } from "react-blob";
 
-import Button from '../../../components/Buttons/Button';
+import Button from "../../../components/Buttons/Button";
 
-import appStoreIcon from '../../../img/svg/appStore.svg';
-import googlePlay from '../../../img/svg/googlePlay.svg';
+import appStoreIcon from "../../../img/svg/appStore.svg";
+import googlePlay from "../../../img/svg/googlePlay.svg";
+
+const renderBubbles = () => (
+  <Blob
+    size="55vh"
+    style={{ zIndex: -1, backgroundColor: "#D5EFFB" }}
+    animationDuration="25s"
+  >
+    <i className="fab fa-react"></i>
+  </Blob>
+);
 
 const FirstBlock = ({ t }) => (
-    <div className='main_first__block'>
-        <div className='main_first__block-content'>
-            <div className='main_first__block-text'>
-                <h1>{t('mainFirstBlocTitle')}</h1>
-                <p>{t('mainFirstBlocSubtitle')}</p>
-            </div>
-            <div className='main_first__block-buttons'>
-                <Button icon={appStoreIcon} type='primary' text={t('appStoreBtn')} />
-                <Button icon={googlePlay} type='success' text={t('googlePlayBtn')} />
-            </div>
-            <div className='main_first__block-qr'>
-                <span className='qr__desc'>{t('mainFirstBlockQr')}</span>
-                <div className='qr__img'></div>
-            </div>
+  <div className="first_block">
+    <div className="container">
+      <div className="first_block__flex">
+        <div className="first_block__left">
+          <h1>{t("mainFirstBlocTitle")}</h1>
+          <p>{t("mainFirstBlocSubtitle")}</p>
+          <div className="first_block__buttons">
+            <Button
+              icon={appStoreIcon}
+              type="primary"
+              text={t("appStoreBtn")}
+            />
+            <Button
+              icon={googlePlay}
+              type="success"
+              text={t("googlePlayBtn")}
+            />
+          </div>
+          <div className="first_block__qr">
+            <span className="first_block__qr-desc">
+              {t("mainFirstBlockQr")}
+            </span>
+            <div className="first_block__img"></div>
+          </div>
         </div>
-        <div className='main_first__block-blob'>
-            <Blob
-                size="55vh"
-                style={{
-                    zIndex: -1,
-                    backgroundColor: "#D5EFFB",
-                    color: "white",
-                    fontSize: "80vh"
-                }}
-                animationDuration="25s"
-            >
-                <i className="fab fa-react"></i>
-            </Blob>
-        </div>
+        <div className="first_block__right">{renderBubbles()}</div>
+      </div>
     </div>
+  </div>
 );
 
 export default FirstBlock;

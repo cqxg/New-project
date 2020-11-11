@@ -1,14 +1,15 @@
 .about {
-    padding-top: 82px;
-    position: relative;
-    & h1 {
-        margin-bottom: 40px;
-    }
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__left, &__right {
-        max-width: 690px;
-    }
+  padding-top: 82px;
+  position: relative;
+  & h1 {
+    margin-bottom: 40px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left,
+  &__right {
+    max-width: 690px;
+  }
 }
