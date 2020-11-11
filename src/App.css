@@ -9,8 +9,15 @@ h1 {
 P {
   font-size: 24px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 36px;
   color: #1E2843;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
 }
 
 .switch-wrapper {
