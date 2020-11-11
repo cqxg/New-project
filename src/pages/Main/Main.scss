@@ -41,34 +41,20 @@
 }
 
 /* ------------------------------------- Second Block ----------------------------------------------------------------- */
-
-.main_second__block {
-    display: flex;
+.second_block {
+    padding-top: 82px;
     position: relative;
-    flex-direction: column;
-    margin: 200px auto 0 auto;
-    max-width: 1440px;
-    width: 100%;
-}
-
-.main_second__block-cols {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.main_second__block-col {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    max-width: 690px;
-}
-
-.main_second__block-titlewrapper {
-    display: flex;
-}
-
-.main_second__block-title,
-.main_second__block-desc {
-    z-index: 1;
+    & h1 {
+        margin-bottom: 40px;
+    }
+    &__title {
+        display: flex;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left, &__right {
+        max-width: 690px;
+    }
 }
