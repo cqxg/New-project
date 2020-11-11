@@ -3,7 +3,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    max-width: 1275px;
+    max-width: 1440px;
     margin: 306px auto 0 auto;
 }
 
@@ -41,28 +41,20 @@
 }
 
 /* ------------------------------------- Second Block ----------------------------------------------------------------- */
-
-.main_second__block {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1275px;
-    margin: 200px auto 0 auto;
-    text-align: start;
-}
-
-.main_second__block-cols {
-    width: 690px;
-    min-height: 550px;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+.second_block {
+    padding-top: 82px;
     position: relative;
-    text-align: start;
-    justify-content: flex-end;
-}
-
-.main_second__block-title,
-.main_second__block-desc {
-    z-index: 1;
+    & h1 {
+        margin-bottom: 40px;
+    }
+    &__title {
+        display: flex;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left, &__right {
+        max-width: 690px;
+    }
 }
