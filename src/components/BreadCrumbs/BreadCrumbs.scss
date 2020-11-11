@@ -1,0 +1,12 @@
+.breadcrumbs {
+    margin-top: 100px;
+    & a, & span {
+        color: #7B7B7B;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        &:first-child {
+            margin: 0;
+        }
+    }
+}
