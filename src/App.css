@@ -13,6 +13,28 @@ P {
   color: #1E2843;
 }
 
+.section__margin {
+  margin-top: 180px;
+}
+
+.section__margin > div:first-child {
+  position: relative;
+  bottom: -4px;
+}
+
+.section__margin > div:last-child {
+  position: relative;
+  bottom: 6px;
+}
+
+.subTitle {
+  margin: 76px 0 158px 0;
+}
+
+.rotate__wave {
+  transform: rotate(180deg);
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
