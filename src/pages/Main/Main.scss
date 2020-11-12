@@ -61,3 +61,31 @@
     max-width: 690px;
   }
 }
+
+/* -------------------------------------  with icon Block ----------------------------------------------------------------- */
+
+.withicon_block {
+  padding-top: 306px;
+  position: relative;
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__desc {
+    max-width: 470px;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    max-width: 690px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
