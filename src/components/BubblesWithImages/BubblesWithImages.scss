@@ -1,0 +1,40 @@
+.bubblesWithImages {
+    padding: 130px 0;
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        max-width: 1205px;
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            max-width: 475px;
+            width: 100%;
+        }
+    }
+    &__title {
+        display: flex;
+        & img {
+            margin-right: 16px;
+        }
+    }
+    &__flex {
+        display: flex;
+        margin-bottom: 256px;
+        .bubblesWithImages__right {
+            margin-left: 150px;
+        }
+        &-reverse {
+            flex-direction: row-reverse;
+            .bubblesWithImages__right {
+                margin-right: 150px;
+            }
+        }
+    }
+    &__left {
+        max-width: 690px;
+        & p {
+            margin-top: 24px;
+        }
+    }
+}

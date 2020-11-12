@@ -6,7 +6,7 @@ import germanyFlag from "../../img/svg/germany-flag.svg";
 import polandFlag from "../../img/svg/poland-flag.svg";
 import usaFlag from "../../img/svg/usa-flag.svg";
 import logo from "../../img/svg/logo.svg";
-import logoLight from "../../img/svg/logoLight.svg";
+// import logoLight from "../../img/svg/logoLight.svg";
 import flag from "../../img/svg/flag.svg";
 
 import { menu } from "./menuConstructor";
@@ -76,7 +76,7 @@ const Menu = props => {
       <div className="menu__container">
         <Link to="/">
           <div className="menu__container-logo">
-            {theme === 'dark' ? <img src={logo} alt="logo" /> : <img src={logoLight} alt="lightLogo" />}
+            <img src={logo} alt="logo" />
           </div>
         </Link>
         <ul className="menu__container-list">{renderMenu()}</ul>

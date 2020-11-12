@@ -12,6 +12,18 @@ import offline from "../img/svg/features/main/offline.svg";
 import restore from "../img/svg/features/main/restore.svg";
 import sound from "../img/svg/features/main/sound.svg";
 
+//Lanzarote isnand tours icons
+import car from "../img/svg/bubbleWithImages/Lanzarote/car.svg";
+//Lanzarote isnand tours images
+import grand from '../img/images/Lanzarote/tours/grand.jpg'
+import north from '../img/images/Lanzarote/tours/north.jpg'
+import south from '../img/images/Lanzarote/tours/south.jpg'
+
+//btn icons
+import appStoreIcon from "../img/svg/appStore.svg";
+import googlePlay from "../img/svg/googlePlay.svg";
+
+
 const constructor = {
   lanzarote: {
     headerTours: [
@@ -58,6 +70,41 @@ const constructor = {
         },
       ],
     },
+    bubblesWithImages: {
+      title: 'Island Tours',
+      items: [
+        {
+          title: 'Grand Tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: grand,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+        {
+          title: 'North tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: north,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+        {
+          title: 'South tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: south,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+      ]
+    }
   },
   main: {
     features: {
@@ -86,6 +133,53 @@ const constructor = {
         },
       ],
     },
+    bubblesWithImages: {
+      buttons: [
+        {
+          icon: appStoreIcon,
+          type: 'primary',
+          text: "appStoreBtn",
+        },
+        {
+          icon: googlePlay,
+          text: "googlePlayBtn",
+          type: 'success'
+        }
+      ],
+      title: 'Island Tours',
+      items: [
+        {
+          title: 'Grand Tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: grand,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+        {
+          title: 'North tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: north,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+        {
+          title: 'South tour',
+          icon: car,
+          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          image: south,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+      ]
+    }
   },
 };
 

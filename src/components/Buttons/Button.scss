@@ -11,7 +11,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   &:hover {
-    transform: translateY(4px);
+    transform: translateY(2px);
     box-shadow: none !important;
   }
 }
@@ -68,5 +68,6 @@
 }
 
 .revert {
+  background: none;
   border: 2px solid #ff5134;
 }
