@@ -10,8 +10,8 @@ const bubbleGroup = () => (
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "2%",
         left: "10%",
+        bottom: "70%",
       }}
       animationDuration="15s"
     >
@@ -24,7 +24,7 @@ const bubbleGroup = () => (
         backgroundColor: "#D5EFFB",
         position: "absolute",
         left: "2%",
-        top: "55%",
+        top: "35%",
       }}
       animationDuration="25s"
       animationTimingFunction="ease-in-out"
@@ -37,7 +37,7 @@ const bubbleGroup = () => (
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "30%",
+        bottom: "65%",
         left: "37%",
       }}
       animationDuration="50s"
@@ -46,25 +46,24 @@ const bubbleGroup = () => (
       <i className="fab fa-react"></i>
     </Blob>
     <Blob
-      size="30vh"
+      size="20vh"
       style={{
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "25%",
-        left: "50%",
+        left: "55%",
       }}
       animationDuration="30s"
     >
       <i className="fab fa-react"></i>
     </Blob>
     <Blob
-      size="10vh"
+      size="15vh"
       style={{
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "95%",
+        top: "60%",
         left: "50%",
       }}
       animationDuration="15s"
@@ -77,24 +76,10 @@ const bubbleGroup = () => (
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "95%",
-        left: "75%",
+        top: "60%",
+        left: "70%",
       }}
       animationDuration="25s"
-      animationTimingFunction="ease-in-out"
-    >
-      <i className="fab fa-react"></i>
-    </Blob>
-    <Blob
-      size="15vh"
-      style={{
-        zIndex: -1,
-        backgroundColor: "#D5EFFB",
-        position: "absolute",
-        top: "55%",
-        left: "92%",
-      }}
-      animationDuration="50s"
       animationTimingFunction="ease-in-out"
     >
       <i className="fab fa-react"></i>
@@ -105,7 +90,20 @@ const bubbleGroup = () => (
         zIndex: -1,
         backgroundColor: "#D5EFFB",
         position: "absolute",
-        top: "25%",
+        top: "37%",
+        left: "90%",
+      }}
+      animationDuration="50s"
+      animationTimingFunction="ease-in-out"
+    >
+      <i className="fab fa-react"></i>
+    </Blob>
+    <Blob
+      size="15vh"
+      style={{
+        zIndex: -1,
+        backgroundColor: "#D5EFFB",
+        position: "absolute",
         left: "90%",
       }}
       animationDuration="30s"
