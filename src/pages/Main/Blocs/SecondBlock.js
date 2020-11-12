@@ -4,7 +4,7 @@ import parse from "html-react-parser";
 import Button from "../../../components/Buttons/Button";
 import bubbleForSecondBlocs from "../../../components/BubbleForSecondBlocs/BubbleForSecondBlocs";
 
-import pathicon from "../../../assets/group1.png";
+import pathicon from "../../../img/images/group1.png";
 
 const SecondBlock = ({ t }) => (
   <div className="second_block">

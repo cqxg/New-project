@@ -4,10 +4,11 @@ import constructor from "../../constructors/constructor";
 
 import FirstBlock from "./Blocs/FirstBlock";
 import SecondBlock from "./Blocs/SecondBlock";
-import Features from "../Lanzarote/Features/Features";
-import WithIconBlock from "./Blocs/WithIconBloc";
+import Features from "../../components/Features/Features";
 
 import "./Main.scss";
+import BubblesWithImages from "../../components/BubblesWithImages/BubblesWithImages";
+import WithIconBlock from "./Blocs/WithIconBloc";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const Main = () => {
       <FirstBlock t={t} />
       <SecondBlock t={t} />
       <Features constructor={pageConstructor} scheme="features" />
+      <BubblesWithImages constructor={pageConstructor} scheme="whatYouGet" />
       <WithIconBlock t={t} />
     </>
   );

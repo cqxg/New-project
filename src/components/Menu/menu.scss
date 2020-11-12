@@ -5,6 +5,7 @@
   width: 100%;
   height: 120px;
   z-index: 999;
+  background: #fff;
   &-light {
     .menu__container {
       &-submenu {
@@ -13,9 +14,6 @@
         }
       }
       &-list {
-        li {
-          color: #fff;
-        }
         a.active {
           border-bottom: 2px solid #fff;
         }
