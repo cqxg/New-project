@@ -8,7 +8,8 @@ import Features from "../../components/Features/Features";
 
 import "./Main.scss";
 import BubblesWithImages from "../../components/BubblesWithImages/BubblesWithImages";
-import WithIconBlock from "./Blocs/WithIconBloc";
+import WithIconBlock from "./Blocs/WithIconBlock";
+import SixBlock from "./Blocs/SixBlock";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -21,6 +22,7 @@ const Main = () => {
       <Features constructor={pageConstructor} scheme="features" />
       <BubblesWithImages constructor={pageConstructor} scheme="whatYouGet" />
       <WithIconBlock t={t} />
+      <SixBlock t={t} />
     </>
   );
 };

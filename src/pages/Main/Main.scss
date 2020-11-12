@@ -133,3 +133,20 @@
     background-repeat: no-repeat;
   }
 }
+
+
+/* ------------------------------------- six block ----------------------------------------------------------------- */
+
+.six_block {
+  padding-top: 270px;
+  position: relative;
+  text-align: center;
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__left,
+  &__right {
+    max-width: 690px;
+  }
+}
