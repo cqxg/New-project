@@ -82,6 +82,7 @@
   &__left,
   &__right {
     display: flex;
+    position: relative;
     max-width: 690px;
     justify-content: center;
     align-items: center;

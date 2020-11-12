@@ -1,6 +1,7 @@
 import React from "react";
 
 import Button from "../../../components/Buttons/Button";
+import bubbleGroup from "../../../components/BubbleGroup/BubbleGroup";
 
 const WithIconBlock = ({ t }) => (
   <div className="withicon_block">
@@ -11,7 +12,7 @@ const WithIconBlock = ({ t }) => (
           <p className="withicon_block__desc">{t("vidodoKnowsIslandDesc")}</p>
           <Button type="revert" text={t("moreDetailBtn")} />
         </div>
-        <div className="withicon_block__right"></div>
+        <div className="withicon_block__right">{bubbleGroup()}</div>
       </div>
     </div>
   </div>
