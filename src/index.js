@@ -4,6 +4,7 @@ import { CookiesProvider } from 'react-cookie';
 
 import './i18n';
 import App from './App';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
