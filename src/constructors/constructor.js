@@ -14,10 +14,16 @@ import sound from "../img/svg/features/main/sound.svg";
 
 //Lanzarote isnand tours icons
 import car from "../img/svg/bubbleWithImages/Lanzarote/car.svg";
+import audiobookSvg from "../img/svg/bubbleWithImages/Lanzarote/audiobook.svg";
 //Lanzarote isnand tours images
 import grand from '../img/images/Lanzarote/tours/grand.jpg'
 import north from '../img/images/Lanzarote/tours/north.jpg'
 import south from '../img/images/Lanzarote/tours/south.jpg'
+import audiobook from '../img/images/Lanzarote/tours/audiobook.jpg'
+//Lanzarote slider images
+import first from '../img/images/Lanzarote/slider/1.jpg'
+import second from '../img/images/Lanzarote/slider/2.jpg'
+import third from '../img/images/Lanzarote/slider/3.jpg'
 
 //btn icons
 import appStoreIcon from "../img/svg/appStore.svg";
@@ -71,12 +77,12 @@ const constructor = {
       ],
     },
     bubblesWithImages: {
-      title: 'Island Tours',
+      title: 'islandTours',
       items: [
         {
-          title: 'Grand Tour',
+          title: 'grandTour',
           icon: car,
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          text: "grandTourText",
           image: grand,
           button: {
             type: 'revert',
@@ -84,9 +90,9 @@ const constructor = {
           }
         },
         {
-          title: 'North tour',
+          title: 'northTour',
           icon: car,
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          text: "northTourText",
           image: north,
           button: {
             type: 'revert',
@@ -94,15 +100,39 @@ const constructor = {
           }
         },
         {
-          title: 'South tour',
+          title: 'southTour',
           icon: car,
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          text: "southTourText",
           image: south,
           button: {
             type: 'revert',
             text: 'More'
           }
         },
+        {
+          title: 'audiobook',
+          icon: audiobookSvg,
+          text: "audioBookText",
+          image: audiobook,
+          button: {
+            type: 'revert',
+            text: 'More'
+          }
+        },
+      ]
+    },
+    slider: {
+      title: 'Island gallery',
+      items: [
+        {
+          image: first
+        },
+        {
+          image: second
+        },
+        {
+          image: third
+        }
       ]
     }
   },
@@ -134,6 +164,7 @@ const constructor = {
       ],
     },
     bubblesWithImages: {
+      title: 'Island Tours',
       buttons: [
         {
           icon: appStoreIcon,
@@ -146,12 +177,10 @@ const constructor = {
           type: 'success'
         }
       ],
-      title: 'Island Tours',
       items: [
         {
-          title: 'Grand Tour',
-          icon: car,
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          title: 'audioGuideTours',
+          text: "audioGuideTourText",
           image: grand,
           button: {
             type: 'revert',
@@ -159,9 +188,8 @@ const constructor = {
           }
         },
         {
-          title: 'North tour',
-          icon: car,
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
+          title: 'audiobook',
+          text: "audioBookText",
           image: north,
           button: {
             type: 'revert',
@@ -169,8 +197,7 @@ const constructor = {
           }
         },
         {
-          title: 'South tour',
-          icon: car,
+          title: 'southTour',
           text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
           image: south,
           button: {

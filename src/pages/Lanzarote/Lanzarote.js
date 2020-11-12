@@ -9,6 +9,7 @@ import Features from '../../components/Features/Features';
 import Header from './Header/Header';
 
 import './Lanzarote.scss'
+import Slider from '../../components/Slider/Slider';
 
 const Lanzarote = () => {
     const { t } = useTranslation();
@@ -21,6 +22,7 @@ const Lanzarote = () => {
             <About t={t}/>
             <Features constructor={pageConstructor} scheme="features"/>
             <BubblesWithImages constructor={pageConstructor} scheme="bubblesWithImages"/>
+            <Slider constructor={pageConstructor}/>
         </div>
     )
 }
