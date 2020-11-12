@@ -132,7 +132,16 @@ const constructor = {
         },
         {
           image: third
-        }
+        },
+        {
+          image: third
+        },
+        {
+          image: third
+        },
+        {
+          image: third
+        },
       ]
     }
   },
