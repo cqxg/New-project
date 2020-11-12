@@ -1,6 +1,16 @@
 .slider {
     padding-bottom: 50px;
+    .container {
+        margin: 0 0 0 404px;
+        max-width: none;
+    }
+    &__container {
+        height: 500px;
+    }
+    & div {
+        outline: none;
+    }
     h1 {
-        margin-bottom: 88px;
+        margin-bottom: 58px;
     }
 }
