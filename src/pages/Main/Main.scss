@@ -133,3 +133,86 @@
     background-repeat: no-repeat;
   }
 }
+
+/* ------------------------------------- six block ----------------------------------------------------------------- */
+
+.six_block {
+  padding-top: 270px;
+  position: relative;
+  text-align: center;
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__left,
+  &__right {
+    max-width: 690px;
+  }
+}
+
+/* ------------------------------------- seven block ----------------------------------------------------------------- */
+
+.seven_block {
+  padding-top: 270px;
+  position: relative;
+  text-align: center;
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 690px;
+  }
+}
+
+/* ------------------------------------- eight   block  ----------------------------------------------------------------- */
+
+.eight_block {
+  padding-top: 270px;
+  position: relative;
+  & h1 {
+    max-width: 460px;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__left {
+    max-width: 690px;
+    text-align: center;
+  }
+  &__right {
+    max-width: 690px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__qr {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__qr-desc {
+    width: 200px;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    opacity: 50%;
+  }
+  &__img {
+    width: 150px;
+    height: 150px;
+    background-image: url("../../img/images/qr.png");
+  }
+}

@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import { Blob } from "../Blob/Blob";
 
 import "./Slider.scss";
-import "@brainhubeu/react-carousel/lib/style.css";
+// import "@brainhubeu/react-carousel/lib/style.css";
 
 const Carousel = (props) => {
   const { constructor } = props;
