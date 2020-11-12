@@ -3,14 +3,20 @@ h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 73.6px;
-  color: #1E2843;
+  color: #1e2843;
 }
 
 P {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
-  color: #1E2843;
+  color: #1e2843;
+}
+
+h3 {
+  color: #1e2843;
+  font-size: 36px;
+  margin: 0;
 }
 
 .section__margin {

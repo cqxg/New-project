@@ -1,5 +1,5 @@
 import React from "react";
-import { Blob } from "react-blob";
+import { Blob } from "../../../components/Blob/Blob";
 
 import Button from "../../../components/Buttons/Button";
 

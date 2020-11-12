@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Blob } from "react-blob";
+import { Blob } from "../Blob/Blob";
 
 const bubbleForSecondBlocs = () => (
   <>

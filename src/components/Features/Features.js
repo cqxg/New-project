@@ -1,7 +1,7 @@
 import React from "react";
 import parse from "html-react-parser";
 
-import { Blob } from "react-blob";
+import { Blob } from "../Blob/Blob";
 import { useTranslation } from "react-i18next";
 import Wave from "react-wavify";
 
