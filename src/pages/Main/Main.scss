@@ -134,7 +134,6 @@
   }
 }
 
-
 /* ------------------------------------- six block ----------------------------------------------------------------- */
 
 .six_block {
@@ -147,6 +146,26 @@
   }
   &__left,
   &__right {
+    max-width: 690px;
+  }
+}
+
+/* ------------------------------------- seven block ----------------------------------------------------------------- */
+
+.seven_block {
+  padding-top: 270px;
+  position: relative;
+  text-align: center;
+  &__flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     max-width: 690px;
   }
 }

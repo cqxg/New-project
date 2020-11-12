@@ -10,6 +10,8 @@ import "./Main.scss";
 import BubblesWithImages from "../../components/BubblesWithImages/BubblesWithImages";
 import WithIconBlock from "./Blocs/WithIconBlock";
 import SixBlock from "./Blocs/SixBlock";
+import SevenBlock from "./Blocs/SevenBlock";
+import EightBlock from "./Blocs/EightBlock";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -23,6 +25,8 @@ const Main = () => {
       <BubblesWithImages constructor={pageConstructor} scheme="whatYouGet" />
       <WithIconBlock t={t} />
       <SixBlock t={t} />
+      <SevenBlock t={t} />
+      <EightBlock t={t} />
     </>
   );
 };
