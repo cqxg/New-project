@@ -168,13 +168,15 @@
     flex-direction: column;
     max-width: 690px;
   }
+  &__girl {
+    position: absolute;
+  }
 }
 
 /* ------------------------------------- eight   block  ----------------------------------------------------------------- */
 
 .eight_block {
   padding-top: 270px;
-  position: relative;
   & h1 {
     max-width: 460px;
   }
@@ -184,6 +186,7 @@
     justify-content: space-around;
   }
   &__left {
+    position: relative;
     max-width: 690px;
     text-align: center;
   }
@@ -214,5 +217,10 @@
     width: 150px;
     height: 150px;
     background-image: url("../../img/images/qr.png");
+  }
+  &__girl {
+    top: -40%;
+    left: -55%;
+    position: absolute;
   }
 }

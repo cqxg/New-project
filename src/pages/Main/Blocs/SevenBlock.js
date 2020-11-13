@@ -3,6 +3,7 @@ import React from "react";
 import bubbleSixBlock from "../../../components/BubbleSixBlock/BubbleSixBlock";
 import Button from "../../../components/Buttons/Button";
 import externallink from "../../../img/images/externallink.png";
+import sevengirl from "../../../img/svg/sevengirl.svg";
 
 const SevenBlock = ({ t }) => (
   <div className="seven_block">
@@ -16,7 +17,10 @@ const SevenBlock = ({ t }) => (
             text={t("takeLoockBtn")}
           />
         </div>
-        <div className="seven_block__right">{bubbleSixBlock()}</div>
+        <div className="seven_block__right">
+          {bubbleSixBlock()}
+          <img className='seven_block__girl' alt="seven block girl" src={sevengirl} />
+        </div>
       </div>
     </div>
   </div>
