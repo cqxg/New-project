@@ -190,7 +190,6 @@ const constructor = {
         {
           title: 'audioGuideTours',
           text: "audioGuideTourText",
-          image: grand,
           button: {
             type: 'revert',
             text: 'More'
@@ -199,16 +198,6 @@ const constructor = {
         {
           title: 'audiobook',
           text: "audioBookText",
-          image: north,
-          button: {
-            type: 'revert',
-            text: 'More'
-          }
-        },
-        {
-          title: 'southTour',
-          text: "You can go on a fascinating journey around the island with a unique author's audiobook. You don't even have to go anywhere - listen to interesting stories about local attractions, traditions, cultural features, history of the island and much more, while staying in one place. Explore Lanzarote anywhere in the world.",
-          image: south,
           button: {
             type: 'revert',
             text: 'More'
