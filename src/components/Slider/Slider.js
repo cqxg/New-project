@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import { Blob } from "../Blob/Blob";
 
 import "./Slider.scss";
-// import "@brainhubeu/react-carousel/lib/style.css";
 
 const Carousel = (props) => {
   const { constructor } = props;
@@ -12,9 +11,10 @@ const Carousel = (props) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     arrows: true,
     slidesToScroll: 1,
+    centerMode: true,
   };
   return (
     <div className="slider">

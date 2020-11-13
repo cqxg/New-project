@@ -19,6 +19,20 @@ h3 {
   margin: 0;
 }
 
+.slick-arrow.slick-next {
+  width: 70px;
+  height: 70px;
+  right: 100px;
+  border-radius: 50%;
+  background: #fff!important;
+  box-shadow: 0 5px 15px 5px rgb(218, 218, 218);
+}
+
+.slick-arrow.slick-next:before {
+  content: url('./img/svg/arrow-right.svg');
+  color: #000;
+}
+
 .section__margin {
   margin-top: 180px;
 }

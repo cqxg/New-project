@@ -27,11 +27,11 @@ const BubblesWithImages = props => {
                         <Blob
                             size="380px"
                             style={{
-                                backgroundColor: "#fff",
+                                backgroundColor: "#D1F1FD",
                             }}
                             animationDuration="15s"
                         >
-                            <img src={item.image} alt={item.text} />
+                            {item.image ? <img src={item.image} alt={item.text} /> : null}
                         </Blob>
                     </div>
                 </div>
