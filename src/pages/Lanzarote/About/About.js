@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 
 import { useTranslation } from "react-i18next";
 
-import bubbleForSecondBlocs from "../../../components/BubbleForSecondBlocs/BubbleForSecondBlocs";
+import bubbleForSecondBlocs from "../../../components/Bubbles/BubbleForSecondBlocs";
 
 import "./About.scss";
 

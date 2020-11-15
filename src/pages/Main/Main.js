@@ -6,12 +6,15 @@ import FirstBlock from "./Blocs/FirstBlock";
 import SecondBlock from "./Blocs/SecondBlock";
 import Features from "../../components/Features/Features";
 
-import "./Main.scss";
-import BubblesWithImages from "../../components/BubblesWithImages/BubblesWithImages";
+import BubblesWithImages from "../../components/Bubbles/BubblesWithImages";
+import MainSlider from "../../components/MainSlider/MainSlider";
 import WithIconBlock from "./Blocs/WithIconBlock";
 import SixBlock from "./Blocs/SixBlock";
 import SevenBlock from "./Blocs/SevenBlock";
 import EightBlock from "./Blocs/EightBlock";
+import Footer from "../../components/Footer/Footer";
+
+import "./Main.scss";
 
 const Main = () => {
   const { t } = useTranslation();
@@ -27,6 +30,8 @@ const Main = () => {
       <SixBlock t={t} />
       <SevenBlock t={t} />
       <EightBlock t={t} />
+      <MainSlider t={t} />
+      <Footer />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-import bubbleSixBlock from "../../../components/BubbleSixBlock/BubbleSixBlock";
+import bubbleSixBlock from "../../../components/Bubbles/BubbleSixBlock";
 import Button from "../../../components/Buttons/Button";
 import externallink from "../../../img/images/externallink.png";
 import sevengirl from "../../../img/svg/sevengirl.svg";

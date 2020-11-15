@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "../../../components/Buttons/Button";
-import bubbleSixBlock from "../../../components/BubbleSixBlock/BubbleSixBlock";
+import bubbleSixBlock from "../../../components/Bubbles/BubbleSixBlock";
 
 import appStoreIcon from "../../../img/svg/appStore.svg";
 import googlePlay from "../../../img/svg/googlePlay.svg";
