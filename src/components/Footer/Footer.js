@@ -9,6 +9,8 @@ import googleplay from "../../img/images/googleplay.svg";
 import facebook from "../../img/svg/facebook.svg";
 import twitter from "../../img/svg/twitter.svg";
 import google from "../../img/svg/google.svg";
+import fbblack from "../../img/svg/fbblack.svg";
+import instblack from "../../img/svg/instblack.svg";
 
 import "./Footer.scss";
 
@@ -57,6 +59,13 @@ const Footer = (props) => {
                 <Button type="empty" icon={facebook} />
                 <Button type="empty" icon={twitter} />
                 <Button type="empty" icon={google} />
+              </div>
+            </div>
+            <div className="footer__right-join">
+              <p>Join us</p>
+              <div className="footer__right-sharebuttons">
+                <img src={fbblack} alt=""/>
+                <img src={instblack} alt=""/>
               </div>
             </div>
           </div>
