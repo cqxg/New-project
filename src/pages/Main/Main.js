@@ -7,7 +7,7 @@ import SecondBlock from "./Blocs/SecondBlock";
 import Features from "../../components/Features/Features";
 
 import "./Main.scss";
-import BubblesWithImages from "../../components/BubblesWithImages/BubblesWithImages";
+import BubblesWithImages from "../../components/Bubbles/BubblesWithImages";
 import WithIconBlock from "./Blocs/WithIconBlock";
 import SixBlock from "./Blocs/SixBlock";
 import SevenBlock from "./Blocs/SevenBlock";

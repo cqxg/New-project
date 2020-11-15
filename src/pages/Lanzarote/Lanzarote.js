@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs';
-import BubblesWithImages from '../../components/BubblesWithImages/BubblesWithImages';
+import BubblesWithImages from '../../components/Bubbles/BubblesWithImages';
 import constructor from '../../constructors/constructor'
 import About from './About/About';
 import Features from '../../components/Features/Features';

@@ -1,6 +1,6 @@
 import React from "react";
 
-import bubbleSixBlock from "../../../components/BubbleSixBlock/BubbleSixBlock";
+import bubbleSixBlock from "../../../components/Bubbles/BubbleSixBlock";
 
 const SixBlock = ({ t }) => (
   <div className="six_block">
