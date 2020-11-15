@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "../../../components/Buttons/Button";
-import bubbleGroup from "../../../components/BubbleGroup/BubbleGroup";
+import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
 import a from "../../../img/icon/a.png";
 import b from "../../../img/icon/b.png";
 import c from "../../../img/icon/c.png";

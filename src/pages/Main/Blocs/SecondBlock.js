@@ -2,7 +2,7 @@ import React from "react";
 import parse from "html-react-parser";
 
 import Button from "../../../components/Buttons/Button";
-import bubbleForSecondBlocs from "../../../components/BubbleForSecondBlocs/BubbleForSecondBlocs";
+import bubbleForSecondBlocs from "../../../components/Bubbles/BubbleForSecondBlocs";
 
 import pathicon from "../../../img/images/group1.png";
 
