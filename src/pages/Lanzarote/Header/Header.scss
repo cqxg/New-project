@@ -1,7 +1,7 @@
 .header {
   background: url("../../../img/images/Lanzarote/bg.jpg");
   background-size: cover;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   &__wave {
       position: absolute;
@@ -43,6 +43,19 @@
     & h1 {
       color: #fff;
       text-align: center;
+    }
+  }
+}
+
+@media(max-width: 1550px) {
+  .header {
+    height: 750px;
+    &__container {
+      padding-top: 150px;
+      &-tour {
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }

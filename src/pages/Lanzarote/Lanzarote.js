@@ -10,6 +10,7 @@ import Header from './Header/Header';
 
 import './Lanzarote.scss'
 import Carousel from '../../components/Slider/Slider';
+import Footer from '../../components/Footer/Footer';
 
 const Lanzarote = () => {
     const { t } = useTranslation();
@@ -23,6 +24,7 @@ const Lanzarote = () => {
             <Features constructor={pageConstructor} scheme="features"/>
             <BubblesWithImages constructor={pageConstructor} scheme="bubblesWithImages"/>
             <Carousel constructor={pageConstructor}/>
+            <Footer/>
         </div>
     )
 }
