@@ -1,5 +1,4 @@
-'use strict';
-
+// eslint-disable-next-line
 function __$styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
   var insertAt = ref.insertAt;
@@ -66,6 +65,7 @@ function __rest(s, e) {
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
         t[p] = s[p];
     if (s != null && typeof Object.getOwnPropertySymbols === "function")
+    // eslint-disable-next-line
         for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
             if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
                 t[p[i]] = s[p[i]];
@@ -77,15 +77,18 @@ function __makeTemplateObject(cooked, raw) {
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
 }
-
+// eslint-disable-next-line
 var spin = styled.keyframes(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  to {\n    transform: rotate(1turn);\n  }\n"], ["\n  to {\n    transform: rotate(1turn);\n  }\n"])));
+// eslint-disable-next-line
 var Shape = styled__default.div(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  transition: border-radius 1s ease-out;\n  transform-origin: center;\n  overflow: hidden;\n  ", "\n  ", "\n"], ["\n  transition: border-radius 1s ease-out;\n  transform-origin: center;\n  overflow: hidden;\n  ",
     "\n  ",
     "\n"])), function (props) {
     return props.size && styled.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n      width: ", ";\n      height: ", ";\n    "], ["\n      width: ", ";\n      height: ", ";\n    "])), props.size, props.size);
 }, function (props) { return styled.css(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    border-radius: ", ";\n    animation: ", " ", "s ease-in-out infinite both alternate,\n      ", " ", ";\n  "], ["\n    border-radius: ", ";\n    animation: ",
     " ", "s ease-in-out infinite both alternate,\n      ", " ", ";\n  "])), props.radius1, styled.keyframes(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n      0% {\n        border-radius: ", ";\n      }\n      100% {\n        border-radius: ", ";\n      }\n    "], ["\n      0% {\n        border-radius: ", ";\n      }\n      100% {\n        border-radius: ", ";\n      }\n    "])), props.radius1, props.radius2), (Math.random() * 10) | (0 + 10), spin, props.spinParams); });
+// eslint-disable-next-line
 var ShapeContent = styled__default.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  animation: ", " ", " reverse;\n  transform-origin: center;\n  height: 100%;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n"], ["\n  animation: ", " ", " reverse;\n  transform-origin: center;\n  height: 100%;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n"])), spin, function (props) { return props.spinParams; });
+// eslint-disable-next-line
 var Image = styled__default.img(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  transform: scale(1.25);\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n"], ["\n  transform: scale(1.25);\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n"])));
 var randomRadiuses = function (x) {
     return new Array(x)
