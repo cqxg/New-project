@@ -12,6 +12,7 @@ import WithIconBlock from "./Blocs/WithIconBlock";
 import SixBlock from "./Blocs/SixBlock";
 import SevenBlock from "./Blocs/SevenBlock";
 import EightBlock from "./Blocs/EightBlock";
+import Footer from "../../components/Footer/Footer";
 
 import "./Main.scss";
 
@@ -30,6 +31,7 @@ const Main = () => {
       <SevenBlock t={t} />
       <EightBlock t={t} />
       <MainSlider t={t} />
+      <Footer />
     </>
   );
 };
