@@ -1,0 +1,22 @@
+.footer {
+    & ul {
+        list-style-type: none;
+        padding-left: 0;
+        & li {
+            margin-bottom: 16px;
+            font-size: 24px;
+            color: #1E2843;
+        }
+    }
+    &__container {
+        max-width: 1120px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right-sharebuttons {
+        display: flex;
+    }
+    background: #D5EFFB;
+}
