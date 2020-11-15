@@ -1,4 +1,8 @@
 .footer {
+    padding-bottom: 30px;
+    & button {
+        margin: 0 5px;
+    }
     & ul {
         list-style-type: none;
         padding-left: 0;
@@ -14,6 +18,14 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+    }
+    &__right {
+        & img {
+            margin: 0 5px;
+        }
+        & p {
+            margin-bottom: 12px;
+        }
     }
     &__right-sharebuttons {
         display: flex;
