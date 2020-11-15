@@ -1,8 +1,7 @@
 import React from 'react';
 
-const BubbleWithIcon = props => {
-    const { icon } = props
+const BubbleWithIcon = (props) => {
+  const { icon } = props;
+};
 
-}
-
-export default BubbleWithIcon
+export default BubbleWithIcon;

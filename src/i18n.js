@@ -20,7 +20,7 @@ const resources = {
   de: {
     translation: DE,
   },
-  
+
   es: {
     translation: ES,
   },

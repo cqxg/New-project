@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 
-import { Routes } from "./routes/routes";
-import Cookies from './components/Cookies/Cookies'
-import Menu from "./components/Menu/Menu";
-import Preloader from "./components/Preloader/Preloader";
+import { Routes } from './routes/routes';
+import Cookies from './components/Cookies/Cookies';
+import Menu from './components/Menu/Menu';
+import Preloader from './components/Preloader/Preloader';
 
-import "./App.css";
+import './App.css';
 
-const App = props => {
+const App = (props) => {
   const [cookies, setCookie] = useCookies(['user']);
-  const [toggleCookie, setToggleCookie] = useState(true)
+  const [toggleCookie, setToggleCookie] = useState(true);
   const [loading, setLoading] = useState(true);
-  const [activeLocale, setActiveLocale] = useState('en')
+  const [activeLocale, setActiveLocale] = useState('en');
 
-  const changeLocale = e => setActiveLocale(e)
+  const changeLocale = (e) => setActiveLocale(e);
 
   const handleCookies = () => {
-    setCookie("user", "gowtham", {
-      path: "/"
+    setCookie('user', 'gowtham', {
+      path: '/',
     });
-    setToggleCookie(false)
-  }
+    setToggleCookie(false);
+  };
 
-  const locationRoute = props.location.pathname
+  const locationRoute = props.location.pathname;
 
   useEffect(() => {
     setTimeout(() => {
@@ -33,12 +33,12 @@ const App = props => {
   }, []);
 
   return (
-      <>
-        {loading ? <Preloader /> : null}
-        <Menu changeLocale={changeLocale} activeLocale={activeLocale} theme={locationRoute === '/about' ? 'light' : 'dark'}/>
-        <Routes />
-        {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
-      </>
+    <>
+      {loading ? <Preloader /> : null}
+      <Menu changeLocale={changeLocale} activeLocale={activeLocale} theme={locationRoute === '/about' ? 'light' : 'dark'} />
+      <Routes />
+      {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
+    </>
   );
 };
 

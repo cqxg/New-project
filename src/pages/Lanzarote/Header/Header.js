@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
 
-import Wave from "react-wavify";
+import Wave from 'react-wavify';
 
-import "./Header.scss";
-import constructor from '../../../constructors/constructor'
+import './Header.scss';
+import constructor from '../../../constructors/constructor';
 
 const Header = () => {
   const { t } = useTranslation();
-  const ref = useRef(null)
+  const ref = useRef(null);
   return (
     <div className="header">
       <div className="header__container">
@@ -21,18 +21,16 @@ const Header = () => {
         </div>
         <div className="header__container-tours">
           {
-            constructor.lanzarote.headerTours.map((item) => {
-              return (
-                <Flippy flipOnHover={true} flipDirection="horizontal" ref={ref}>
-                  <FrontSide style={{ boxShadow: 'none', padding: 0 }}>
-                    <div className={`header__container-tour ${item.className}`}>{item.frontText}</div>
-                  </FrontSide>
-                  <BackSide style={{ boxShadow: 'none', padding: 0 }}>
-                    <div className="header__container-tour">{item.backText}</div>
-                  </BackSide>
-                </Flippy>
-              )
-            })
+            constructor.lanzarote.headerTours.map((item) => (
+              <Flippy flipOnHover flipDirection="horizontal" ref={ref}>
+                <FrontSide style={{ boxShadow: 'none', padding: 0 }}>
+                  <div className={`header__container-tour ${item.className}`}>{item.frontText}</div>
+                </FrontSide>
+                <BackSide style={{ boxShadow: 'none', padding: 0 }}>
+                  <div className="header__container-tour">{item.backText}</div>
+                </BackSide>
+              </Flippy>
+            ))
           }
         </div>
       </div>

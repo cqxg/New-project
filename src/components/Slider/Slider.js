@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Slider from "react-slick";
-import { Blob } from "../Blob/Blob";
+import Slider from 'react-slick';
+import { Blob } from '../Blob/Blob';
 
-import "./Slider.scss";
+import './Slider.scss';
 
 const Carousel = (props) => {
   const { constructor } = props;
@@ -21,24 +21,22 @@ const Carousel = (props) => {
       <div className="container">
         <h1>{sliderConstructor.title}</h1>
         <Slider {...settings}>
-          {sliderConstructor.items.map((item) => {
-            return (
-              <div className="slider__container">
-                <Blob
-                  style={{
-                    width: "520px",
-                    height: "520px",
-                    marginTop: "30px",
-                    marginBottom: "30px",
-                    backgroundColor: "#fff",
-                  }}
-                  animationDuration="15s"
-                >
-                  <img src={item.image} alt="slide" />
-                </Blob>
-              </div>
-            );
-          })}
+          {sliderConstructor.items.map((item) => (
+            <div className="slider__container">
+              <Blob
+                style={{
+                  width: '520px',
+                  height: '520px',
+                  marginTop: '30px',
+                  marginBottom: '30px',
+                  backgroundColor: '#fff',
+                }}
+                animationDuration="15s"
+              >
+                <img src={item.image} alt="slide" />
+              </Blob>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>
