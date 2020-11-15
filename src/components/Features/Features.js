@@ -1,35 +1,31 @@
-import React from "react";
-import parse from "html-react-parser";
+import React from 'react';
+import parse from 'html-react-parser';
 
-import { Blob } from "../Blob/Blob";
-import { useTranslation } from "react-i18next";
-import Wave from "react-wavify";
+import { useTranslation } from 'react-i18next';
+import Wave from 'react-wavify';
+import { Blob } from '../Blob/Blob';
 
-import "./Features.scss";
+import './Features.scss';
 
 const Features = (props) => {
   const { scheme, constructor } = props;
   const featureConstructor = constructor[scheme];
   const { t } = useTranslation();
 
-  const renderBubbles = () => {
-    return featureConstructor.bubbles.map((item) => {
-      return (
-        <div className="features__item">
-          <Blob
-            size="195px"
-            style={{
-              backgroundColor: "#fff",
-            }}
-            animationDuration="15s"
-          >
-            <img src={item.icon} alt={item.text} />
-          </Blob>
-          <p>{t(item.text)}</p>
-        </div>
-      );
-    });
-  };
+  const renderBubbles = () => featureConstructor.bubbles.map((item) => (
+    <div className="features__item">
+      <Blob
+        size="195px"
+        style={{
+          backgroundColor: '#fff',
+        }}
+        animationDuration="15s"
+      >
+        <img src={item.icon} alt={item.text} />
+      </Blob>
+      <p>{t(item.text)}</p>
+    </div>
+  ));
 
   return (
     <div className="section__margin">

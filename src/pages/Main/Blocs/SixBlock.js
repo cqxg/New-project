@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import bubbleSixBlock from "../../../components/Bubbles/BubbleSixBlock";
+import bubbleSixBlock from '../../../components/Bubbles/BubbleSixBlock';
 
 const SixBlock = ({ t }) => (
   <div className="six_block">
@@ -8,8 +8,8 @@ const SixBlock = ({ t }) => (
       <div className="six_block__flex">
         <div className="six_block__left">{bubbleSixBlock()}</div>
         <div className="six_block__right">
-            <h1>{t("eventsSpecialOferTitle")}</h1>
-            <p>{t("eventsSpecialOferDesk")}</p>
+          <h1>{t('eventsSpecialOferTitle')}</h1>
+          <p>{t('eventsSpecialOferDesk')}</p>
         </div>
       </div>
     </div>

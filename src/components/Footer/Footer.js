@@ -1,18 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import { useTranslation } from "react-i18next";
-import Wave from "react-wavify";
-import Button from "../Buttons/Button";
+import { useTranslation } from 'react-i18next';
+import Wave from 'react-wavify';
+import Button from '../Buttons/Button';
 
-import appStore from "../../img/images/appstore.svg";
-import googleplay from "../../img/images/googleplay.svg";
-import facebook from "../../img/svg/facebook.svg";
-import twitter from "../../img/svg/twitter.svg";
-import google from "../../img/svg/google.svg";
-import fbblack from "../../img/svg/fbblack.svg";
-import instblack from "../../img/svg/instblack.svg";
+import appStore from '../../img/images/appstore.svg';
+import googleplay from '../../img/images/googleplay.svg';
+import facebook from '../../img/svg/facebook.svg';
+import twitter from '../../img/svg/twitter.svg';
+import google from '../../img/svg/google.svg';
+import fbblack from '../../img/svg/fbblack.svg';
+import instblack from '../../img/svg/instblack.svg';
 
-import "./Footer.scss";
+import './Footer.scss';
 
 const Footer = (props) => {
   const { t } = useTranslation();
@@ -33,19 +33,19 @@ const Footer = (props) => {
           <div className="footer__left">
             <h3>Lanzarote</h3>
             <ul>
-              <li>{t("grandTour")}</li>
-              <li>{t("northTour")}</li>
-              <li>{t("southTour")}</li>
-              <li>{t("audiobook")}</li>
+              <li>{t('grandTour')}</li>
+              <li>{t('northTour')}</li>
+              <li>{t('southTour')}</li>
+              <li>{t('audiobook')}</li>
             </ul>
           </div>
           <div className="footer__center">
             <h3>Site map</h3>
             <ul>
-              <li>{t("about")}</li>
-              <li>{t("aboutUs")}</li>
-              <li>{t("faq")}</li>
-              <li>{t("contacts")}</li>
+              <li>{t('about')}</li>
+              <li>{t('aboutUs')}</li>
+              <li>{t('faq')}</li>
+              <li>{t('contacts')}</li>
             </ul>
           </div>
           <div className="footer__right">
@@ -64,8 +64,8 @@ const Footer = (props) => {
             <div className="footer__right-join">
               <p>Join us</p>
               <div className="footer__right-sharebuttons">
-                <img src={fbblack} alt=""/>
-                <img src={instblack} alt=""/>
+                <img src={fbblack} alt="" />
+                <img src={instblack} alt="" />
               </div>
             </div>
           </div>
