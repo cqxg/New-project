@@ -66,8 +66,13 @@
   -webkit-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
   -moz-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
   box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  cursor: default;
   .btn-icon {
     margin: 0;
+  }
+  &:hover {
+    transform: translateY(0px);
+    box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5)!important;
   }
 }
 
@@ -75,6 +80,10 @@
   max-width: 200px;
   background: none;
   border: 2px solid #ff5134;
+  &:hover {
+    background: #ff5134;
+    color: #fff;
+  }
 }
 
 .empty {
