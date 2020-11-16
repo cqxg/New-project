@@ -1,0 +1,52 @@
+{
+  "name": "vidodo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "html-react-parser": "^0.14.1",
+    "i18next": "^19.8.3",
+    "i18next-xhr-backend": "^3.2.2",
+    "react": "^17.0.1",
+    "react-blob": "^2.1.0",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^17.0.1",
+    "react-flippy": "^0.1.5",
+    "react-i18next": "^11.7.3",
+    "react-router-dom": "^5.2.0",
+    "react-router-transition": "^2.0.0",
+    "react-scripts": "4.0.0",
+    "react-slick": "^0.27.13",
+    "react-wavify": "^1.4.0",
+    "sass": "^1.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.1",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
