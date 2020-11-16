@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Medium.eot');
+  src: url('./fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Gilroy-Medium.woff') format('woff'),
+  url('./fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./fonts/Gilroy-Bold.eot');
+  src: url('./fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Gilroy-Bold.woff') format('woff'),
+  url('./fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gilroy', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

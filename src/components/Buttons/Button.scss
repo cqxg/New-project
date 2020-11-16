@@ -1,0 +1,92 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  left: 343px;
+  top: 548px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: translateY(2px);
+    box-shadow: none !important;
+  }
+}
+
+.btn-icon {
+  margin-right: 18px;
+}
+
+.btn-icon-revert {
+  margin-left: 18px;
+}
+
+.btn_text {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.primary {
+  color: #ffffff;
+  background: linear-gradient(159.78deg, #17c9fb 6.33%, #1a78e9 86.91%);
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(12, 127, 242, 0.5);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(12, 127, 242, 0.54);
+  box-shadow: 0px 7px 15px 0px rgba(12, 127, 242, 0.54);
+}
+
+.success {
+  color: #ffffff;
+  background: linear-gradient(180deg, #15d79d 0%, #00875f 100%);
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(19, 118, 13, 0.5);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(19, 118, 13, 0.5);
+  box-shadow: 0px 7px 15px 0px rgba(19, 118, 13, 0.5);
+}
+
+.secondary {
+  color: #ffffff;
+  background: linear-gradient(180deg, rgb(255, 109, 85) 0%, #ff5134 114.71%);
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+}
+
+.rectangle {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  margin-left: 35px;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(255, 109, 85) 0%, #ff5134 114.71%);
+  -webkit-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  -moz-box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+  .btn-icon {
+    margin: 0;
+  }
+}
+
+.revert {
+  max-width: 200px;
+  background: none;
+  border: 2px solid #ff5134;
+}
+
+.empty {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  & img {
+    margin-right: 0;
+  }
+}
