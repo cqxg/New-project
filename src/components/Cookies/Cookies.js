@@ -13,7 +13,7 @@ const Cookies = (props) => {
     <div className="cookies">
       <div className="cookies__container">
         <p>
-          By continuing to browse the site, you agree to the
+          By continuing to browse the site, you agree to the&nbsp;
           <Link to="/cookies">cookie policy</Link>
         </p>
         <Button onClick={handleCookies} type="secondary" text={t('cookieBtnText')} />

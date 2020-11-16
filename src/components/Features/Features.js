@@ -19,7 +19,7 @@ const Features = (props) => {
         style={{
           backgroundColor: '#fff',
         }}
-        animationDuration="15s"
+        animationDuration="0s"
       >
         <img src={item.icon} alt={item.text} />
       </Blob>
