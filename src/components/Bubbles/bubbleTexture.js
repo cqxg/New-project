@@ -6,7 +6,6 @@ export const bubbleTexture = () => {
         left: '50%',
         top: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '115%',
         height: '120%',
         padding: '2rem',
     }
@@ -81,12 +80,12 @@ export const bubbleTexture = () => {
             </ellipse>
 
             <circle r="50%" cx="50%" cy="50%"
-                fill="#E2ECF1"
+                fill="#68cdff"
                 mask="url(#mask--light-bottom)">
             </circle>
 
             <circle r="50%" cx="50%" cy="50%"
-                fill="#E2ECF1"
+                fill="#c0eaff"
                 mask="url(#mask--light-top)">
             </circle>
 

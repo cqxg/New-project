@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Blob } from '../Blob/Blob';
+import { bubbleTexture } from './bubbleTexture';
 
 const bubbleGroup = () => (
   <>
@@ -8,20 +9,18 @@ const bubbleGroup = () => (
       size="20vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         left: '10%',
         bottom: '70%',
       }}
       animationDuration="15s"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="35vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         left: '2%',
         top: '35%',
@@ -29,13 +28,12 @@ const bubbleGroup = () => (
       animationDuration="25s"
       animationTimingFunction="ease-in-out"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="10vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         bottom: '65%',
         left: '37%',
@@ -43,38 +41,35 @@ const bubbleGroup = () => (
       animationDuration="50s"
       animationTimingFunction="ease-in-out"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="20vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         left: '55%',
       }}
       animationDuration="30s"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="15vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         top: '60%',
         left: '50%',
       }}
       animationDuration="15s"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="25vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         top: '60%',
         left: '70%',
@@ -82,13 +77,12 @@ const bubbleGroup = () => (
       animationDuration="25s"
       animationTimingFunction="ease-in-out"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="10vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         top: '37%',
         left: '90%',
@@ -96,19 +90,18 @@ const bubbleGroup = () => (
       animationDuration="50s"
       animationTimingFunction="ease-in-out"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
     <Blob
       size="15vh"
       style={{
         zIndex: -1,
-        backgroundColor: '#D5EFFB',
         position: 'absolute',
         left: '90%',
       }}
       animationDuration="30s"
     >
-      <i className="fab fa-react" />
+      {bubbleTexture()}
     </Blob>
   </>
 );

@@ -70,3 +70,14 @@ h3 {
   position: absolute;
   width: 100%;
 }
+
+/* bubble animation for svg */
+
+@keyframes rotateBubbleSvg {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to { 
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
