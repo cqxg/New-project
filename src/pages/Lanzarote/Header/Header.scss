@@ -47,11 +47,12 @@
   }
 }
 
-@media(max-width: 1550px) {
+@media(max-width: 1440px) {
   .header {
     height: 750px;
     &__container {
       padding-top: 150px;
+      max-width: 1180px;
       &-tour {
         width: 200px;
         height: 200px;
