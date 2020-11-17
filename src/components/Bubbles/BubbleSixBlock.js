@@ -1,17 +1,17 @@
 import React from 'react';
 
 import { Blob } from '../Blob/Blob';
+import { bubbleTexture } from './bubbleTexture';
 
 const bubbleSixBlock = () => (
   <Blob
     size="50vh"
     style={{
       zIndex: -1,
-      backgroundColor: '#D5EFFB',
     }}
     animationDuration="15s"
   >
-    <i className="fab fa-react" />
+    {bubbleTexture()}
   </Blob>
 );
 

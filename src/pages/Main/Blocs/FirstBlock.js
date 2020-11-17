@@ -1,5 +1,6 @@
 import React from 'react';
 import { Blob } from '../../../components/Blob/Blob';
+import { bubbleTexture } from '../../../components/Bubbles/bubbleTexture';
 
 import Button from '../../../components/Buttons/Button';
 
@@ -12,7 +13,7 @@ const renderBubbles = () => (
     style={{ zIndex: -1, backgroundColor: '#D5EFFB' }}
     animationDuration="25s"
   >
-    <i className="fab fa-react" />
+    {bubbleTexture()}
   </Blob>
 );
 
