@@ -189,6 +189,7 @@ const constructor = {
         {
           title: 'audioGuideTours',
           text: 'audioGuideTourText',
+          image: audiobook,
           button: {
             type: 'revert',
             text: 'More',
@@ -197,6 +198,7 @@ const constructor = {
         {
           title: 'audiobook',
           text: 'audioBookText',
+          image: audiobook,
           button: {
             type: 'revert',
             text: 'More',
