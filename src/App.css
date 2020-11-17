@@ -81,3 +81,24 @@ h3 {
     transform: translate(-50%, -50%) rotate(180deg);
   }
 }
+
+@media(max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+  h1 {
+    font-size: 58px;
+  }
+  
+  P {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 28px;
+  }
+  .seven_block__girl {
+    width: 400px;
+  }
+}
+                                           

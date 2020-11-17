@@ -13,11 +13,11 @@ const EightBlock = ({ t }) => (
       <div className="eight_block__flex">
         <div className="eight_block__left">
           {bubbleSixBlock()}
-          <img
+          {/* <img
             className="eight_block__girl"
             alt="eight block girl"
             src={eightgirl}
-          />
+          /> */}
         </div>
         <div className="eight_block__right">
           <h1>{t('installTheVidodo')}</h1>
