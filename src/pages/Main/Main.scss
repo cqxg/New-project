@@ -71,7 +71,8 @@
 
 @media (max-width: 1440px) {
   .second_block {
-    &__left, &__right {
+    &__left,
+    &__right {
       max-width: 590px;
     }
   }
