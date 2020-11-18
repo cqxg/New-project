@@ -1,5 +1,6 @@
 import React from "react";
 
+import Cubes from "../../../components/Cubes/Cubes";
 import Button from "../../../components/Buttons/Button";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
 import a from "../../../img/icon/a.png";
@@ -28,22 +29,9 @@ const WithIconBlock = ({ t }) => (
         <div className="withicon_block__right">
           {bubbleGroup()}
           <div className="withicon_block__iconblock">
-            {/* <div
-              className="withicon_block__icon"
-              style={{ backgroundImage: `url(${a})` }}
-            /> */}
-            <div className="stage" style={{ width: "120px", height: "120px" }}>
-              <div className="cubespinner">
-                <div className="face1"  style={{ backgroundImage: `url(${a})` }}>1</div>
-                <div className="face2"  style={{ backgroundImage: `url(${a})` }}>2</div>
-                <div className="face3"  style={{ backgroundImage: `url(${a})` }}>3</div>
-                <div className="face4"  style={{ backgroundImage: `url(${a})` }}>4</div>
-                <div className="face5"  style={{ backgroundImage: `url(${a})` }}>5</div>
-                <div className="face6"  style={{ backgroundImage: `url(${a})` }}>6</div>
-              </div>
-            </div>
+            <Cubes />
 
-            <div className="stage" style={{ width: "120px", height: "120px" }}>
+            {/* <div className="stage" style={{ width: "120px", height: "120px" }}>
               <div className="cubespinner">
                 <div className="face1"  style={{ backgroundImage: `url(${b})` }}>1</div>
                 <div className="face2"  style={{ backgroundImage: `url(${b})` }}>2</div>
@@ -119,9 +107,14 @@ const WithIconBlock = ({ t }) => (
                 <div className="face5"  style={{ backgroundImage: `url(${k})` }}>5</div>
                 <div className="face6"  style={{ backgroundImage: `url(${k})` }}>6</div>
               </div>
-            </div> 
+            </div>  */}
 
-            {/* <div
+            {/* 
+            <div
+              className="withicon_block__icon"
+              style={{ backgroundImage: `url(${a})` }}
+            />
+            <div
               className="withicon_block__icon"
               style={{ backgroundImage: `url(${b})` }}
             />
@@ -169,8 +162,8 @@ const WithIconBlock = ({ t }) => (
               <div
                 className="withicon_block__muchiconinside"
                 style={{ backgroundImage: `url(${p})` }}
-              /> 
-             </div> 
+              />
+            </div>
           </div>
         </div>
       </div>

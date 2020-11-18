@@ -1,0 +1,108 @@
+@keyframes spincube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateY(90deg);
+  }
+  // 16% {
+
+  // }
+  //   33% {
+  //     transform: rotateY(-90deg) rotateZ(90deg);
+  //   }
+  //   50% {
+  //     transform: rotateY(-180deg) rotateZ(90deg);
+  //   }
+  //   66% {
+  //     transform: rotateY(-270deg) rotateX(90deg);
+  //   }
+  //   83% {
+  //     transform: rotateX(90deg);
+  //   }
+}
+
+.cubespinner1,
+.cubespinner2,
+.cubespinner3,
+.cubespinner4 {
+  animation-name: spincube;
+  animation-duration: 1s;
+  transform-style: preserve-3d;
+  transform-origin: 60px 60px 0;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.cubespinner1 {
+  animation-delay: 1s;
+}
+.cubespinner2 {
+  animation-delay: 2s;
+}
+.cubespinner3 {
+  animation-delay: 3s;
+}
+.cubespinner4 {
+  animation-delay: 4s;
+}
+
+.cubespinner1 div,
+.cubespinner2 div,
+.cubespinner3 div,
+.cubespinner4 div {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  border-radius: 25px;
+  border: 3px solid #fff;
+  margin: 5px 5px 10px 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.5);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.5);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.5);
+}
+
+.cubespinner1 .face1,
+.cubespinner2 .face1,
+.cubespinner3 .face1,
+.cubespinner4 .face1 {
+  transform: translateZ(60px);
+}
+
+.cubespinner1 .face2,
+.cubespinner2 .face2,
+.cubespinner3 .face2,
+.cubespinner4 .face2 {
+  transform: rotateY(90deg) translateZ(60px);
+}
+.cubespinner1 .face3,
+.cubespinner2 .face3,
+.cubespinner3 .face3,
+.cubespinner4 .face3 {
+  transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+}
+.cubespinner1 .face4,
+.cubespinner2 .face4,
+.cubespinner3 .face4,
+.cubespinner4 .face4 {
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+}
+.cubespinner1 .face5,
+.cubespinner2 .face5,
+.cubespinner3 .face5,
+.cubespinner4 .face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+}
+.cubespinner1 .face6,
+.cubespinner2 .face6,
+.cubespinner3 .face6,
+.cubespinner4 .face6 {
+  transform: rotateX(-90deg) translateZ(60px);
+}
