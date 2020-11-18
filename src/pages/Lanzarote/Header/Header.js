@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import parse from 'html-react-parser';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import ReactWOW from 'react-wow'
 
 import Wave from 'react-wavify';
 
@@ -16,11 +15,9 @@ const Header = () => {
     <div className="header">
       <div className="header__container">
         <div className="header__container-title">
-          <ReactWOW animation='fadeIn' delay='0.2s'>
             <h1 className="animate__animated">
               {parse(t('LanzaroteTitle'))}
             </h1>
-          </ReactWOW>
         </div>
         <div className="header__container-tours">
           {
