@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactWOW from 'react-wow';
 import { Blob } from '../../../components/Blob/Blob';
 
 import Button from '../../../components/Buttons/Button';
@@ -20,8 +19,7 @@ const FirstBlock = ({ t }) => (
     <div className="container">
       <div className="first_block__flex">
         <div className="first_block__left">
-          <ReactWOW animation='fadeInUp' delay='0.2s'><h1 className="animate__animated">{t('mainFirstBlocTitle')}</h1></ReactWOW>
-          <ReactWOW animation='fadeInUp' delay='0.3s'><p className="animate__animated">{t('mainFirstBlocSubtitle')}</p></ReactWOW>
+          <h1 className="animate__animated">{t('mainFirstBlocTitle')}</h1>
           <div className="first_block__buttons">
             <Button
               icon={appStoreIcon}

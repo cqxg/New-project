@@ -9,7 +9,6 @@ import Menu from './components/Menu/Menu';
 import Preloader from './components/Preloader/Preloader';
 
 import './App.css';
-import ReactWOW from 'react-wow';
 
 const App = (props) => {
   const [loading, setLoading] = useState(true);
@@ -46,7 +45,6 @@ const App = (props) => {
       <>
         {coordinates.map((num) => {
           return (
-            <ReactWOW animation='fadeInUp' delay='0.2s'>
               <div style={{position: 'absolute', left: `${Math.floor(Math.random() * 100 + 1)}%`, top: `${num}px`}} className="animate__animated">
                 <Blob
                   size={`${Math.floor(Math.random() * 25 + 1)}vh`}
@@ -61,7 +59,6 @@ const App = (props) => {
 
                 </Blob>
               </div>
-            </ReactWOW>
           )
         })}
       </>
@@ -77,7 +74,7 @@ const App = (props) => {
         theme={locationRoute === "/about" ? "light" : "dark"}
       />
       <Routes />
-      {renderBackGroundBubbles()}
+      {/* {renderBackGroundBubbles()} */}
       {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
     </>
   );
