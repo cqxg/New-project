@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { withRouter } from 'react-router-dom';
-import { useCookies } from 'react-cookie';
+import React, { useState, useEffect } from "react";
+import { withRouter } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
 import { Routes } from './routes/routes';
 import { Blob } from './components/Blob/Blob';
@@ -12,16 +12,16 @@ import './App.css';
 import ReactWOW from 'react-wow';
 
 const App = (props) => {
-  const [cookies, setCookie] = useCookies(['user']);
-  const [toggleCookie, setToggleCookie] = useState(true);
   const [loading, setLoading] = useState(true);
-  const [activeLocale, setActiveLocale] = useState('en');
+  const [cookies, setCookie] = useCookies(["user"]);
+  const [activeLocale, setActiveLocale] = useState("en");
+  const [toggleCookie, setToggleCookie] = useState(true);
 
   const changeLocale = (e) => setActiveLocale(e);
 
   const handleCookies = () => {
-    setCookie('user', 'gowtham', {
-      path: '/',
+    setCookie("user", "gowtham", {
+      path: "/",
     });
     setToggleCookie(false);
   };
@@ -71,7 +71,11 @@ const App = (props) => {
   return (
     <>
       {loading ? <Preloader /> : null}
-      <Menu changeLocale={changeLocale} activeLocale={activeLocale} theme={locationRoute === '/about' ? 'light' : 'dark'} />
+      <Menu
+        changeLocale={changeLocale}
+        activeLocale={activeLocale}
+        theme={locationRoute === "/about" ? "light" : "dark"}
+      />
       <Routes />
       {renderBackGroundBubbles()}
       {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
