@@ -29,7 +29,8 @@ const App = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1);
+      document.getElementsByTagName('body')[0].classList.add('loaded')
+    }, 4000);
   }, []);
 
   return (

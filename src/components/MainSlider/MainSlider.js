@@ -23,17 +23,17 @@ const MainSlider = ({ t }) => {
         <h1>{t('chooseUIsland')}</h1>
         <Slider {...settings}>
           <div className="mainslider__gomera">
-            <img src={gomera} />
-            <img className="vectorbubble" src={vector} />
+            <img src={gomera} alt='slider'/>
+            <img className="vectorbubble" src={vector} alt='slider' />
             <h1>{t('comingSoon')}</h1>
             <p>{t('gomera')}</p>
           </div>
           <div className="mainslider__lanzarote">
-            <img src={rosan} />
+            <img src={rosan} alt='slider' />
             <p>{t('Lanzarote')}</p>
           </div>
           <div className="mainslider__lanzarote">
-            <img src={rosan} />
+            <img src={rosan} alt='slider' />
             <p>{t('Lanzarote')}</p>
           </div>
         </Slider>

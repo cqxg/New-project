@@ -1,5 +1,6 @@
 import React from 'react';
 import parse from 'html-react-parser';
+import ReactWOW from 'react-wow';
 
 import { useTranslation } from 'react-i18next';
 import Wave from 'react-wavify';
@@ -12,19 +13,21 @@ const Features = (props) => {
   const featureConstructor = constructor[scheme];
   const { t } = useTranslation();
 
-  const renderBubbles = () => featureConstructor.bubbles.map((item) => (
-    <div className="features__item">
-      <Blob
-        size="195px"
-        style={{
-          backgroundColor: '#fff',
-        }}
-        animationDuration="0s"
-      >
-        <img src={item.icon} alt={item.text} />
-      </Blob>
-      <p>{t(item.text)}</p>
-    </div>
+  const renderBubbles = () => featureConstructor.bubbles.map((item, index) => (
+    <ReactWOW delay={`0.${4 + index}s`} animation='fadeInUp'>
+      <div className="features__item animate__animated">
+        <Blob
+          size="195px"
+          style={{
+            backgroundColor: '#fff',
+          }}
+          animationDuration="0s"
+        >
+          <img src={item.icon} alt={item.text} />
+        </Blob>
+        <p>{t(item.text)}</p>
+      </div>
+    </ReactWOW>
   ));
 
   return (
@@ -41,10 +44,14 @@ const Features = (props) => {
       />
       <div className="features">
         <div className="container">
-          <h1>{t(featureConstructor.title)}</h1>
-          {featureConstructor.subTitle ? (
-            <p className="subTitle">{parse(t(featureConstructor.subTitle))}</p>
-          ) : null}
+          <ReactWOW delay='0.2s' animation='fadeInUp'>
+            <h1 className="animate__animated">{t(featureConstructor.title)}</h1>
+          </ReactWOW>
+          <ReactWOW delay='0.3s' animation='fadeInUp'>
+            {featureConstructor.subTitle ? (
+              <p className="subTitle animate__animated">{parse(t(featureConstructor.subTitle))}</p>
+            ) : null}
+          </ReactWOW>
           <div className="features__items">{renderBubbles()}</div>
         </div>
       </div>
