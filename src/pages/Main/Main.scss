@@ -1,6 +1,13 @@
 .first_block {
-  padding-top: 306px;
+  // padding-top: 250px;
+  height: 100vh;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .container {
+    padding-top: 10vh;
+  }
   & h1 {
     max-width: 460px;
   }

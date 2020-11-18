@@ -1,18 +1,16 @@
 import React from 'react';
 
 import { Blob } from '../Blob/Blob';
-import { bubbleTexture } from './bubbleTexture';
 
 const bubbleSixBlock = () => (
   <Blob
     size="50vh"
     style={{
       zIndex: -1,
+      backgroundColor: '#D1F1FD',
     }}
     animationDuration="15s"
-  >
-    {bubbleTexture()}
-  </Blob>
+  />
 );
 
 export default bubbleSixBlock;

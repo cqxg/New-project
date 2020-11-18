@@ -5,7 +5,7 @@ import bubbleSixBlock from '../../../components/Bubbles/BubbleSixBlock';
 
 import appStoreIcon from '../../../img/svg/appStore.svg';
 import googlePlay from '../../../img/svg/googlePlay.svg';
-import eightgirl from '../../../img/svg/eightgirl.svg';
+// import eightgirl from '../../../img/svg/eightgirl.svg';
 
 const EightBlock = ({ t }) => (
   <div className="eight_block">

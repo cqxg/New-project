@@ -7,6 +7,7 @@ import { CookiesProvider } from 'react-cookie';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './i18n';
+import 'animate.css'
 
 import './index.css';
 

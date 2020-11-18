@@ -1,6 +1,6 @@
 import React from 'react';
+import ReactWOW from 'react-wow';
 import { Blob } from '../../../components/Blob/Blob';
-import { bubbleTexture } from '../../../components/Bubbles/bubbleTexture';
 
 import Button from '../../../components/Buttons/Button';
 
@@ -12,9 +12,7 @@ const renderBubbles = () => (
     size="55vh"
     style={{ zIndex: -1, backgroundColor: '#D5EFFB' }}
     animationDuration="25s"
-  >
-    {bubbleTexture()}
-  </Blob>
+  />
 );
 
 const FirstBlock = ({ t }) => (
@@ -22,8 +20,8 @@ const FirstBlock = ({ t }) => (
     <div className="container">
       <div className="first_block__flex">
         <div className="first_block__left">
-          <h1>{t('mainFirstBlocTitle')}</h1>
-          <p>{t('mainFirstBlocSubtitle')}</p>
+          <ReactWOW animation='fadeInUp' delay='0.2s'><h1 className="animate__animated">{t('mainFirstBlocTitle')}</h1></ReactWOW>
+          <ReactWOW animation='fadeInUp' delay='0.3s'><p className="animate__animated">{t('mainFirstBlocSubtitle')}</p></ReactWOW>
           <div className="first_block__buttons">
             <Button
               icon={appStoreIcon}
