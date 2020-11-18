@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
-import { Routes } from "./routes/routes";
-import Cookies from "./components/Cookies/Cookies";
-import Menu from "./components/Menu/Menu";
-import Preloader from "./components/Preloader/Preloader";
+import { Routes } from './routes/routes';
+import { Blob } from './components/Blob/Blob';
+import Cookies from './components/Cookies/Cookies';
+import Menu from './components/Menu/Menu';
+import Preloader from './components/Preloader/Preloader';
 
-import "./App.css";
+import './App.css';
+import ReactWOW from 'react-wow';
 
 const App = (props) => {
   const [loading, setLoading] = useState(true);
@@ -29,9 +31,42 @@ const App = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-      document.getElementsByTagName("body")[0].classList.add("loaded");
-    }, 4000);
+      document.getElementsByTagName('body')[0].classList.add('loaded')
+    }, 1);
   }, []);
+
+  const renderBackGroundBubbles = () => {
+    const coordinates = []
+    const maxNum = 5;
+    const max = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight, min = 1000
+    for (let i = 0; i < maxNum; i++) {
+      coordinates.push(Math.floor(Math.random() * (max - min + 1) + min))
+    }
+    return (
+      <>
+        {coordinates.map((num) => {
+          return (
+            <ReactWOW animation='fadeInUp' delay='0.2s'>
+              <div style={{position: 'absolute', left: `${Math.floor(Math.random() * 100 + 1)}%`, top: `${num}px`}} className="animate__animated">
+                <Blob
+                  size={`${Math.floor(Math.random() * 25 + 1)}vh`}
+                  style={{
+                    zIndex: -1,
+                    color: 'white',
+                    fontSize: '80vh',
+                    backgroundColor: '#D1F1FD',
+                  }}
+                  animationDuration="4s"
+                >
+
+                </Blob>
+              </div>
+            </ReactWOW>
+          )
+        })}
+      </>
+    )
+  }
 
   return (
     <>
@@ -42,9 +77,8 @@ const App = (props) => {
         theme={locationRoute === "/about" ? "light" : "dark"}
       />
       <Routes />
-      {toggleCookie && !cookies.user ? (
-        <Cookies cookies={cookies} handleCookies={handleCookies} />
-      ) : null}
+      {renderBackGroundBubbles()}
+      {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
     </>
   );
 };
