@@ -23,7 +23,11 @@ body {
   font-family: 'Gilroy', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+body.loaded {
+  overflow: auto;
 }
 
 code {

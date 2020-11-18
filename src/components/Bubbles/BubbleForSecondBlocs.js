@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Blob } from '../Blob/Blob';
-import { bubbleTexture } from './bubbleTexture';
 
 const bubbleForSecondBlocs = () => (
   <>
@@ -10,16 +9,15 @@ const bubbleForSecondBlocs = () => (
       size="15vh"
       style={{
         zIndex: -1,
-        backgroundColor: 'transparent',
         color: 'white',
         fontSize: '80vh',
+        backgroundColor: '#D1F1FD',
         position: 'absolute',
         left: '12%',
         top: '2%',
       }}
       animationDuration="15s"
     >
-      {bubbleTexture()}
       <i className="fab fa-react" />
     </Blob>
     <Blob
@@ -27,6 +25,7 @@ const bubbleForSecondBlocs = () => (
       style={{
         zIndex: -1,
         color: 'white',
+        backgroundColor: '#D1F1FD',
         fontSize: '80vh',
         position: 'absolute',
         left: '20%',
@@ -34,7 +33,7 @@ const bubbleForSecondBlocs = () => (
       animationDuration="25s"
       animationTimingFunction="ease-in-out"
     >
-      {bubbleTexture()}
+      <i className="fab fa-react" />
     </Blob>
 
     {/* Right blobs */}
@@ -45,6 +44,7 @@ const bubbleForSecondBlocs = () => (
         color: 'white',
         fontSize: '80vh',
         position: 'absolute',
+        backgroundColor: '#D1F1FD',
         top: '15%',
         height: '50vh',
         right: '10%',
@@ -52,21 +52,23 @@ const bubbleForSecondBlocs = () => (
       animationDuration="50s"
       animationTimingFunction="ease-in-out"
     >
-      {bubbleTexture()}
+      <i className="fab fa-react" />
     </Blob>
     <Blob
       size="10vh"
       style={{
         zIndex: -1,
         color: 'white',
+        backgroundColor: '#D1F1FD',
         fontSize: '80vh',
         position: 'absolute',
+
         top: '15%',
         right: '30%',
       }}
       animationDuration="30s"
     >
-      {bubbleTexture()}
+      <i className="fab fa-react" />
     </Blob>
   </>
 );
