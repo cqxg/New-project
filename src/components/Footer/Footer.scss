@@ -1,5 +1,25 @@
 .footer {
     padding-bottom: 30px;
+    position: relative;
+    &__bottom {
+        &-wave {
+            position: absolute!important;
+            bottom: -75px!important;
+            right: -175px;
+            width: 535px;
+            height: 300px;
+            transform: rotate(-35deg);
+            & div:first-child {
+                height: 100%
+            }
+            & p {
+                top: 45%;
+                right: 40%;
+                transform: rotate(35deg) translate(-50%);
+                position: absolute;
+            }
+        }
+    }
     & button {
         margin: 0 5px;
     }
