@@ -13,7 +13,7 @@ const Features = (props) => {
   const { t } = useTranslation();
 
   const renderBubbles = () => featureConstructor.bubbles.map((item, index) => (
-      <div className="features__item animate__animated">
+      <div key={index} className="features__item animate__animated">
         <Blob
           size="195px"
           style={{

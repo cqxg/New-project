@@ -85,10 +85,13 @@ h3 {
     transform: translateY(0%);
     opacity: 0;
   }
-  10% {
+  5% {
     opacity: 1;
   }
   80% {
+    opacity: 1;
+  }
+  95% {
     opacity: 0.8;
   }
   100% {

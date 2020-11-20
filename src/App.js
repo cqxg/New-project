@@ -35,28 +35,30 @@ const App = (props) => {
     }, 1);
   }, []);
 
-  document.addEventListener('wheel', function(e){
-    document.querySelectorAll('.bg__bubbles').forEach((item) => {
-      if (e.deltaY > 0) {
-        item.style.animation = 'translateBubbleonScrollToBottom 30s ease-in-out'
-      } else if(e.deltaY < 0) {
-        item.style.animation = 'translateBubbleonScrollToTop 30s ease-in-out'
-      }
-    })
-  })
+
+  // document.addEventListener('wheel', function(e){
+  //   document.querySelectorAll('.bg__bubbles').forEach((item) => {
+  //     if (e.deltaY > 0) {
+  //       item.style.animation = 'translateBubbleonScrollToBottom 30s ease-in-out'
+  //     } else if(e.deltaY < 0) {
+  //       item.style.animation = 'translateBubbleonScrollToTop 30s ease-in-out'
+  //     }
+  //   })
+  // })
 
   const renderBackGroundBubbles = () => {
     const coordinates = []
-    const maxNum = 5;
-    const max = document.documentElement.clientHeight + window.pageYOffset , min = window.pageYOffset
+    const maxNum = 10;
+    const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
+    const max = pageHeight , min = document.documentElement.clientHeight
     for (let i = 0; i < maxNum; i++) {
       coordinates.push(Math.floor(Math.random() * (max - min + 1) + min))
     }
     return (
       <>
-        {coordinates.map((num) => {
+        {coordinates.map((num, index) => {
           return (
-              <div style={{opacity: 0, animation: 'translateBubbleonScrollToTop 40s ease-in-out', zIndex: 2, position: 'absolute', left: `${Math.floor(Math.random() * 75 + 5)}%`, top: `${num}px`}} className="animate__animated bg__bubbles">
+              <div key={index} style={{animation: 'translateBubbleonScrollToTop 30s infinite ease-in-out', zIndex: 2, position: 'absolute', left: `${Math.floor(Math.random() * 75 + 5)}%`, top: `${num}px`}} className="animate__animated bg__bubbles">
                 <Blob
                   size={`${Math.floor(Math.random() * 25 + 5)}vh`}
                   style={{backgroundColor: '#eee',}}

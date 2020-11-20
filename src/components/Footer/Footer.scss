@@ -1,6 +1,13 @@
 .footer {
     padding-bottom: 30px;
     position: relative;
+    &__svg {
+        position: absolute;
+        bottom: 0;
+        height: 100vh;
+        left: 0;
+        z-index: 10000;
+    }
     &__bottom {
         &-wave {
             position: absolute!important;
@@ -9,6 +16,7 @@
             width: 535px;
             height: 300px;
             transform: rotate(-35deg);
+            z-index: 10001;
             & div:first-child {
                 height: 100%
             }
@@ -51,4 +59,9 @@
         display: flex;
     }
     background: #D5EFFB;
+}
+
+#morphing {
+    width: 100%;
+    position: absolute;
 }
