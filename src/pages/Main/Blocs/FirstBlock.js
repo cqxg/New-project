@@ -20,6 +20,7 @@ const FirstBlock = ({ t }) => (
       <div className="first_block__flex">
         <div className="first_block__left">
           <h1 className="animate__animated">{t('mainFirstBlocTitle')}</h1>
+          <p className="animate__animated">{t('mainFirstBlocSubtitle')}</p>
           <div className="first_block__buttons">
             <Button
               icon={appStoreIcon}

@@ -4,6 +4,8 @@ h1 {
   font-weight: 700;
   line-height: 73.6px;
   color: #1e2843;
+  position: relative;
+  z-index: 10;
 }
 
 P {
@@ -11,12 +13,16 @@ P {
   font-weight: 500;
   line-height: 36px;
   color: #1e2843;
+  position: relative;
+  z-index: 10;
 }
 
 h3 {
   color: #1e2843;
   font-size: 36px;
   margin: 0;
+  position: relative;
+  z-index: 10;
 }
 
 .slick-arrow.slick-next {
@@ -69,9 +75,44 @@ h3 {
 .switch-wrapper > div {
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 /* bubble animation for svg */
+
+@keyframes translateBubbleonScrollToTop {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes translateBubbleonScrollToBottom {
+  0% {
+    opacity: 0;
+    position: fixed;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(10vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+    position: fixed;
+  }
+}
 
 @keyframes rotateBubbleSvg {
   from {
