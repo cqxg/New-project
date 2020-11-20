@@ -12,7 +12,7 @@ const BubblesWithImages = (props) => {
   console.log(constructor);
 
   const renderItems = () => bubbleConstructor.items.map((item, index) => (
-    <div className={`bubblesWithImages__flex ${index % 2 === 0 ? '' : 'bubblesWithImages__flex-reverse'}`}>
+    <div key={index} className={`bubblesWithImages__flex ${index % 2 === 0 ? '' : 'bubblesWithImages__flex-reverse'}`}>
       <div className="bubblesWithImages__left">
         <div className="bubblesWithImages__title">
           {item.icon ? <img src={item.icon} alt="tour" /> : null}
@@ -43,7 +43,7 @@ const BubblesWithImages = (props) => {
           {bubbleConstructor.buttons
             ? (
               <div className="bubblesWithImages__buttons-items">
-                {bubbleConstructor.buttons.map((button) => <Button type={button.type} icon={button.icon} text={button.text} />)}
+                {bubbleConstructor.buttons.map((button, index) => <Button key={index} type={button.type} icon={button.icon} text={button.text} />)}
               </div>
             )
             : null}

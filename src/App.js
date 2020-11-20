@@ -51,15 +51,14 @@ const App = (props) => {
     const maxNum = 10;
     const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
     const max = pageHeight , min = document.documentElement.clientHeight
-    console.log(pageHeight)
     for (let i = 0; i < maxNum; i++) {
       coordinates.push(Math.floor(Math.random() * (max - min + 1) + min))
     }
     return (
       <>
-        {coordinates.map((num) => {
+        {coordinates.map((num, index) => {
           return (
-              <div style={{animation: 'translateBubbleonScrollToTop 30s infinite ease-in-out', zIndex: 2, position: 'absolute', left: `${Math.floor(Math.random() * 75 + 5)}%`, top: `${num}px`}} className="animate__animated bg__bubbles">
+              <div key={index} style={{animation: 'translateBubbleonScrollToTop 30s infinite ease-in-out', zIndex: 2, position: 'absolute', left: `${Math.floor(Math.random() * 75 + 5)}%`, top: `${num}px`}} className="animate__animated bg__bubbles">
                 <Blob
                   size={`${Math.floor(Math.random() * 25 + 5)}vh`}
                   style={{backgroundColor: '#eee',}}
