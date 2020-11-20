@@ -19,7 +19,7 @@ import "./Cubes.scss";
 const Cubes = () => {
   return (
     <>
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner1">
           <div className="face1" style={{ backgroundImage: `url(${a})` }}></div>
           <div className="face2" style={{ backgroundImage: `url(${a})` }}></div>
@@ -30,7 +30,7 @@ const Cubes = () => {
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner2">
           <div className="face1" style={{ backgroundImage: `url(${b})` }}></div>
           <div className="face2" style={{ backgroundImage: `url(${b})` }}></div>
@@ -41,7 +41,7 @@ const Cubes = () => {
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner3">
           <div className="face1" style={{ backgroundImage: `url(${c})` }}></div>
           <div className="face2" style={{ backgroundImage: `url(${c})` }}></div>
@@ -52,7 +52,7 @@ const Cubes = () => {
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner4">
           <div className="face1" style={{ backgroundImage: `url(${d})` }}></div>
           <div className="face2" style={{ backgroundImage: `url(${d})` }}></div>
@@ -63,47 +63,47 @@ const Cubes = () => {
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner5">
-          <div className="face1" style={{ backgroundImage: `url(${a})` }}></div>
-          <div className="face2" style={{ backgroundImage: `url(${a})` }}></div>
-          <div className="face3" style={{ backgroundImage: `url(${a})` }}></div>
-          <div className="face4" style={{ backgroundImage: `url(${a})` }}></div>
-          <div className="face5" style={{ backgroundImage: `url(${a})` }}></div>
-          <div className="face6" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face1" style={{ backgroundImage: `url(${e})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${e})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${e})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${e})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${e})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${e})` }}></div>
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner6">
-          <div className="face1" style={{ backgroundImage: `url(${b})` }}></div>
-          <div className="face2" style={{ backgroundImage: `url(${b})` }}></div>
-          <div className="face3" style={{ backgroundImage: `url(${b})` }}></div>
-          <div className="face4" style={{ backgroundImage: `url(${b})` }}></div>
-          <div className="face5" style={{ backgroundImage: `url(${b})` }}></div>
-          <div className="face6" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face1" style={{ backgroundImage: `url(${f})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${f})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${f})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${f})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${f})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${f})` }}></div>
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner7">
-          <div className="face1" style={{ backgroundImage: `url(${c})` }}></div>
-          <div className="face2" style={{ backgroundImage: `url(${c})` }}></div>
-          <div className="face3" style={{ backgroundImage: `url(${c})` }}></div>
-          <div className="face4" style={{ backgroundImage: `url(${c})` }}></div>
-          <div className="face5" style={{ backgroundImage: `url(${c})` }}></div>
-          <div className="face6" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face1" style={{ backgroundImage: `url(${g})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${g})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${g})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${g})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${g})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${g})` }}></div>
         </div>
       </div>
 
-      <div className="stage" style={{ width: "120px", height: "120px" }}>
+      <div className="stage">
         <div className="cubespinner8">
-          <div className="face1" style={{ backgroundImage: `url(${d})` }}></div>
-          <div className="face2" style={{ backgroundImage: `url(${d})` }}></div>
-          <div className="face3" style={{ backgroundImage: `url(${d})` }}></div>
-          <div className="face4" style={{ backgroundImage: `url(${d})` }}></div>
-          <div className="face5" style={{ backgroundImage: `url(${d})` }}></div>
-          <div className="face6" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face1" style={{ backgroundImage: `url(${k})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${k})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${k})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${k})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${k})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${k})` }}></div>
         </div>
       </div>
     </>

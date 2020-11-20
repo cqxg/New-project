@@ -109,27 +109,15 @@
     justify-content: center;
     position: relative;
     max-width: 690px;
-    min-height: 410px;
+    min-height: 510px;
   }
   &__iconblock {
     height: 100%;
-    max-width: 550px;
+    max-width: 570px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  &__icon {
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 118px;
-    height: 118px;
-    margin: 5px 5px 10px 5px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 7px 15px 0px rgba(130, 130, 130, 0.5);
-    -moz-box-shadow: 0px 7px 15px 0px rgba(130, 130, 130, 0.5);
-    box-shadow: 0px 7px 15px 0px rgba(130, 130, 130, 0.5);
   }
   &__muchicon {
     display: flex;
