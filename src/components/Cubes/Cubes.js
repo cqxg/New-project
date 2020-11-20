@@ -62,6 +62,50 @@ const Cubes = () => {
           <div className="face6" style={{ backgroundImage: `url(${d})` }}></div>
         </div>
       </div>
+
+      <div className="stage" style={{ width: "120px", height: "120px" }}>
+        <div className="cubespinner5">
+          <div className="face1" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${a})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${a})` }}></div>
+        </div>
+      </div>
+
+      <div className="stage" style={{ width: "120px", height: "120px" }}>
+        <div className="cubespinner6">
+          <div className="face1" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${b})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${b})` }}></div>
+        </div>
+      </div>
+
+      <div className="stage" style={{ width: "120px", height: "120px" }}>
+        <div className="cubespinner7">
+          <div className="face1" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${c})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${c})` }}></div>
+        </div>
+      </div>
+
+      <div className="stage" style={{ width: "120px", height: "120px" }}>
+        <div className="cubespinner8">
+          <div className="face1" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face2" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face3" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face4" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face5" style={{ backgroundImage: `url(${d})` }}></div>
+          <div className="face6" style={{ backgroundImage: `url(${d})` }}></div>
+        </div>
+      </div>
     </>
   );
 };

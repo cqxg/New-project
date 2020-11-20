@@ -75,6 +75,7 @@ h3 {
 .switch-wrapper > div {
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 /* bubble animation for svg */
