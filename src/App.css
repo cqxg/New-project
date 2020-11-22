@@ -145,4 +145,9 @@ h3 {
     width: 400px;
   }
 }
+
+.svgBlob {
+  fill: #f06;
+	fill: url(#paint0_linear);
+}
                                            
