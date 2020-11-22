@@ -10,6 +10,8 @@ import Preloader from './components/Preloader/Preloader';
 
 import './App.css';
 import { bubbleTexture } from "./components/Bubbles/bubbleTexture";
+import SvgBlobs from "./utils/svgBlobs/SvgBlobs";
+import { morphingSvgBlobs } from "./utils/svgBlobs/morphingSvgBlobs";
 
 const App = (props) => {
   const [loading, setLoading] = useState(true);
@@ -59,13 +61,7 @@ const App = (props) => {
         {coordinates.map((num, index) => {
           return (
               <div key={index} style={{animation: 'translateBubbleonScrollToTop 30s infinite ease-in-out', zIndex: 2, position: 'absolute', left: `${Math.floor(Math.random() * 75 + 5)}%`, top: `${num}px`}} className="animate__animated bg__bubbles">
-                <Blob
-                  size={`${Math.floor(Math.random() * 25 + 5)}vh`}
-                  style={{backgroundColor: '#eee',}}
-                  animationDuration="25s"
-                >
-                  {bubbleTexture()}
-                </Blob>
+              <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index}/>
               </div>
           )
         })}
