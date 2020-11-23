@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 
 import a from "../../img/icon/a.png";
 import b from "../../img/icon/b.png";
@@ -17,10 +17,23 @@ import p from "../../img/icon/p.png";
 import "./Cubes.scss";
 
 const Cubes = () => {
+  const target = useRef(null)
+  
+  setInterval(() => {
+    target.current.style.animation = ''
+  console.log(document.querySelectorAll('.stage div:first-child'))
+
+  }, 8000)
+
+  setInterval(() => {
+    target.current.style.animation = 'spincubeRight 1s ease-in-out'
+  console.log(target.current)
+
+  }, 9000)
   return (
     <>
       <div className="stage">
-        <div className="cubespinner1">
+        <div ref={target} className="cubespinner1">
           <div className="face1" style={{ backgroundImage: `url(${a})` }}></div>
           <div className="face2" style={{ backgroundImage: `url(${a})` }}></div>
           <div className="face3" style={{ backgroundImage: `url(${a})` }}></div>
