@@ -36,7 +36,17 @@
   }
 }
 
-.cubespinner1,
+.cubespinner1 {
+  transform-style: preserve-3d;
+  transform-origin: 60px 60px 0;
+  animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
 .cubespinner2,
 .cubespinner3 {
   animation: spincubeRight 1s ease-in-out;
