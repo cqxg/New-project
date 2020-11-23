@@ -3,8 +3,12 @@ import { Route } from 'react-router-dom';
 import { AnimatedSwitch } from 'react-router-transition';
 import Faq from '../pages/FAQ/Faq';
 
-import Lanzarote from '../pages/Lanzarote/Lanzarote';
 import Main from '../pages/Main/Main';
+import Lanzarote from '../pages/Lanzarote/Lanzarote';
+import GrandTour from '../pages/LanzaroteTours/GrandTour';
+import NorthTour from '../pages/LanzaroteTours/NorthTour';
+import SouthTour from '../pages/LanzaroteTours/SouthTour';
+import LanzaroteTours from '../pages/LanzaroteTours/LanzaroteTours';
 
 export const Routes = () => (
   <AnimatedSwitch
@@ -15,6 +19,10 @@ export const Routes = () => (
   >
     <Route exact path="/" component={Main} />
     <Route exact path="/about" component={Lanzarote} />
+    <Route exact path="/tours" component={LanzaroteTours} />
+    <Route exact path="/tours/grand" component={GrandTour} />
+    <Route exact path="/tours/north" component={NorthTour} />
+    <Route exact path="/tours/south" component={SouthTour} />
     <Route exact path="/faq" component={Faq} />
   </AnimatedSwitch>
 );
