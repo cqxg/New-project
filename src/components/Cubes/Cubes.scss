@@ -13,7 +13,7 @@
   }
   to {
     margin-top: 5px;
-    transform: rotateX(-90deg);
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
   }
 }
 
@@ -36,94 +36,15 @@
   }
 }
 
-.cubespinner1 {
-  transform-style: preserve-3d;
-  transform-origin: 60px 60px 0;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
+.cubespinner1,
 .cubespinner2,
-.cubespinner3 {
-  animation: spincubeRight 1s ease-in-out;
-  transform-style: preserve-3d;
-  transform-origin: 60px 60px 0;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
+.cubespinner3,
+.cubespinner4,
+.cubespinner5,
 .cubespinner6,
 .cubespinner7,
 .cubespinner8 {
-  animation-name: spincubeLeft;
-  animation-duration: 1s;
   transform-style: preserve-3d;
-  transform-origin: 60px 60px 0;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
-.cubespinner4 {
-  animation-name: spincubeDown;
-  animation-duration: 1s;
-  transform-style: preserve-3d;
-  transform-origin: 60px 60px 0;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
-.cubespinner5 {
-  animation-name: spincubeUp;
-  animation-duration: 1s;
-  transform-style: preserve-3d;
-  transform-origin: 60px 60px 0;
-  animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
-  -ms-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-  animation-timing-function: ease-in-out;
-}
-
-.cubespinner1 {
-  animation-delay: 1s;
-}
-.cubespinner2 {
-  animation-delay: 2s;
-}
-.cubespinner3 {
-  animation-delay: 3s;
-}
-.cubespinner4 {
-  animation-delay: 4s;
-}
-.cubespinner5 {
-  animation-delay: 8s;
-}
-.cubespinner6 {
-  animation-delay: 7s;
-}
-.cubespinner7 {
-  animation-delay: 6s;
-}
-.cubespinner8 {
-  animation-delay: 5s;
 }
 
 .stage {

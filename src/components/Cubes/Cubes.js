@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 
 import a from "../../img/icon/a.png";
 import b from "../../img/icon/b.png";
@@ -17,19 +17,49 @@ import p from "../../img/icon/p.png";
 import "./Cubes.scss";
 
 const Cubes = () => {
-  const target = useRef(null)
-  
+  const target = useRef(null);
+
+  const goSpin = () => {
+    document.querySelectorAll(".stage").forEach((item, index) => {
+      const spinner = item.children[0];
+      if (spinner.classList[0] === "cubespinner4") {
+        spinner.style.animation = "spincubeDown 1s ease-in-out";
+      } else if (spinner.classList[0] === "cubespinner8") {
+        spinner.style.animation = "spincubeUp 1s ease-in-out";
+      } else if (
+        spinner.classList[0] === "cubespinner1" ||
+        spinner.classList[0] === "cubespinner2" ||
+        spinner.classList[0] === "cubespinner3"
+      ) {
+        spinner.style.animation = "spincubeRight 1s ease-in-out";
+      } else if (
+        spinner.classList[0] === "cubespinner5" ||
+        spinner.classList[0] === "cubespinner6" ||
+        spinner.classList[0] === "cubespinner7"
+      ) {
+        spinner.style.animation = "spincubeLeft 1s ease-in-out";
+      }
+
+      spinner.style.animationDelay = `${index + 1}s`;
+    });
+  };
+
+  goSpin();
+
   setInterval(() => {
-    target.current.style.animation = ''
-  console.log(document.querySelectorAll('.stage div:first-child'))
-
-  }, 8000)
+    target.current.style.animation = "";
+    document.querySelectorAll(".stage").forEach((item) => {
+      const spinner = item.children[0];
+      spinner.style.animation = "";
+      spinner.style.animationDelay = "";
+    });
+  }, 9500);
 
   setInterval(() => {
-    target.current.style.animation = 'spincubeRight 1s ease-in-out'
-  console.log(target.current)
+    goSpin();
+    // console.log(target.current);
+  }, 9505);
 
-  }, 9000)
   return (
     <>
       <div className="stage">
