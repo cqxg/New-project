@@ -1,0 +1,36 @@
+.tour {
+    &__header {
+        height: 100vh;
+        .container {
+            padding-top: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-buttons {
+            max-width: 484px;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+        }
+        &-left {
+            max-width: 690px;
+        }
+    }
+    audio {
+        max-width: 1200px;
+        background: #fff;
+        width: 100%;
+        margin: 0 auto;
+    }
+    audio::-webkit-media-controls-timeline-container {
+        height: 80px;
+    }
+    audio::-webkit-media-controls-play-button {
+        width: 30px;
+        height: 30px;
+
+        background: linear-gradient(180deg, #ff6d55 0%, #ff5134 114.71%);
+        border-radius: 10px;
+    }
+}
