@@ -28,13 +28,14 @@ const Footer = (props) => {
     setState(!state)
     FooterAnimate(state, changeIndex)
   }
+  console.log(zIndex)
 
   if (!state) document.body.style.background = '#D5EFFB';
   else document.body.style.background = '#fff';
 
   return (
     <>
-      <svg className="footer__svg" width="1920" viewBox="0 0 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg style={{visibility: zIndex ? "hidden" : "visible"}} className="footer__svg" width="1920" viewBox="0 0 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0)">
           <path ref={target} id="morphing" d="M0.000152588 0.000110626V1080H1920V0.000110626H0.000152588ZM1920 415C1920 610 1976.69 1018.83 1920 1080C1871 1132.86 1628 1127 1542.5 1120.5C1457 1114 1111 1156 945 1147.5C779 1139 200.5 1272.26 89.5 1205.5C10.5 1157.97 0.000152588 1112 -28.4999 929.5C-57 747 5.34058e-05 666 -28.5001 525C-57.0002 384 -188.5 8.36 -28.4999 -13C115.7 -32.25 794.23 9.64021 945 -12.9998C1076.73 -32.7898 1844.4 -84.1498 1920 -24.9998C2012.42 47.3202 1920 242.5 1920 415Z" fill="white" />
         </g>

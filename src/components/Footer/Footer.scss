@@ -2,11 +2,12 @@
     padding-bottom: 30px;
     position: relative;
     &__svg {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         height: 100vh;
-        left: 0;
+        left: 50%;
         z-index: 10000;
+        transform: translateX(-50%);
     }
     &__bottom {
         &-wave {
