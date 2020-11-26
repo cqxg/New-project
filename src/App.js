@@ -39,22 +39,11 @@ const App = (props) => {
       setLoading(false);
       document.getElementsByTagName('body')[0].classList.add('loaded')
       document.querySelectorAll('.custom-class').forEach((item) => {
-        item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
-        item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
+      item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
+      item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
       })
     }, 1);
   }, []);
-
-
-  // document.addEventListener('wheel', function(e){
-  //   document.querySelectorAll('.bg__bubbles').forEach((item) => {
-  //     if (e.deltaY > 0) {
-  //       item.style.animation = 'translateBubbleonScrollToBottom 30s ease-in-out'
-  //     } else if(e.deltaY < 0) {
-  //       item.style.animation = 'translateBubbleonScrollToTop 30s ease-in-out'
-  //     }
-  //   })
-  // })
 
   const renderBackGroundBubbles = () => {
     const coordinates = []
@@ -71,7 +60,7 @@ const App = (props) => {
         {coordinates.map((num, index) => {
           console.log(ref)
           return (
-            <Parallax y={[100, -100]} className="custom-class" tagOuter="figure">
+            <Parallax y={[200, -200]} className="custom-class" tagOuter="figure">
               <div key={index} className="animate__animated bg__bubbles">
                 <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index} />
               </div>
@@ -81,8 +70,6 @@ const App = (props) => {
       </>
     )
   }
-
-  console.log(ref)
 
   return (
     <>
