@@ -1,68 +1,72 @@
 .footer {
-    padding-bottom: 30px;
-    position: relative;
-    &__svg {
-        position: fixed;
-        bottom: 0;
-        height: 100vh;
-        left: 50%;
-        z-index: 10000;
-        transform: translateX(-50%);
+  padding-bottom: 30px;
+  position: relative;
+  &__svg {
+    position: fixed;
+    bottom: 0;
+    height: 100vh;
+    left: 50%;
+    z-index: 10000;
+    transform: translateX(-50%);
+  }
+  &__bottom {
+    &-wave {
+      position: absolute !important;
+      bottom: -75px !important;
+      right: -175px;
+      width: 535px;
+      height: 300px;
+      transform: rotate(-35deg);
+      z-index: 10001;
+      & div:first-child {
+        height: 100%;
+      }
+      & p {
+        top: 45%;
+        right: 40%;
+        transform: rotate(35deg) translate(-50%);
+        position: absolute;
+      }
     }
-    &__bottom {
-        &-wave {
-            position: absolute!important;
-            bottom: -75px!important;
-            right: -175px;
-            width: 535px;
-            height: 300px;
-            transform: rotate(-35deg);
-            z-index: 10001;
-            & div:first-child {
-                height: 100%
-            }
-            & p {
-                top: 45%;
-                right: 40%;
-                transform: rotate(35deg) translate(-50%);
-                position: absolute;
-            }
-        }
+  }
+  & button {
+    margin: 0 5px;
+  }
+  & ul {
+    list-style-type: none;
+    padding-left: 0;
+    & li {
+      margin-bottom: 16px;
+      font-size: 24px;
+      color: #1e2843;
     }
-    & button {
-        margin: 0 5px;
+  }
+  &__container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    & img {
+      margin: 0 5px;
     }
-    & ul {
-        list-style-type: none;
-        padding-left: 0;
-        & li {
-            margin-bottom: 16px;
-            font-size: 24px;
-            color: #1E2843;
-        }
+    & p {
+      margin-bottom: 12px;
     }
-    &__container {
-        max-width: 1120px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__right {
-        & img {
-            margin: 0 5px;
-        }
-        & p {
-            margin-bottom: 12px;
-        }
-    }
-    &__right-sharebuttons {
-        display: flex;
-    }
-    background: #D5EFFB;
+  }
+  &__right-sharebuttons {
+    display: flex;
+  }
+  background: #d5effb;
 }
 
 #morphing {
-    width: 100%;
-    position: absolute;
+  width: 100%;
+  position: absolute;
+}
+
+.ticket-link:hover {
+    cursor:url('../../img/images/cursor.png'),auto;
 }
