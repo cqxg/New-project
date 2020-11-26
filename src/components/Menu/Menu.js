@@ -42,8 +42,8 @@ const Menu = (props) => {
       <ul
         style={
             toggleMenu
-              ? { transform: 'scaleY(1)', opacity: 1 }
-              : { transform: 'scaleY(0)', opacity: 0 }
+              ? { opacity: 1 }
+              : { opacity: 0 }
           }
         className="menu__container-submenu"
       >
