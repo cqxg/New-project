@@ -46,14 +46,14 @@ const Cubes = () => {
 
   goSpin();
 
-  setInterval(() => {
-    target.current.style.animation = "";
-    document.querySelectorAll(".stage").forEach((item) => {
-      const spinner = item.children[0];
-      spinner.style.animation = "";
-      spinner.style.animationDelay = "";
-    });
-  }, 9500);
+  // setInterval(() => {
+  //   target.current.style.animation = "";
+  //   document.querySelectorAll(".stage").forEach((item) => {
+  //     const spinner = item.children[0];
+  //     spinner.style.animation = "";
+  //     spinner.style.animationDelay = "";
+  //   });
+  // }, 9500);
 
   setInterval(() => {
     goSpin();

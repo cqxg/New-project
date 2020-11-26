@@ -22,6 +22,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.0.0",
     "react-scripts": "4.0.0",
+    "react-scroll-parallax": "^2.3.5",
     "react-slick": "^0.27.13",
     "react-wavify": "^1.4.0",
     "react-wow": "^1.0.0",

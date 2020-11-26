@@ -19,7 +19,7 @@ import { attribute } from "./AttributeSvg";
 const Footer = (props) => {
   const { t } = useTranslation();
   const [state, setState] = useState(true)
-  const [zIndex, setIndex] = useState(false)
+  const [zIndex, setIndex] = useState(true)
   const target = useRef(null)
 
   const changeIndex = e => setIndex(e)
@@ -37,7 +37,7 @@ const Footer = (props) => {
     <>
       <svg style={{visibility: zIndex ? "hidden" : "visible"}} className="footer__svg" width="1920" viewBox="0 0 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0)">
-          <path ref={target} id="morphing" d="M0.000152588 0.000110626V1080H1920V0.000110626H0.000152588ZM1920 415C1920 610 1976.69 1018.83 1920 1080C1871 1132.86 1628 1127 1542.5 1120.5C1457 1114 1111 1156 945 1147.5C779 1139 200.5 1272.26 89.5 1205.5C10.5 1157.97 0.000152588 1112 -28.4999 929.5C-57 747 5.34058e-05 666 -28.5001 525C-57.0002 384 -188.5 8.36 -28.4999 -13C115.7 -32.25 794.23 9.64021 945 -12.9998C1076.73 -32.7898 1844.4 -84.1498 1920 -24.9998C2012.42 47.3202 1920 242.5 1920 415Z" fill="white" />
+          <path ref={target} id="morphing" d="M49.3,-17.5C54.4,-0.3,42.5,20.8,26.4,31.3C10.4,41.7,-9.7,41.4,-26.7,30.5C-43.6,19.7,-57.4,-1.7,-52.5,-18.7C-47.5,-35.7,-23.7,-48.2,-0.8,-48C22.1,-47.7,44.2,-34.6,49.3,-17.5Z" fill="white" />
         </g>
         <defs>
           <clipPath id="clip0">

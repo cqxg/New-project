@@ -78,6 +78,16 @@ h3 {
   overflow: hidden;
 }
 
+.custom-class {
+  animation: translateBubbleonScrollToTop 30s infinite ease-in-out; 
+  z-index: 2;
+  position: absolute
+}
+
+.parallax-inner {
+  will-change: transform;
+}
+
 /* bubble animation for svg */
 
 @keyframes translateBubbleonScrollToTop {
