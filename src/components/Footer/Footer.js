@@ -20,7 +20,7 @@ import "./Footer.scss";
 const Footer = (props) => {
   const { t } = useTranslation();
   const [state, setState] = useState(true);
-  const [zIndex, setIndex] = useState(false);
+  const [zIndex, setIndex] = useState(true);
   const target = useRef(null);
 
   const changeIndex = (e) => setIndex(e);

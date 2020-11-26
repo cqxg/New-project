@@ -24,12 +24,11 @@ const Menu = (props) => {
 
   const renderSubMenu = (item, index) => (
     <div
-      onMouseEnter={() => setToggleMenu(true)}
       onMouseLeave={() => setToggleMenu(false)}
       className="menu__container-submenuactive"
       key={index}
     >
-      <NavLink key={item.text} to={item.link}>
+      <NavLink onMouseEnter={() => setToggleMenu(true)} key={item.text} to={item.link}>
         <li>
           {t(item.text)}
           <span className={toggleMenu ? 'active' : ''}>
@@ -42,8 +41,8 @@ const Menu = (props) => {
       <ul
         style={
             toggleMenu
-              ? { opacity: 1 }
-              : { opacity: 0 }
+              ? { display: 'block' }
+              : { display: 'none' }
           }
         className="menu__container-submenu"
       >
