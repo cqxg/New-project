@@ -62,6 +62,7 @@ const Cubes = () => {
 
   return (
     <>
+      <div className="first-line">
       <div className="stage">
         <div ref={target} className="cubespinner1">
           <div className="face1" style={{ backgroundImage: `url(${a})` }}></div>
@@ -105,7 +106,8 @@ const Cubes = () => {
           <div className="face6" style={{ backgroundImage: `url(${d})` }}></div>
         </div>
       </div>
-
+      </div>
+      <div className="second-line">
       <div className="stage">
         <div className="cubespinner5">
           <div className="face1" style={{ backgroundImage: `url(${e})` }}></div>
@@ -148,6 +150,8 @@ const Cubes = () => {
           <div className="face5" style={{ backgroundImage: `url(${k})` }}></div>
           <div className="face6" style={{ backgroundImage: `url(${k})` }}></div>
         </div>
+      </div>
+      
       </div>
     </>
   );

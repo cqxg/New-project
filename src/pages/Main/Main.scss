@@ -107,18 +107,16 @@
   }
   &__right {
     display: flex;
+    max-width: 690px;
     justify-content: center;
     position: relative;
-    max-width: 690px;
-    min-height: 510px;
   }
   &__iconblock {
-    height: 100%;
-    max-width: 570px;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-around;
   }
   &__muchicon {
     display: flex;
@@ -132,8 +130,8 @@
     box-shadow: 0px 7px 15px 0px rgba(130, 130, 130, 0.5);
   }
   &__muchiconinside {
-    width: 118px;
-    height: 118px;
+    width: 120px;
+    height: 120px;
     background-position: center;
     background-repeat: no-repeat;
   }
