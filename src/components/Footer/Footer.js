@@ -35,7 +35,7 @@ const Footer = (props) => {
 
   return (
     <>
-      <svg style={{visibility: zIndex ? "hidden" : "visible"}} className="footer__svg" width="1920" viewBox="0 0 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* <svg style={{visibility: zIndex ? "hidden" : "visible"}} className="footer__svg" width="1920" viewBox="0 0 1920" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0)">
           <path ref={target} id="morphing" d="M49.3,-17.5C54.4,-0.3,42.5,20.8,26.4,31.3C10.4,41.7,-9.7,41.4,-26.7,30.5C-43.6,19.7,-57.4,-1.7,-52.5,-18.7C-47.5,-35.7,-23.7,-48.2,-0.8,-48C22.1,-47.7,44.2,-34.6,49.3,-17.5Z" fill="white" />
         </g>
@@ -44,7 +44,7 @@ const Footer = (props) => {
             <rect width="1920" height="1080" fill="white" />
           </clipPath>
         </defs>
-      </svg>
+      </svg> */}
 
       <div className="section__margin">
         <Wave
