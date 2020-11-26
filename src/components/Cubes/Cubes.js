@@ -23,24 +23,39 @@ const Cubes = () => {
     document.querySelectorAll(".stage").forEach((item, index) => {
       const spinner = item.children[0];
       if (spinner.classList[0] === "cubespinner4") {
-        spinner.style.animation = "spincubeDown 1s ease-in-out";
-      } else if (spinner.classList[0] === "cubespinner8") {
-        spinner.style.animation = "spincubeUp 1s ease-in-out";
+        spinner.style.animation = "spincubeDown 0.8s ease-in-out";
+      } else if (spinner.classList[0] === "cubespinner5") {
+        spinner.style.animation = "spincubeUp 0.5s ease-in-out";
       } else if (
         spinner.classList[0] === "cubespinner1" ||
         spinner.classList[0] === "cubespinner2" ||
         spinner.classList[0] === "cubespinner3"
       ) {
-        spinner.style.animation = "spincubeRight 1s ease-in-out";
+        spinner.style.animation = "spincubeRight 0.8s ease-in-out";
       } else if (
-        spinner.classList[0] === "cubespinner5" ||
+        spinner.classList[0] === "cubespinner8" ||
         spinner.classList[0] === "cubespinner6" ||
         spinner.classList[0] === "cubespinner7"
       ) {
-        spinner.style.animation = "spincubeLeft 1s ease-in-out";
+        spinner.style.animation = "spincubeLeft 0.8s ease-in-out";
       }
-
-      spinner.style.animationDelay = `${index + 1}s`;
+      if (index === 0) {
+        spinner.style.animationDelay = "0.3s";
+      } else if (index === 1) {
+        spinner.style.animationDelay = "1.1s";
+      } else if (index === 2) {
+        spinner.style.animationDelay = "1.9s";
+      } else if (index === 3) {
+        spinner.style.animationDelay = "2.7s";
+      } else if (index === 4) {
+        spinner.style.animationDelay = "5.9s";
+      } else if (index === 5) {
+        spinner.style.animationDelay = "5.1s";
+      } else if (index === 6) {
+        spinner.style.animationDelay = "4.3s";
+      } else if (index === 7) {
+        spinner.style.animationDelay = "3.5s";
+      }
     });
   };
 
@@ -53,11 +68,11 @@ const Cubes = () => {
       spinner.style.animation = "";
       spinner.style.animationDelay = "";
     });
-  }, 9500);
+  }, 7000);
 
   setInterval(() => {
     goSpin();
-  }, 9505);
+  }, 7005);
 
   return (
     <>
