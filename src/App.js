@@ -1,18 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
 import { Routes } from './routes/routes';
-import { Blob } from './components/Blob/Blob';
 import Cookies from './components/Cookies/Cookies';
 import Menu from './components/Menu/Menu';
 import Preloader from './components/Preloader/Preloader';
 
 import './App.css';
-import { bubbleTexture } from "./components/Bubbles/bubbleTexture";
 import SvgBlobs from "./utils/svgBlobs/SvgBlobs";
-import { morphingSvgBlobs } from "./utils/svgBlobs/morphingSvgBlobs";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 import { useController } from 'react-scroll-parallax';
 
 const App = (props) => {
@@ -20,7 +17,6 @@ const App = (props) => {
   const [cookies, setCookie] = useCookies(["user"]);
   const [activeLocale, setActiveLocale] = useState("en");
   const [toggleCookie, setToggleCookie] = useState(true);
-  const ref = useRef(null)
   const { parallaxController } = useController();
 
   const changeLocale = (e) => setActiveLocale(e);
@@ -58,12 +54,11 @@ const App = (props) => {
     return (
       <>
         {coordinates.map((num, index) => {
-          console.log(ref)
           return (
-            <Parallax y={[200, -200]} className="custom-class" tagOuter="figure">
-              <div key={index} className="animate__animated bg__bubbles">
-                <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index} />
-              </div>
+            <Parallax y={[100, -100]} className="custom-class" tagOuter="figure">
+            <div key={index} className="animate__animated bg__bubbles">
+              <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index} />
+            </div>
             </Parallax>
           )
         })}
