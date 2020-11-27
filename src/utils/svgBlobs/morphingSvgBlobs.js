@@ -3,14 +3,15 @@ import {Timeline, TweenMax, Sine} from 'gsap/gsap-core'
 const morphingSvgBlobs = (index) => {
 	var blob1 = createBlob({
 		element: document.querySelector(`#morph${index}`),
-		numPoints: 8,
+		numPoints: 10,
 		centerX: 500,
 		centerY: 500,
 		minRadius: 400,
 		maxRadius: 500,
 		minDuration: 1,
-		maxDuration: 2
+		maxDuration: 5
 	});
+
 	
 	function createBlob(options) {
 
@@ -58,7 +59,7 @@ const morphingSvgBlobs = (index) => {
 	function cardinal(data, closed, tension) {
 	
 		if (data.length < 1) return "M0 0";
-		if (tension === null) tension = 1;
+		if (tension == null) tension = 1;
 	
 		var size = data.length - (closed ? 0 : 1);
 		var path = "M" + data[0].x + " " + data[0].y + " C";
@@ -74,10 +75,10 @@ const morphingSvgBlobs = (index) => {
 				p3 = data[(i + 2) % size];
 	
 			} else {
-				p0 = i === 0 ? data[0] : data[i - 1];
+				p0 = i == 0 ? data[0] : data[i - 1];
 				p1 = data[i];
 				p2 = data[i + 1];
-				p3 = i === size - 1 ? p2 : data[i + 2];
+				p3 = i == size - 1 ? p2 : data[i + 2];
 			}
 	
 			var x1 = p1.x + (p2.x - p0.x) / 6 * tension;
@@ -93,7 +94,7 @@ const morphingSvgBlobs = (index) => {
 	}
 	
 	function random(min, max) {
-		if (max = null) {
+		if (max == null) {
 			max = min;
 			min = 0;
 		}
