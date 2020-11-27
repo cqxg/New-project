@@ -1,5 +1,4 @@
 import anime from "animejs";
-import { useState } from "react";
 
 export const FooterAnimate = (state, changeIndex) => {
   let end = false;

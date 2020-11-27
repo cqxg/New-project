@@ -1,32 +1,22 @@
 import React from "react";
-import { morphingSvgBlobs } from "./morphingSvgBlobs";
+import morphingSvgBlobs from "./morphingSvgBlobs";
 
 const SvgBlobs = ({ index, width }) => {
   morphingSvgBlobs(index);
   return (
-    <svg
-      className="svgBlob"
-      width={width}
-      height={width}
-      viewBox="0 0 500 500"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g transform="translate(250,250)">
-        <defs>
-        <linearGradient id="paint0_linear" x1="4.49022" y1="-118.883" x2="225.358" y2="265.994"
-            gradientUnits="userSpaceOnUse">
-            <stop stop-color="#D5EFFB" />
-            <stop offset="1" stop-color="#D5EFFB" stop-opacity="0" />
+    <svg width={width} id="svg" viewBox="0 0 1000 1000">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop stop-color="#D5EFFB" />
+          <stop offset="0.437612" stop-color="#E2F6FF" stop-opacity="0.35" />
+          <stop offset="1" stop-color="#BBEAFF" stop-opacity="0.19" />
         </linearGradient>
-        </defs>
-        <path
-          id={`morph${index}`}
-          stroke="none"
-          stroke-width="0"
-          d="M161.23691003228475,-142.91547838970675C181.22293223201214,-103.52046591026897,150.56953271518822,-38.07519551682116,132.17827658263366,25.22354638199265C113.78702045007908,88.52228828080645,107.65790770179386,149.67450168498627,78.41569906755855,164.33349172080008C49.17349043332327,178.9924817566139,-3.181814086862076,147.15824842406178,-56.01312467781069,120.21665030992501C-108.8444352687593,93.27505219578826,-162.15175193047116,71.2260893000669,-187.94767695994662,24.05229400148208C-213.74360198942205,-23.12150129710275,-212.02813538666103,-95.42012899855102,-176.1182906212972,-138.44965006594194C-140.20844585593338,-181.47917113333287,-70.10422292796669,-195.23958556666642,0.2606104941560024,-195.44741550061937C70.62544391627868,-195.65524543457227,141.25088783255737,-182.3104908691445,161.23691003228475,-142.91547838970675Z"
-        />
-      </g>
+      </defs>
+      <path id={`morph${index}`} fill="url(#grad)"></path >
     </svg>
+
+
+
   );
 };
 

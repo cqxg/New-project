@@ -79,7 +79,7 @@ h3 {
 }
 
 .custom-class {
-  animation: translateBubbleonScrollToTop 30s infinite ease-in-out; 
+  /* animation: translateBubbleonScrollToTop 30s infinite ease-in-out;  */
   z-index: 2;
   position: absolute
 }
@@ -93,6 +93,7 @@ h3 {
 @keyframes translateBubbleonScrollToTop {
   0% {
     transform: translateY(0%);
+    opacity: 0;
   }
   5% {
     opacity: 1;
@@ -101,9 +102,11 @@ h3 {
     opacity: 1;
   }
   95% {
+    opacity: 0.8;
   }
   100% {
-    transform: translateY(-100vh);
+    opacity: 0;
+    transform: translateY(-200vh);
   }
 }
 

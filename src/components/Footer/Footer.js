@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef} from "react";
 
 import { useTranslation } from "react-i18next";
 import Wave from "react-wavify";
@@ -13,7 +13,6 @@ import fbblack from "../../img/svg/fbblack.svg";
 import instblack from "../../img/svg/instblack.svg";
 
 import { FooterAnimate } from "./FooterAnimate";
-import { attribute } from "./AttributeSvg";
 
 import "./Footer.scss";
 
@@ -29,7 +28,6 @@ const Footer = (props) => {
     setState(!state);
     FooterAnimate(state, changeIndex);
   };
-  console.log(zIndex);
 
   if (!state) document.body.style.background = "#D5EFFB";
   else document.body.style.background = "#fff";

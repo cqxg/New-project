@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Blob } from '../Blob/Blob';
+// import { Blob } from '../Blob/Blob';
+// import BlobCanvas from '../Blob/BlobCanvas';
 
 import Button from '../Buttons/Button';
 import './BubblesWithImages.scss';
@@ -9,7 +10,6 @@ const BubblesWithImages = (props) => {
   const { constructor } = props;
   const bubbleConstructor = constructor.bubblesWithImages;
   const { t } = useTranslation();
-  console.log(constructor);
 
   const renderItems = () => bubbleConstructor.items.map((item, index) => (
     <div key={index} className={`bubblesWithImages__flex ${index % 2 === 0 ? '' : 'bubblesWithImages__flex-reverse'}`}>
@@ -22,7 +22,7 @@ const BubblesWithImages = (props) => {
         <Button type={item.button.type} text={item.button.text} />
       </div>
       <div className="bubblesWithImages__right animate__animated">
-          <Blob
+          {/* <Blob
             size="380px"
             style={{
               backgroundColor: '#D1F1FD',
@@ -30,7 +30,7 @@ const BubblesWithImages = (props) => {
             animationDuration="15s"
           >
             {item.image ? <img src={item.image} alt={item.text} /> : null}
-          </Blob>
+          </Blob> */}
       </div>
     </div>
   ));
