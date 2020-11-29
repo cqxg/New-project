@@ -21,6 +21,7 @@ const Menu = (props) => {
     changeLocale(language);
   };
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   const renderSubMenu = (item, index) => (
     <div
@@ -75,6 +76,28 @@ const Menu = (props) => {
         </Link>
         <ul className="menu__container-list">{renderMenu()}</ul>
         <ul className="menu__container-flags">
+          <li className={activeLocale === 'pl' ? 'active' : ''} onClick={() => setLanguage('pl')}>
+            <img src={polandFlag} alt="polandFlag" />
+          </li>
+          <li className={activeLocale === 'en' ? 'active' : ''} onClick={() => setLanguage('en')}>
+            <img src={usaFlag} alt="usaFlag" />
+          </li>
+          <li className={activeLocale === 'de' ? 'active' : ''} onClick={() => setLanguage('de')}>
+            <img src={germanyFlag} alt="germanyFlag" />
+          </li>
+          <li className={activeLocale === 'es' ? 'active' : ''} onClick={() => setLanguage('es')}>
+            <img src={flag} alt="flag" />
+          </li>
+        </ul>
+      </div>
+      <div onClick={() => setMobileMenu(!mobileMenu)} className="menu__container-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={`menu__container-mobile ${mobileMenu ? 'active' : ''}`}>
+        <ul className="menu__container-list mobile">{renderMenu()}</ul>
+        <ul className="menu__container-flags mobile">
           <li className={activeLocale === 'pl' ? 'active' : ''} onClick={() => setLanguage('pl')}>
             <img src={polandFlag} alt="polandFlag" />
           </li>

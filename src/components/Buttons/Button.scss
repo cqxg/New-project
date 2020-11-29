@@ -101,3 +101,15 @@
     margin-right: 0;
   }
 }
+
+@media(max-width: 768px) {
+  .btn {
+    padding: 12px 18px;
+    &_text {
+      font-size: 14px;
+    }
+    &-icon {
+      margin-right: 8px;
+    }
+  }
+}

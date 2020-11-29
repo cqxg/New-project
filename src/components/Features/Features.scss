@@ -19,3 +19,16 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .subTitle {
+        margin-top: 8px!important;
+        margin-bottom: 37px!important;
+    }
+    .features {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

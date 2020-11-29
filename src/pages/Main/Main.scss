@@ -227,3 +227,76 @@
     position: absolute;
   }
 }
+
+@media(max-width: 768px) {
+  .first_block {
+    &__right {
+      position: absolute;
+    }
+    &__buttons {
+      max-width: 288px;
+    }
+    &__qr {
+      display: none;
+    }
+  }
+  .second_block {
+    & button {
+      margin-left: 10px;
+    }
+    &__flex {
+      flex-direction: column;
+    }
+  }
+  .withicon_block {
+    &__flex {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .face1, .face2, .face3, .face4, .face5, .face6 {
+      width: 63px;
+      height: 63px;
+    }
+    .stage {
+      width: 63px;
+      height: 63px;
+    }
+  }
+  .six_block {
+    padding-top: 60px;
+    &__left {
+      margin-bottom: 25px;
+    }
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .seven_block {
+    & button {
+      margin-top: 25px;
+    }
+    padding-top: 155px;
+    &__girl {
+      width: 288px!important;
+    }
+    &__flex {
+      flex-direction: column-reverse;
+    }
+    &__left {
+      margin-top: 125px;
+    }
+  }
+  .eight_block {
+    &__flex {
+      flex-direction: column;
+    }
+    &__buttons {
+      max-width: 288px;
+      margin: 0 auto;
+    }
+    &__qr-desc {
+      font-size: 14px;
+    }
+  }
+}

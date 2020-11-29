@@ -160,4 +160,15 @@ h3 {
   fill: #f06;
 	fill: url(#paint0_linear);
 }
+
+@media(max-width: 768px) {
+  h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
                                            
