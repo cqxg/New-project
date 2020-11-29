@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Blob } from '../Blob/Blob';
 // import { Blob } from '../Blob/Blob';
 // import BlobCanvas from '../Blob/BlobCanvas';
 
@@ -22,15 +23,15 @@ const BubblesWithImages = (props) => {
         <Button type={item.button.type} text={item.button.text} />
       </div>
       <div className="bubblesWithImages__right animate__animated">
-          {/* <Blob
-            size="380px"
+          <Blob
+            size="50vh"
             style={{
               backgroundColor: '#D1F1FD',
             }}
             animationDuration="15s"
           >
             {item.image ? <img src={item.image} alt={item.text} /> : null}
-          </Blob> */}
+          </Blob>
       </div>
     </div>
   ));
