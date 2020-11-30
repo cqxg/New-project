@@ -31,19 +31,21 @@ const App = (props) => {
   const locationRoute = props.location.pathname;
 
   useEffect(() => {
+    setLoading(true)
     setTimeout(() => {
       setLoading(false);
       document.getElementsByTagName('body')[0].classList.add('loaded')
       document.querySelectorAll('.custom-class').forEach((item) => {
       item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
       item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
+      window.pageYOffset = 0
       })
-    }, 1);
-  }, []);
+    }, 4000);
+  }, [locationRoute]);
 
   const renderBackGroundBubbles = () => {
     const coordinates = []
-    const maxNum = 20;
+    const maxNum = 12;
     const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
     const max = pageHeight, min = document.documentElement.clientHeight
     for (let i = 0; i < maxNum; i++) {
