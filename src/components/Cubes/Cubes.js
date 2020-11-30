@@ -78,10 +78,10 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube0">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
@@ -89,10 +89,10 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube1">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
@@ -100,22 +100,22 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube2">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
           <div className="cubespinner cube3">
-            <div className="top side"></div>
-            <div className="front side"></div>
+            <div className="top side"><img src={a}/></div>
+            <div className="front side"><img src={a}/></div>
             <div className="right side"></div>
-            <div className="back side"></div>
+            <div className="back side"><img src={a}/></div>
             <div className="left side"></div>
-            <div className="bottom side"></div>
+            <div className="bottom side"><img src={a}/></div>
           </div>
         </div>
       </div>
@@ -124,10 +124,10 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube4">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
@@ -135,10 +135,10 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube5">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
@@ -146,22 +146,22 @@ const Cubes = () => {
         <div className="stage">
           <div className="cubespinner cube6">
             <div className="top side"></div>
-            <div className="front side"></div>
-            <div className="right side"></div>
-            <div className="back side"></div>
-            <div className="left side"></div>
+            <div className="front side"><img src={a}/></div>
+            <div className="right side"><img src={a}/></div>
+            <div className="back side"><img src={a}/></div>
+            <div className="left side"><img src={a}/></div>
             <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
           <div className="cubespinner cube7">
-            <div className="top side"></div>
-            <div className="front side"></div>
+          <div className="top side"><img src={a}/></div>
+            <div className="front side"><img src={a}/></div>
             <div className="right side"></div>
-            <div className="back side"></div>
+            <div className="back side"><img src={a}/></div>
             <div className="left side"></div>
-            <div className="bottom side"></div>
+            <div className="bottom side"><img src={a}/></div>
           </div>
         </div>
       </div>
