@@ -17,296 +17,151 @@ import p from "../../img/icon/p.png";
 import "./Cubes.scss";
 
 const Cubes = () => {
-  const target = useRef(null);
+  useEffect(() => {
+    let cubeN = 0;
+    let cubeDeg = 90;
+    let cube2Deg = -90;
 
-  const goSpin = () => {
-    document.querySelectorAll(".stage").forEach((item, index) => {
-      const spinner = item.children[0];
-      if (spinner.classList[0] === "cubespinner4") {
-        spinner.style.animation = "spincubeDown 0.8s ease-in-out";
-      } else if (spinner.classList[0] === "cubespinner5") {
-        spinner.style.animation = "spincubeUp 0.5s ease-in-out";
-      } else if (
-        spinner.classList[0] === "cubespinner1" ||
-        spinner.classList[0] === "cubespinner2" ||
-        spinner.classList[0] === "cubespinner3"
-      ) {
-        spinner.style.animation = "spincubeRight 0.8s ease-in-out";
-      } else if (
-        spinner.classList[0] === "cubespinner8" ||
-        spinner.classList[0] === "cubespinner6" ||
-        spinner.classList[0] === "cubespinner7"
-      ) {
-        spinner.style.animation = "spincubeLeft 0.8s ease-in-out";
+    function rotateY(a) {
+      a.style.transform = `rotateY(${cubeDeg}deg)`;
+      setTimeout(nextCube, 1500);
+    }
+    function rotateX(a) {
+      a.style.transform = `rotateX(${cube2Deg}deg)`;
+      setTimeout(nextCube, 1500);
+    }
+    function rotateYm(a) {
+      a.style.transform = `rotateY(${cube2Deg}deg)`;
+      setTimeout(nextCube, 1500);
+    }
+    function rotateXm(a) {
+      a.style.transform = `rotateX(${cubeDeg}deg)`;
+      setTimeout(nextCube, 1500);
+    }
+    function nextCube() {
+      let tCube = document.querySelector(`.cube${cubeN}`);
+      console.log(cubeN);
+
+      if (cubeN < 3) {
+        rotateY(tCube);
+      } else if (3 === cubeN) {
+        rotateX(tCube);
+      } else if (3 < cubeN && 7 > cubeN) {
+        rotateYm(tCube);
+      } else if (7 === cubeN) {
+        rotateXm(tCube);
+        cubeN = -1;
+        cubeDeg += 90;
+        cube2Deg -= 90;
       }
-      if (index === 0) {
-        spinner.style.animationDelay = "0.3s";
-      } else if (index === 1) {
-        spinner.style.animationDelay = "1.1s";
-      } else if (index === 2) {
-        spinner.style.animationDelay = "1.9s";
-      } else if (index === 3) {
-        spinner.style.animationDelay = "2.7s";
-      } else if (index === 4) {
-        spinner.style.animationDelay = "5.9s";
-      } else if (index === 5) {
-        spinner.style.animationDelay = "5.1s";
-      } else if (index === 6) {
-        spinner.style.animationDelay = "4.3s";
-      } else if (index === 7) {
-        spinner.style.animationDelay = "3.5s";
-      }
+      cubeN++;
+    }
+
+    document.querySelectorAll(".cubespinner").forEach((item) => {
+      item.style.transformStyle = "preserve-3d";
+      item.style.transition = "1.5s";
+      item.style.perspective = "5000px";
+      item.style.perspectiveOrigin = "50% 50%";
     });
-  };
-
-  goSpin();
-
-  setInterval(() => {
-    target.current.style.animation = "";
-    document.querySelectorAll(".stage").forEach((item) => {
-      const spinner = item.children[0];
-      spinner.style.animation = "";
-      spinner.style.animationDelay = "";
+    document.querySelectorAll(".side").forEach((item) => {
+      item.style.display = "flex";
+      item.style.justifyContent = "center";
+      item.style.alignItems = "center";
+      item.style.transformStyle = "preserve-3d";
     });
-  }, 7000);
-
-  setInterval(() => {
-    goSpin();
-  }, 7005);
+    nextCube();
+  }, []);
 
   return (
     <>
       <div className="first-line">
         <div className="stage">
-          <div ref={target} className="cubespinner1">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${a})` }}
-            ></div>
+          <div className="cubespinner cube0">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner2">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${b})` }}
-            ></div>
+          <div className="cubespinner cube1">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner3">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${c})` }}
-            ></div>
+          <div className="cubespinner cube2">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner4">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${d})` }}
-            ></div>
+          <div className="cubespinner cube3">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
       </div>
+
       <div className="second-line">
         <div className="stage">
-          <div className="cubespinner5">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${e})` }}
-            ></div>
+          <div className="cubespinner cube4">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner6">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${f})` }}
-            ></div>
+          <div className="cubespinner cube5">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner7">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${g})` }}
-            ></div>
+          <div className="cubespinner cube6">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
 
         <div className="stage">
-          <div className="cubespinner8">
-            <div
-              className="face1"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
-            <div
-              className="face2"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
-            <div
-              className="face3"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
-            <div
-              className="face4"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
-            <div
-              className="face5"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
-            <div
-              className="face6"
-              style={{ backgroundImage: `url(${k})` }}
-            ></div>
+          <div className="cubespinner cube7">
+            <div className="top side"></div>
+            <div className="front side"></div>
+            <div className="right side"></div>
+            <div className="back side"></div>
+            <div className="left side"></div>
+            <div className="bottom side"></div>
           </div>
         </div>
       </div>
