@@ -43,7 +43,7 @@ const App = (props) => {
 
   const renderBackGroundBubbles = () => {
     const coordinates = []
-    const maxNum = 10;
+    const maxNum = 20;
     const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
     const max = pageHeight, min = document.documentElement.clientHeight
     for (let i = 0; i < maxNum; i++) {
@@ -57,7 +57,7 @@ const App = (props) => {
           return (
             <Parallax y={[100, -100]} className="custom-class" tagOuter="figure">
             <div key={index} className="animate__animated bg__bubbles">
-              <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index} />
+              <SvgBlobs width={`${Math.floor(Math.random() * 150 + 75)}`} index={index} />
             </div>
             </Parallax>
           )

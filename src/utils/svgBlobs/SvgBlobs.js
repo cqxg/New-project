@@ -6,17 +6,23 @@ const SvgBlobs = ({ index, width }) => {
   return (
     <svg width={width} id="svg" viewBox="0 0 1000 1000">
       <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop stop-color="#D5EFFB" />
-          <stop offset="0.437612" stop-color="#E2F6FF" stop-opacity="0.35" />
-          <stop offset="1" stop-color="#BBEAFF" stop-opacity="0.19" />
-        </linearGradient>
+        <radialGradient id="paint0_radial" fx="25%" fy="25%">
+          <stop offset="0%"
+            stop-color="#D1F1FD" />
+          <stop offset="30%"
+            stop-color="#fff"
+            stop-opacity=".4" />
+          <stop offset="90%"
+            stop-color="#D1F1FD"
+            stop-opacity=".6" />
+          <stop offset="100%"
+            stop-color="#D1F1FD"
+            stop-opacity=".8"
+          />
+        </radialGradient>
       </defs>
-      <path id={`morph${index}`} fill="url(#grad)"></path >
+      <path id={`morph${index}`} fill="url(#paint0_radial)"></path >
     </svg>
-
-
-
   );
 };
 
