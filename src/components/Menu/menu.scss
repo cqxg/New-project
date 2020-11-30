@@ -27,6 +27,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &-mobile {
+      display: none;
+    }
     &-hamburger {
       display: none;
     }
@@ -136,7 +139,7 @@
     &__container {
       &-mobile {
         display: none;
-        & .active {
+        &.active {
           display: block;
         }
       }

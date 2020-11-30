@@ -31,19 +31,21 @@ const App = (props) => {
   const locationRoute = props.location.pathname;
 
   useEffect(() => {
+    setLoading(true)
     setTimeout(() => {
       setLoading(false);
       document.getElementsByTagName('body')[0].classList.add('loaded')
       document.querySelectorAll('.custom-class').forEach((item) => {
       item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
       item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
+      window.pageYOffset = 0
       })
-    }, 1);
-  }, []);
+    }, 4000);
+  }, [locationRoute]);
 
   const renderBackGroundBubbles = () => {
     const coordinates = []
-    const maxNum = 10;
+    const maxNum = 12;
     const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
     const max = pageHeight, min = document.documentElement.clientHeight
     for (let i = 0; i < maxNum; i++) {
@@ -57,7 +59,7 @@ const App = (props) => {
           return (
             <Parallax y={[100, -100]} className="custom-class" tagOuter="figure">
             <div key={index} className="animate__animated bg__bubbles">
-              <SvgBlobs width={`${Math.floor(Math.random() * 300 + 75)}`} index={index} />
+              <SvgBlobs width={`${Math.floor(Math.random() * 150 + 75)}`} index={index} />
             </div>
             </Parallax>
           )
