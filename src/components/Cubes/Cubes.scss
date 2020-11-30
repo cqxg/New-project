@@ -1,13 +1,13 @@
 .first-line,
 .second-line {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 
 .stage {
-  margin: 0 13px 25px 13px;
   position: relative;
+  margin: 0 13px 25px 13px;
   transform-style: preserve-3d;
 }
 
@@ -33,11 +33,11 @@
   max-height: 118px;
 }
 
-.front {
-  transform: translateZ(1.75em);
-}
 .top {
   transform: translateY(-1.75em) rotateX(90deg);
+}
+.front {
+  transform: translateZ(1.75em);
 }
 .right {
   transform: translateX(1.75em) rotateY(90deg);
