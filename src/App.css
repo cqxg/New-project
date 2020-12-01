@@ -25,6 +25,16 @@ h3 {
   z-index: 10;
 }
 
+h5 {
+  margin: 0;
+  font-size: 22px;
+}
+
+h6 {
+  margin: 0;
+  font-size: 14px;
+}
+
 .slick-arrow.slick-next {
   width: 70px;
   height: 70px;

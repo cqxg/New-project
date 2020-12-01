@@ -48,7 +48,7 @@ const Menu = (props) => {
         className="menu__container-submenu"
       >
         {item.subMenu.map((value, index) => (
-          <NavLink key={index} to={item.link}>
+          <NavLink key={index} to={value.link}>
             <li>{t(value.text)}</li>
           </NavLink>
         ))}

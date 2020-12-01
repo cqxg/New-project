@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-
+ /* eslint-disable */
 import a from "../../img/icon/a.png";
 import b from "../../img/icon/b.png";
 import c from "../../img/icon/c.png";
@@ -40,21 +40,22 @@ const Cubes = () => {
     };
     const nextCube = () => {
       let tCube = document.querySelector(`.cube${cubeN}`);
-      console.log(cubeN);
 
-      if (cubeN < 3) {
-        rotateY(tCube);
-      } else if (3 === cubeN) {
-        rotateX(tCube);
-      } else if (3 < cubeN && 7 > cubeN) {
-        rotateYm(tCube);
-      } else if (7 === cubeN) {
-        rotateXm(tCube);
-        cubeN = -1;
-        cubeDeg += 90;
-        cube2Deg -= 90;
-      }
-      cubeN++;
+if (tCube) {
+  if (cubeN < 3) {
+    rotateY(tCube);
+  } else if (3 === cubeN) {
+    rotateX(tCube);
+  } else if (3 < cubeN && 7 > cubeN) {
+    rotateYm(tCube);
+  } else if (7 === cubeN) {
+    rotateXm(tCube);
+    cubeN = -1;
+    cubeDeg += 90;
+    cube2Deg -= 90;
+  }
+  cubeN++;
+}
     };
 
     document.querySelectorAll(".cubespinner").forEach((item) => {

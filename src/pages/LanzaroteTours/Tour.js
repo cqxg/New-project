@@ -42,7 +42,7 @@ const Tour = ({ headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitl
             </div>
             <div className="tour__audio">
                 <div className="container">
-                    <Audioplayer/>
+                    <Audioplayer tourName={headerTitle}/>
                 </div>
             </div>
         </div>

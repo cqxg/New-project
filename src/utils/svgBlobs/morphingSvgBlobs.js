@@ -1,7 +1,8 @@
+/* eslint-disable eqeqeq */
 import {Timeline, TweenMax, Sine} from 'gsap/gsap-core'
 
 const morphingSvgBlobs = (index) => {
-	var blob1 = createBlob({
+	createBlob({
 		element: document.querySelector(`#morph${index}`),
 		numPoints: 6,
 		centerX: 500,

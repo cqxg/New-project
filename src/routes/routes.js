@@ -20,7 +20,7 @@ export const Routes = () => (
     <Route exact path="/" component={Main} />
     <Route exact path="/about" component={Lanzarote} />
     <Route exact path="/tours" component={LanzaroteTours} />
-    <Route exact path="/tours/grand" component={GrandTour} />
+    <Route exact path="/tours/grand-tour" component={GrandTour} />
     <Route exact path="/tours/north" component={NorthTour} />
     <Route exact path="/tours/south" component={SouthTour} />
     <Route exact path="/faq" component={Faq} />

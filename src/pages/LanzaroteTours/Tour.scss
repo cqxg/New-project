@@ -17,20 +17,7 @@
             max-width: 690px;
         }
     }
-    audio {
-        max-width: 1200px;
-        background: #fff;
-        width: 100%;
-        margin: 0 auto;
-    }
-    audio::-webkit-media-controls-timeline-container {
-        height: 80px;
-    }
-    audio::-webkit-media-controls-play-button {
-        width: 30px;
-        height: 30px;
-
-        background: linear-gradient(180deg, #ff6d55 0%, #ff5134 114.71%);
-        border-radius: 10px;
+    &__audio {
+        padding: 50px 0;
     }
 }

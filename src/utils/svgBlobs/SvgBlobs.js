@@ -8,16 +8,16 @@ const SvgBlobs = ({ index, width }) => {
       <defs>
         <radialGradient id="paint0_radial" fx="25%" fy="25%">
           {/* <stop offset="0%"
-            stop-color={index%2 === 0 ? "#D1F1FD" : "#fff"} /> */}
+            stopColor={index%2 === 0 ? "#D1F1FD" : "#fff"} /> */}
           <stop offset="30%"
-            stop-color="#fff"
-            stop-opacity=".4" />
+            stopColor="#fff"
+            stopOpacity=".4" />
           <stop offset="90%"
-            stop-color="#D1F1FD"
-            stop-opacity=".6" />
+            stopColor="#D1F1FD"
+            stopOpacity=".6" />
           <stop offset="100%"
-            stop-color="#D1F1FD"
-            stop-opacity=".8"
+            stopColor="#D1F1FD"
+            stopOpacity=".8"
           />
         </radialGradient>
       </defs>

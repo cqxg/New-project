@@ -1,0 +1,51 @@
+.audioplayer {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 20px 0px #00000045;
+    padding: 30px 40px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    &__volume {
+        margin-left: 40px;
+    }
+    &__time {
+        position: absolute;
+        right: 0;
+        bottom: 20%;
+        transform: translateY(20%);
+    }
+    &__progress {
+        background: #DEDEDE;
+        width: 100%;
+        &-line {
+            height: 2px;
+            background: #FF6D55;
+        }
+    }
+    &__text {
+        width: 100%;
+        position: relative;
+        & h5 {
+            color: #8F93A1;
+        }
+        & h6 {
+            color: #1E2843;
+            margin: 5px 0 7px 0;
+        }
+    }
+    &__btn {
+        &-status {
+            margin-right: 40px;
+            background: linear-gradient(180deg, #ff6d55 0%, #ff5134 114.71%);
+            border-radius: 20px;
+            width: 68px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0px 7px 15px 0px rgba(255, 109, 85, 0.5);
+        }
+    }
+}
