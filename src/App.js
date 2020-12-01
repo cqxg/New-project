@@ -29,6 +29,9 @@ const App = (props) => {
   };
 
   const locationRoute = props.location.pathname;
+  document.body.scrollIntoView({
+    behavior: 'auto',
+  });
 
   useEffect(() => {
     setLoading(true)
@@ -38,7 +41,6 @@ const App = (props) => {
       document.querySelectorAll('.custom-class').forEach((item) => {
       item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
       item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
-      window.pageYOffset = 0
       })
     }, 4000);
   }, [locationRoute]);
@@ -57,7 +59,7 @@ const App = (props) => {
       <>
         {coordinates.map((num, index) => {
           return (
-            <Parallax y={[100, -100]} className="custom-class" tagOuter="figure">
+            <Parallax key={index} y={[100, -100]} className="custom-class" tagOuter="figure">
             <div key={index} className="animate__animated bg__bubbles">
               <SvgBlobs width={`${Math.floor(Math.random() * 150 + 75)}`} index={index} />
             </div>

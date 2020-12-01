@@ -9,15 +9,15 @@ export const menu = [
     subMenu: [
       {
         text: 'grandTour',
-        link: '/grand-tour',
+        link: '/tours/grand-tour',
       },
       {
         text: 'northTour',
-        link: '/north-tour',
+        link: '/tours/north-tour',
       },
       {
         text: 'southTour',
-        link: '/south-tour',
+        link: '/tours/south-tour',
       },
       {
         text: 'audiobook',

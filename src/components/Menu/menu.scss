@@ -57,6 +57,9 @@
       & li {
         position: relative;
         padding: 5px 0;
+        &:hover {
+          color: #FF5134;
+        }
       }
     }
     &-list {

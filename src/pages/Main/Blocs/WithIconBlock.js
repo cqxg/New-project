@@ -1,5 +1,5 @@
 import React from "react";
-
+ /* eslint-disable */
 import Cubes from "../../../components/Cubes/Cubes";
 import Button from "../../../components/Buttons/Button";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
