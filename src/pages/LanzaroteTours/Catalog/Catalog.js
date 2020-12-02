@@ -1,7 +1,7 @@
 import React from "react";
-import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
+import BreadCrumbs from '../../../components/BreadCrumbs/BreadCrumbs'
 
-const LanzaroteTours = () => {
+const Catalog = () => {
   return (
     <div className="tour">
       <BreadCrumbs scheme="catalog" />
@@ -10,4 +10,4 @@ const LanzaroteTours = () => {
   );
 };
 
-export default LanzaroteTours;
+export default Catalog;

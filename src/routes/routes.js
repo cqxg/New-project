@@ -8,7 +8,7 @@ import Lanzarote from '../pages/Lanzarote/Lanzarote';
 import GrandTour from '../pages/LanzaroteTours/GrandTour';
 import NorthTour from '../pages/LanzaroteTours/NorthTour';
 import SouthTour from '../pages/LanzaroteTours/SouthTour';
-import LanzaroteTours from '../pages/LanzaroteTours/LanzaroteTours';
+import Catalog from '../pages/LanzaroteTours/Catalog/Catalog';
 
 export const Routes = () => (
   <AnimatedSwitch
@@ -19,7 +19,7 @@ export const Routes = () => (
   >
     <Route exact path="/" component={Main} />
     <Route exact path="/about" component={Lanzarote} />
-    <Route exact path="/tours" component={LanzaroteTours} />
+    <Route exact path="/tours" component={Catalog} />
     <Route exact path="/tours/grand-tour" component={GrandTour} />
     <Route exact path="/tours/north" component={NorthTour} />
     <Route exact path="/tours/south" component={SouthTour} />
