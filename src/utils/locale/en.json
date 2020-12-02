@@ -2,6 +2,7 @@
     "about": "About Island",
     "aboutUs": "About Us",
     "catalog": "Catalog",
+    "more": "More",
     "grandTour": "Grand tour",
     "northTour": "North tour",
     "southTour": "South tour",
@@ -52,5 +53,13 @@
     "chooseUIsland": "Choose your Island",
     "lanzarote": "Lanzarote",
     "gomera": "La Gomera",
-    "comingSoon": "Coming soon"
+    "sights": "20 sights",
+    "minAudioContent": "120 min audio content",
+    "addvantage": "3th addvantage",
+    "comingSoon": "Coming soon",
+    "LanzaroteTours": "Lanzarote Tours",
+    "purchase": "Your purchase will never expire.",
+    "offlineUse": "Allow ample time for download to complete for offline use.",
+    "connection": "Use good data or WiFi connection.",
+    "LanzaroteToursDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sed nullam urna malesuada scelerisque in. Et orci blandit pretium sed dui scelerisque."
 }
