@@ -38,7 +38,11 @@ const Catalog = () => {
 
               <div className="card__desc">
                 <div className="card__desc--wrapper">
-                  <h3>{t("grandTour")}</h3>
+                  <div className="card__desc-title-wrapper">
+                    <h3>{t("grandTour")}</h3>
+                    <h3>5,95€</h3>
+                  </div>
+
                   <div className="card__text--wrapper">
                     <img className="dot" src={dot} alt="dot" />
                     <p>{t("sights")}</p>
@@ -60,9 +64,6 @@ const Catalog = () => {
               </div>
             </div>
 
-
-
-
             <div className="card-wrapper">
               <div
                 className="card__img"
@@ -74,7 +75,31 @@ const Catalog = () => {
                 <button>{t("more")}</button>
               </div>
 
-              <div className="card__desc"></div>
+              <div className="card__desc">
+                <div className="card__desc--wrapper">
+                  <div className="card__desc-title-wrapper">
+                    <h3>{t("northTour")}</h3>
+                    <h3>5,95€</h3>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("sights")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("minAudioContent")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("addvantage")}</p>
+                  </div>
+                  <div className="card__text--foot">
+                    <p>{t("purchase")}</p>
+                    <p>{t("offlineUse")}</p>
+                    <p>{t("connection")}</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="card-wrapper">
@@ -88,7 +113,31 @@ const Catalog = () => {
                 <button>{t("more")}</button>
               </div>
 
-              <div className="card__desc"></div>
+              <div className="card__desc">
+                <div className="card__desc--wrapper">
+                  <div className="card__desc-title-wrapper">
+                    <h3>{t("southTour")}</h3>
+                    <h3>5,95€</h3>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("sights")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("minAudioContent")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("addvantage")}</p>
+                  </div>
+                  <div className="card__text--foot">
+                    <p>{t("purchase")}</p>
+                    <p>{t("offlineUse")}</p>
+                    <p>{t("connection")}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
