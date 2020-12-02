@@ -2,6 +2,7 @@
     "about": "About Island",
     "aboutUs": "About Us",
     "catalog": "Catalog",
+    "more": "More",
     "grandTour": "Grand tour",
     "northTour": "North tour",
     "southTour": "South tour",
@@ -52,5 +53,7 @@
     "chooseUIsland": "Choose your Island",
     "lanzarote": "Lanzarote",
     "gomera": "La Gomera",
-    "comingSoon": "Coming soon"
+    "comingSoon": "Coming soon",
+    "LanzaroteTours": "Lanzarote Tours",
+    "LanzaroteToursDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus, sed nullam urna malesuada scelerisque in. Et orci blandit pretium sed dui scelerisque."
 }
