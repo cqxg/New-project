@@ -75,3 +75,37 @@
   top: 10%;
   position: absolute;
 }
+
+.card__desc--wrapper {
+  display: flex;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1e2843;
+  flex-direction: column;
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.card__text--wrapper {
+  display: flex;
+  align-items: center;
+  max-height: 25px;
+}
+
+.card__text--foot {
+  max-height: 40px;
+  p {
+    max-height: 10px;
+    font-weight: 600;
+  }
+}
+
+.dot {
+  margin-right: 10px;
+}

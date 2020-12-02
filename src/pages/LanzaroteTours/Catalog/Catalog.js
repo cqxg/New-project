@@ -9,6 +9,7 @@ import grand from "../../../img/images/Lanzarote/mainslider/grand.png";
 import north from "../../../img/images/Lanzarote/mainslider/north.png";
 import south from "../../../img/images/Lanzarote/mainslider/south.png";
 import car from "../../../img/images/Lanzarote/mainslider/car.svg";
+import dot from "../../../img/images/Lanzarote/mainslider/dot.svg";
 
 import "./Catalog.scss";
 
@@ -36,9 +37,31 @@ const Catalog = () => {
               </div>
 
               <div className="card__desc">
-                <h3>{t("grandTour")}</h3>
+                <div className="card__desc--wrapper">
+                  <h3>{t("grandTour")}</h3>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("sights")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("minAudioContent")}</p>
+                  </div>
+                  <div className="card__text--wrapper">
+                    <img className="dot" src={dot} alt="dot" />
+                    <p>{t("addvantage")}</p>
+                  </div>
+                  <div className="card__text--foot">
+                    <p>{t("purchase")}</p>
+                    <p>{t("offlineUse")}</p>
+                    <p>{t("connection")}</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+
+
 
             <div className="card-wrapper">
               <div
