@@ -7,10 +7,17 @@ const Audioplayer = ({tourName}) => {
     const ref = useRef(null)
     const [status, setStatus] = useState(true);
     const [duration, setDuration] = useState(0)
+    const [toggleVolume, setToggleVolume] = useState(false);
+    const [volume, setVolume] = useState([100]);
     // ref.current.play();
     const handle = {
         status: () => setStatus(!status),
         duration: (e) => setDuration(e),
+        toggleVolume: (e) => setToggleVolume(e),
+        setVolume: (e) => {
+            setVolume(e)
+            ref.current.volume = volume[0] / 100
+        },
         play: () => ref.current?.play(),
         pause: () => ref.current?.pause()
     }
@@ -32,7 +39,7 @@ const Audioplayer = ({tourName}) => {
                 </div>
                 <Time seconds={durationTime - currentTime}/>
             </div>
-            <Volume/>
+            <Volume volume={volume} toggleVolume={toggleVolume} setVolume={handle.setVolume} handleToggleVolume={handle.toggleVolume}/>
             <audio onEnded={() => setStatus(!status)} onTimeUpdate={() => setDuration(duration + 1)} src="https://sound-pack.net/download/Sound_03720.mp3" ref={ref}/>
         </div>
     )

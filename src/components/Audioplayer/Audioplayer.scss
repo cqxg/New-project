@@ -2,12 +2,34 @@
     width: 100%;
     background: #fff;
     box-shadow: 0 5px 20px 0px #00000045;
-    padding: 30px 40px;
+    padding: 30px 70px;
     display: flex;
     border-radius: 25px;
     align-items: center;
+    position: fixed;
+    max-width: 1300px;
+    z-index: 9999;
+    bottom: 5%;
     &__volume {
         margin-left: 40px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 51px 10px 20px 10px;
+        justify-content: center;
+        flex-direction: column;
+        right: 4%;
+        bottom: 30px;
+        border-radius: 37px;
+        background: none;
+        box-shadow: none;
+        & svg {
+            cursor: pointer;
+        }
+        &.active {
+            background: #fff;
+            box-shadow: 0 5px 20px 0px #2727272c;
+        }
     }
     &__time {
         position: absolute;
@@ -25,6 +47,7 @@
     }
     &__text {
         width: 100%;
+        max-width: 1100px;
         position: relative;
         & h5 {
             color: #8F93A1;
@@ -39,7 +62,7 @@
             margin-right: 40px;
             background: linear-gradient(180deg, #ff6d55 0%, #ff5134 114.71%);
             border-radius: 20px;
-            width: 68px;
+            width: 60px;
             height: 60px;
             display: flex;
             align-items: center;

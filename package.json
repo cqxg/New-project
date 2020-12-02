@@ -20,6 +20,7 @@
     "react-flippy": "^0.1.5",
     "react-gsap": "^2.2.1",
     "react-i18next": "^11.7.3",
+    "react-range": "^1.8.3",
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.0.0",
     "react-scripts": "4.0.0",
