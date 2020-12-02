@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
-import { Routes } from './routes/routes';
-import Cookies from './components/Cookies/Cookies';
-import Menu from './components/Menu/Menu';
-import Preloader from './components/Preloader/Preloader';
-
-import './App.css';
-import SvgBlobs from "./utils/svgBlobs/SvgBlobs";
 import { Parallax } from "react-scroll-parallax";
-import { useController } from 'react-scroll-parallax';
+import { useController } from "react-scroll-parallax";
+
+import { Routes } from "./routes/routes";
+import Menu from "./components/Menu/Menu";
+import SvgBlobs from "./utils/svgBlobs/SvgBlobs";
+import Cookies from "./components/Cookies/Cookies";
+import Preloader from "./components/Preloader/Preloader";
+
+import "./App.css";
 
 const App = (props) => {
   const [loading, setLoading] = useState(true);
@@ -30,45 +31,55 @@ const App = (props) => {
 
   const locationRoute = props.location.pathname;
   document.body.scrollIntoView({
-    behavior: 'auto',
+    behavior: "auto",
   });
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      document.getElementsByTagName('body')[0].classList.add('loaded')
-      document.querySelectorAll('.custom-class').forEach((item) => {
-      item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`
-      item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`
-      })
-    }, 4000);
+      document.getElementsByTagName("body")[0].classList.add("loaded");
+      document.querySelectorAll(".custom-class").forEach((item) => {
+        item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`;
+        item.style.top = `${Math.floor(Math.random() * 6000 + 500)}px`;
+      });
+    }, 2);
   }, [locationRoute]);
 
   const renderBackGroundBubbles = () => {
-    const coordinates = []
+    const coordinates = [];
     const maxNum = 12;
-    const pageHeight = document.querySelector('.switch-wrapper div:first-child')?.offsetHeight
-    const max = pageHeight, min = document.documentElement.clientHeight
+    const pageHeight = document.querySelector(".switch-wrapper div:first-child")
+      ?.offsetHeight;
+    const max = pageHeight,
+      min = document.documentElement.clientHeight;
     for (let i = 0; i < maxNum; i++) {
-      coordinates.push(Math.floor(Math.random() * (max - min + 1) + min))
+      coordinates.push(Math.floor(Math.random() * (max - min + 1) + min));
     }
-    parallaxController.update()
+    parallaxController.update();
 
     return (
       <>
         {coordinates.map((num, index) => {
           return (
-            <Parallax key={index} y={[100, -100]} className="custom-class" tagOuter="figure">
-            <div key={index} className="animate__animated bg__bubbles">
-              <SvgBlobs width={`${Math.floor(Math.random() * 150 + 75)}`} index={index} />
-            </div>
+            <Parallax
+              key={index}
+              y={[100, -100]}
+              className="custom-class"
+              tagOuter="figure"
+            >
+              <div key={index} className="animate__animated bg__bubbles">
+                <SvgBlobs
+                  width={`${Math.floor(Math.random() * 150 + 75)}`}
+                  index={index}
+                />
+              </div>
             </Parallax>
-          )
+          );
         })}
       </>
-    )
-  }
+    );
+  };
 
   return (
     <>
@@ -78,10 +89,12 @@ const App = (props) => {
         activeLocale={activeLocale}
         theme={locationRoute === "/about" ? "light" : "dark"}
       />
-        <Routes />
-        {renderBackGroundBubbles()}
+      <Routes />
+      {renderBackGroundBubbles()}
 
-      {toggleCookie && !cookies.user ? <Cookies cookies={cookies} handleCookies={handleCookies} /> : null}
+      {toggleCookie && !cookies.user ? (
+        <Cookies cookies={cookies} handleCookies={handleCookies} />
+      ) : null}
     </>
   );
 };
