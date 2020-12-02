@@ -101,6 +101,7 @@
 .card__desc-title-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card__text--foot {
