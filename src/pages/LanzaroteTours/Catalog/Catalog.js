@@ -35,6 +35,36 @@ const Catalog = () => {
                 <button>{t("more")}</button>
               </div>
 
+              <div className="card__desc">
+                <h3>{t("grandTour")}</h3>
+              </div>
+            </div>
+
+            <div className="card-wrapper">
+              <div
+                className="card__img"
+                style={{ backgroundImage: `url(${north})` }}
+              >
+                <img className="car" src={car} alt="car" />
+                <h3>{t("northTour")}</h3>
+                <h2>{t("lanzarote")}</h2>
+                <button>{t("more")}</button>
+              </div>
+
+              <div className="card__desc"></div>
+            </div>
+
+            <div className="card-wrapper">
+              <div
+                className="card__img"
+                style={{ backgroundImage: `url(${south})` }}
+              >
+                <img className="car" src={car} alt="car" />
+                <h3>{t("southTour")}</h3>
+                <h2>{t("lanzarote")}</h2>
+                <button>{t("more")}</button>
+              </div>
+
               <div className="card__desc"></div>
             </div>
           </div>
