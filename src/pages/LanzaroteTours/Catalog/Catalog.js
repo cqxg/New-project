@@ -1,8 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import BreadCrumbs from "../../../components/BreadCrumbs/BreadCrumbs";
+import Cards from "../../../components/Cards/Cards";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
+import BreadCrumbs from "../../../components/BreadCrumbs/BreadCrumbs";
 
 import grand from "../../../img/images/Lanzarote/mainslider/grand.png";
 import north from "../../../img/images/Lanzarote/mainslider/north.png";
@@ -11,7 +12,6 @@ import womanwire from "../../../img/images/Lanzarote/mainslider/womanwire.svg";
 
 import homeimg from "../../../img/images/Lanzarote/mainslider/homeimg.svg";
 import car from "../../../img/images/Lanzarote/mainslider/car.svg";
-import dot from "../../../img/images/Lanzarote/mainslider/dot.svg";
 
 import "./Catalog.scss";
 import RenderBackgroundBubbles from "../../../components/RenderBgBubbles";
@@ -30,118 +30,31 @@ const Catalog = () => {
           <p className="lanzarote-tours__desc">{t("LanzaroteToursDesc")}</p>
           <div className="lanzarote-tours__cards">
             <div className="card-wrapper">
-              <div
-                className="card__img"
-                style={{ backgroundImage: `url(${grand})` }}
-              >
-                <img className="car" src={car} alt="car" />
-                <h3>{t("grandTour")}</h3>
-                <h2>{t("lanzarote")}</h2>
-                <button>{t("more")}</button>
-              </div>
-
-              <div className="card__desc">
-                <div className="card__desc--wrapper">
-                  <div className="card__desc-title-wrapper">
-                    <h3>{t("grandTour")}</h3>
-                    <h3>5,95€</h3>
-                  </div>
-
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("sights")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("minAudioContent")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("addvantage")}</p>
-                  </div>
-                  <div className="card__text--foot">
-                    <p>{t("purchase")}</p>
-                    <p>{t("offlineUse")}</p>
-                    <p>{t("connection")}</p>
-                  </div>
-                </div>
-              </div>
+              <Cards
+                icon={car}
+                bgimage={grand}
+                scheme="img-card"
+                tourname={t("grandTour")}
+              />
+              <Cards scheme="desc-card" tourname={t("grandTour")} />
             </div>
-
             <div className="card-wrapper">
-              <div
-                className="card__img"
-                style={{ backgroundImage: `url(${north})` }}
-              >
-                <img className="car" src={car} alt="car" />
-                <h3>{t("northTour")}</h3>
-                <h2>{t("lanzarote")}</h2>
-                <button>{t("more")}</button>
-              </div>
-
-              <div className="card__desc">
-                <div className="card__desc--wrapper">
-                  <div className="card__desc-title-wrapper">
-                    <h3>{t("northTour")}</h3>
-                    <h3>5,95€</h3>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("sights")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("minAudioContent")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("addvantage")}</p>
-                  </div>
-                  <div className="card__text--foot">
-                    <p>{t("purchase")}</p>
-                    <p>{t("offlineUse")}</p>
-                    <p>{t("connection")}</p>
-                  </div>
-                </div>
-              </div>
+              <Cards
+                icon={car}
+                bgimage={north}
+                scheme="img-card"
+                tourname={t("northTour")}
+              />
+              <Cards scheme="desc-card" tourname={t("northTour")} />
             </div>
-
             <div className="card-wrapper">
-              <div
-                className="card__img"
-                style={{ backgroundImage: `url(${south})` }}
-              >
-                <img className="car" src={car} alt="car" />
-                <h3>{t("southTour")}</h3>
-                <h2>{t("lanzarote")}</h2>
-                <button>{t("more")}</button>
-              </div>
-
-              <div className="card__desc">
-                <div className="card__desc--wrapper">
-                  <div className="card__desc-title-wrapper">
-                    <h3>{t("southTour")}</h3>
-                    <h3>5,95€</h3>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("sights")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("minAudioContent")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("addvantage")}</p>
-                  </div>
-                  <div className="card__text--foot">
-                    <p>{t("purchase")}</p>
-                    <p>{t("offlineUse")}</p>
-                    <p>{t("connection")}</p>
-                  </div>
-                </div>
-              </div>
+              <Cards
+                icon={car}
+                bgimage={south}
+                scheme="img-card"
+                tourname={t("southTour")}
+              />
+              <Cards scheme="desc-card" tourname={t("southTour")} />
             </div>
           </div>
         </div>
@@ -152,42 +65,13 @@ const Catalog = () => {
           </h1>
           <div className="lanzarote-tours__cards">
             <div className="card-wrapper">
-              <div
-                className="card__img"
-                style={{ backgroundImage: `url(${womanwire})` }}
-              >
-                <img className="car" src={homeimg} alt="car" />
-                <h3>{t("audiobook")}</h3>
-                <h2>{t("lanzarote")}</h2>
-                <button>{t("more")}</button>
-              </div>
-
-              <div className="card__desc">
-                <div className="card__desc--wrapper">
-                  <div className="card__desc-title-wrapper">
-                    <h3>{t("audiobook")}</h3>
-                    <h3>5,95€</h3>
-                  </div>
-
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("sights")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("minAudioContent")}</p>
-                  </div>
-                  <div className="card__text--wrapper">
-                    <img className="dot" src={dot} alt="dot" />
-                    <p>{t("addvantage")}</p>
-                  </div>
-                  <div className="card__text--foot">
-                    <p>{t("purchase")}</p>
-                    <p>{t("offlineUse")}</p>
-                    <p>{t("connection")}</p>
-                  </div>
-                </div>
-              </div>
+              <Cards
+                icon={homeimg}
+                scheme="img-card"
+                bgimage={womanwire}
+                tourname={t("audiobook")}
+              />
+              <Cards scheme="desc-card" tourname={t("audiobook")} />
             </div>
           </div>
         </div>
