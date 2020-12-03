@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Slider from 'react-slick';
-import rosan from '../../img/images/Lanzarote/mainslider/rosan.png';
-import gomera from '../../img/images/Lanzarote/mainslider/gomera.png';
-import vector from '../../img/images/Lanzarote/mainslider/vectorbuble.png';
+import Slider from "react-slick";
+import grand from "../../img/images/Lanzarote/mainslider/grand.png";
+import north from "../../img/images/Lanzarote/mainslider/north.png";
+import south from "../../img/images/Lanzarote/mainslider/south.png";
+import vector from "../../img/images/Lanzarote/mainslider/vectorbuble.png";
 
-import './MainSlider.scss';
+import "./MainSlider.scss";
 
 const MainSlider = ({ t }) => {
   const settings = {
@@ -20,21 +21,21 @@ const MainSlider = ({ t }) => {
   return (
     <div className="mainslider">
       <div className="container">
-        <h1>{t('chooseUIsland')}</h1>
+        <h1>{t("chooseUIsland")}</h1>
         <Slider {...settings}>
           <div className="mainslider__gomera">
-            <img src={gomera} alt='slider'/>
-            <img className="vectorbubble" src={vector} alt='slider' />
-            <h1>{t('comingSoon')}</h1>
-            <p>{t('gomera')}</p>
+            <img src={north} alt="slider" />
+            <img className="vectorbubble" src={vector} alt="slider" />
+            <h1>{t("comingSoon")}</h1>
+            <p>{t("gomera")}</p>
           </div>
           <div className="mainslider__lanzarote">
-            <img src={rosan} alt='slider' />
-            <p>{t('Lanzarote')}</p>
+            <img src={grand} alt="slider" />
+            <p>{t("Lanzarote")}</p>
           </div>
           <div className="mainslider__lanzarote">
-            <img src={rosan} alt='slider' />
-            <p>{t('Lanzarote')}</p>
+            <img src={south} alt="slider" />
+            <p>{t("Lanzarote")}</p>
           </div>
         </Slider>
       </div>
