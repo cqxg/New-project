@@ -5,8 +5,58 @@
   }
 }
 
-.lanzarote-audiobook {
+.lanzarote-audiobook,
+.lanzarote-allfunctions {
   margin-top: 100px;
+}
+
+.lanzarote-allfunctions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
+    width: 45%;
+    min-width: 320px;
+  }
+
+  &__right {
+    width: 45%;
+    display: flex;
+    min-width: 320px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    display: flex;
+    min-width: 320px;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      white-space: nowrap;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: space-between;
+    p {
+      margin: 0 25px 0 10px;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+  }
 }
 
 .card-wrapper {
@@ -14,4 +64,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+  .lanzarote-allfunctions__dots,
+  .lanzarote-allfunctions__subtitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .lanzarote-allfunctions {
+    flex-direction: column;
+  }
 }

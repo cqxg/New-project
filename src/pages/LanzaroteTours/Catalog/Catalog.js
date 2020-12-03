@@ -2,12 +2,15 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import Cards from "../../../components/Cards/Cards";
+import { Blob } from "../../../components/Blob/Blob";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
 import BreadCrumbs from "../../../components/BreadCrumbs/BreadCrumbs";
 
+import dot from "../../../img/images/Lanzarote/mainslider/dot.svg";
 import grand from "../../../img/images/Lanzarote/mainslider/grand.png";
 import north from "../../../img/images/Lanzarote/mainslider/north.png";
 import south from "../../../img/images/Lanzarote/mainslider/south.png";
+import badge from "../../../img/images/Lanzarote/mainslider/badge.svg";
 import womanwire from "../../../img/images/Lanzarote/mainslider/womanwire.svg";
 
 import homeimg from "../../../img/images/Lanzarote/mainslider/homeimg.svg";
@@ -15,6 +18,14 @@ import car from "../../../img/images/Lanzarote/mainslider/car.svg";
 
 import "./Catalog.scss";
 import RenderBackgroundBubbles from "../../../components/RenderBgBubbles";
+
+const renderBubbles = () => (
+  <Blob
+    size="45vh"
+    style={{ zIndex: -1, backgroundColor: "#D5EFFB" }}
+    animationDuration="25s"
+  />
+);
 
 const Catalog = () => {
   const { t } = useTranslation();
@@ -74,6 +85,30 @@ const Catalog = () => {
               <Cards scheme="desc-card" tourname={t("audiobook")} />
             </div>
           </div>
+        </div>
+
+        <div className="lanzarote-allfunctions">
+          <div className="lanzarote-allfunctions__left">
+            <div className="lanzarote-allfunctions__title">
+              <h1>{t("allfunctions")}</h1>
+              <h1>7,95€</h1>
+            </div>
+            <div className="lanzarote-allfunctions__subtitle">
+              <div className="lanzarote-allfunctions__dots">
+                <img alt="dot" src={dot} />
+                <p>{t("allExcursions")}</p>
+                <img alt="dot" src={dot} />
+                <p>{t("audiobook")}</p>
+              </div>
+              <img alt="badge" src={badge} />
+            </div>
+            <div className="lanzarote-allfunctions__desc">
+              <p>{t("purchase")}</p>
+              <p>{t("offlineUse")}</p>
+              <p>{t("connection")}</p>
+            </div>
+          </div>
+          <div className="lanzarote-allfunctions__right">{renderBubbles()}</div>
         </div>
       </div>
     </div>
