@@ -15,6 +15,7 @@ import EightBlock from './Blocs/EightBlock';
 import Footer from '../../components/Footer/Footer';
 
 import './Main.scss';
+import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
 
 const Main = () => {
   const { t } = useTranslation();
@@ -22,6 +23,7 @@ const Main = () => {
 
   return (
     <>
+      {RenderBackgroundBubbles()}
       <FirstBlock t={t} />
       <SecondBlock t={t} />
       <Features constructor={pageConstructor} scheme="features" />

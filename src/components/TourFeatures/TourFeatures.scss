@@ -1,0 +1,21 @@
+.tourFeatures {
+    background: url('../../img/images/GrandTour/featurebg.jpg');
+    & .container {
+        padding-top: 130px;
+    }
+    & h1 {
+        margin-bottom: 60px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            max-width: 230px;
+            & p {
+                margin-top: -110px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -12,6 +12,9 @@ import offline from '../img/svg/features/main/offline.svg';
 import restore from '../img/svg/features/main/restore.svg';
 import sound from '../img/svg/features/main/sound.svg';
 
+// GrandTour features
+import voice from '../img/svg/features/grandTour/voice.svg';
+
 // Lanzarote isnand tours icons
 import car from '../img/svg/bubbleWithImages/Lanzarote/car.svg';
 import audiobookSvg from '../img/svg/bubbleWithImages/Lanzarote/audiobook.svg';
@@ -207,6 +210,48 @@ const constructor = {
       ],
     },
   },
+  grandTour: {
+    features: {
+      title: "Features",
+      items: [
+        {
+          text: 'travelOnPlace',
+          img: voice
+        },
+        {
+          text: 'listenVoice',
+          img: voice
+        },
+        {
+          text: 'absorbInformation',
+          img: voice
+        },
+      ]
+    },
+    slider: {
+      title: 'Gallery tours',
+      items: [
+        {
+          image: first,
+        },
+        {
+          image: second,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+      ],
+    },
+  }
 };
 
 export default constructor;

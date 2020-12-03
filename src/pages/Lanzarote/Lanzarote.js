@@ -11,6 +11,7 @@ import Header from './Header/Header';
 import './Lanzarote.scss';
 import Carousel from '../../components/Slider/Slider';
 import Footer from '../../components/Footer/Footer';
+import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
 
 const Lanzarote = () => {
   const { t } = useTranslation();
@@ -18,6 +19,7 @@ const Lanzarote = () => {
 
   return (
     <div className="lanzarote">
+      {RenderBackgroundBubbles()}
       <Header />
       <BreadCrumbs scheme="lanzarote" />
       <About t={t} />

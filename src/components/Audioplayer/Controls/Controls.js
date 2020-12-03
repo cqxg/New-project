@@ -19,7 +19,7 @@ const svgStatuses = (status) => {
 
 }
 
-export const PlayBtn = ({ status, handleStatus }) => (<div onClick={handleStatus} className="audioplayer__btn-status">{svgStatuses(status)}</div>)
+export const PlayBtn = ({ status, handleStatus }) => (<div onClick={handleStatus} className={`audioplayer__btn-status ${!status ? 'transparent' : ''}`}>{svgStatuses(status)}</div>)
 
 export const Time = ({ seconds }) => {
     let newSeconds = seconds;

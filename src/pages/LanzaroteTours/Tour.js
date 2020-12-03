@@ -1,18 +1,25 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+import Slider from '../../components/Slider/Slider';
 import Audioplayer from '../../components/Audioplayer/Audioplayer';
 import { Blob } from '../../components/Blob/Blob';
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
 import Button from '../../components/Buttons/Button';
+import TourFeatures from '../../components/TourFeatures/TourFeatures';
+import About from '../Lanzarote/About/About';
+import Footer from '../../components/Footer/Footer';
 
 import './Tour.scss'
+import constructor from '../../constructors/constructor';
+import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
 
-const Tour = ({ headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitle, aboutText, featuresItems, price }) => {
+const Tour = ({scheme, headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitle, aboutLeftText, aboutRightText, featuresItems, price }) => {
     const { t } = useTranslation();
 
     return (
         <div className="tour">
-            <BreadCrumbs scheme="lanzarote" />
+            {RenderBackgroundBubbles()}
+            <BreadCrumbs scheme={scheme} />
             <div className="tour__header">
                 <div className="container">
                     <div className="tour__header-left">
@@ -35,7 +42,7 @@ const Tour = ({ headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitl
                         <Blob
                             size="55vh"
                             style={{ zIndex: -1, backgroundColor: '#D5EFFB' }}
-                            animationDuration="25s"
+                            animationDuration="25s"      
                         />
                     </div>
                 </div>
@@ -45,6 +52,10 @@ const Tour = ({ headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitl
                     <Audioplayer tourName={headerTitle}/>
                 </div>
             </div>
+            <About aboutTitle={aboutTitle} aboutLeftText={aboutLeftText} aboutRightText={aboutRightText}/>
+            <TourFeatures scheme={scheme}/>
+            <Slider constructor={constructor[scheme]}/>
+            <Footer/>
         </div>
     )
 }
