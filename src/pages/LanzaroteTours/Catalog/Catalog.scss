@@ -6,7 +6,8 @@
 }
 
 .lanzarote-audiobook,
-.lanzarote-allfunctions {
+.lanzarote-allfunctions,
+.lanzarote-test {
   margin-top: 100px;
 }
 
@@ -35,6 +36,7 @@
     min-width: 320px;
     align-items: center;
     justify-content: space-between;
+
     h1 {
       white-space: nowrap;
     }
@@ -49,6 +51,7 @@
   &__dots {
     display: flex;
     justify-content: space-between;
+
     p {
       margin: 0 25px 0 10px;
     }
@@ -67,12 +70,15 @@
 }
 
 @media (max-width: 1000px) {
-  .lanzarote-allfunctions__dots,
   .lanzarote-allfunctions__subtitle {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .lanzarote-allfunctions__dots {
+    margin-bottom: 10px;
   }
 }
 
@@ -81,8 +87,8 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
   }
 }
 
