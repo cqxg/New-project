@@ -11,10 +11,15 @@ const BreadCrumbs = (props) => {
       routes.push({ text: 'Main', link: '/' });
       routes.push({ text: 'About island' });
       break;
-      case 'catalog':
-        routes.push({ text: 'Main', link: '/' });
-        routes.push({ text: 'Catalog' });
-        break;
+    case 'catalog':
+      routes.push({ text: 'Main', link: '/' });
+      routes.push({ text: 'Catalog' });
+      break;
+    case 'grandTour':
+      routes.push({ text: 'Main', link: '/' });
+      routes.push({ text: 'Catalog', link: 'tours' });
+      routes.push({ text: 'Grand Tour' });
+      break;
     default:
       break;
   }

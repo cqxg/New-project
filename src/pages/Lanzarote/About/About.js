@@ -7,19 +7,20 @@ import bubbleForSecondBlocs from '../../../components/Bubbles/BubbleForSecondBlo
 
 import './About.scss';
 
-const About = () => {
+const About = ({aboutTitle, aboutLeftText, aboutRightText}) => {
   const { t } = useTranslation();
 
   return (
     <div className="about">
       {bubbleForSecondBlocs()}
       <div className="container">
+        <h1>{aboutTitle || t('about')}</h1>
           <div className="about__flex animate__animated">
             <div className="about__left">
-              <p>{parse(t('LanzaroteAboutLeftBlock'))}</p>
+              <p>{aboutLeftText || parse(t('LanzaroteAboutLeftBlock'))}</p>
             </div>
             <div className="about__right">
-              <p>{parse(t('LanzaroteAboutRightBlock'))}</p>
+              <p>{aboutRightText || parse(t('LanzaroteAboutRightBlock'))}</p>
             </div>
           </div>
       </div>

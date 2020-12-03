@@ -3,13 +3,20 @@ import Tour from "./Tour";
 
 import appStoreIcon from '../../img/svg/appStore.svg';
 import googlePlay from '../../img/svg/googlePlay.svg';
+import { useTranslation } from "react-i18next";
 
 const GrandTour = () => {
+    const { t } = useTranslation();
+
     const props = {
         headerTitle: 'Grand Tour',
-        headerSubtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, suscipit sed ac vitae, massa. Tortor eget habitant sollicitudin velit. Mauris diam orci aliquam quisque tortor.',
+        headerSubtitle: t('grandTourHeaderDescription'),
         appStoreIcon: appStoreIcon,
         googlePlay: googlePlay,
+        aboutTitle: t('aboutTour'),
+        aboutLeft: t('grandTourAboutLeft'),
+        aboutRight: t('grandTourAboutRight'),
+        scheme: 'grandTour'
     }
     return (
         <Tour {...props}/>

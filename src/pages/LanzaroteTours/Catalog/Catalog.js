@@ -14,12 +14,14 @@ import car from "../../../img/images/Lanzarote/mainslider/car.svg";
 import dot from "../../../img/images/Lanzarote/mainslider/dot.svg";
 
 import "./Catalog.scss";
+import RenderBackgroundBubbles from "../../../components/RenderBgBubbles";
 
 const Catalog = () => {
   const { t } = useTranslation();
 
   return (
     <div className="сatalog">
+      {RenderBackgroundBubbles()}
       <BreadCrumbs scheme="catalog" />
       <div className="container">
         <div className="lanzarote-tours">

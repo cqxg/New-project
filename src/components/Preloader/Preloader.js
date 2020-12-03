@@ -2,7 +2,7 @@ import React from 'react';
 import './Preloader.scss';
 
 const Preloader = () => (
-  <div className="preloader">
+  <div style={{top: window.pageYOffset}} className="preloader">
     <div className="preloader__container">
       <svg
         width="153"
