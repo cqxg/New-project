@@ -3,21 +3,21 @@ import { useTranslation } from "react-i18next";
 
 import Cards from "../../../components/Cards/Cards";
 import { Blob } from "../../../components/Blob/Blob";
+import Footer from "../../../components/Footer/Footer";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
 import BreadCrumbs from "../../../components/BreadCrumbs/BreadCrumbs";
+import RenderBackgroundBubbles from "../../../components/RenderBgBubbles";
 
+import car from "../../../img/images/Lanzarote/mainslider/car.svg";
 import dot from "../../../img/images/Lanzarote/mainslider/dot.svg";
 import grand from "../../../img/images/Lanzarote/mainslider/grand.png";
 import north from "../../../img/images/Lanzarote/mainslider/north.png";
 import south from "../../../img/images/Lanzarote/mainslider/south.png";
 import badge from "../../../img/images/Lanzarote/mainslider/badge.svg";
+import homeimg from "../../../img/images/Lanzarote/mainslider/homeimg.svg";
 import womanwire from "../../../img/images/Lanzarote/mainslider/womanwire.svg";
 
-import homeimg from "../../../img/images/Lanzarote/mainslider/homeimg.svg";
-import car from "../../../img/images/Lanzarote/mainslider/car.svg";
-
 import "./Catalog.scss";
-import RenderBackgroundBubbles from "../../../components/RenderBgBubbles";
 
 const renderBubbles = () => (
   <Blob
@@ -110,6 +110,15 @@ const Catalog = () => {
           </div>
           <div className="lanzarote-allfunctions__right">{renderBubbles()}</div>
         </div>
+
+        <div className="lanzarote-test">
+          <h1>{t("test")}</h1>
+          <p>{t("testP1")}</p>
+          <p>{t("testP2")}</p>
+          <p>{t("testP3")}</p>
+        </div>
+
+        <Footer />
       </div>
     </div>
   );

@@ -6,7 +6,8 @@
 }
 
 .lanzarote-audiobook,
-.lanzarote-allfunctions {
+.lanzarote-allfunctions,
+.lanzarote-test {
   margin-top: 100px;
 }
 
@@ -67,12 +68,14 @@
 }
 
 @media (max-width: 1000px) {
-  .lanzarote-allfunctions__dots,
   .lanzarote-allfunctions__subtitle {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  }
+  .lanzarote-allfunctions__dots {
+    margin-bottom: 10px;
   }
 }
 
