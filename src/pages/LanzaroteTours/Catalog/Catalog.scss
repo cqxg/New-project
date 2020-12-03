@@ -5,6 +5,10 @@
   }
 }
 
+.lanzarote-audiobook {
+  margin-top: 100px;
+}
+
 .card-wrapper {
   width: 100%;
   display: flex;
@@ -100,8 +104,8 @@
 
 .card__desc-title-wrapper {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card__text--foot {
