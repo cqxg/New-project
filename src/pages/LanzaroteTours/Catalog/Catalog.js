@@ -15,7 +15,7 @@ import north from "../../../img/images/Lanzarote/mainslider/north.png";
 import south from "../../../img/images/Lanzarote/mainslider/south.png";
 import badge from "../../../img/images/Lanzarote/mainslider/badge.svg";
 import homeimg from "../../../img/images/Lanzarote/mainslider/homeimg.svg";
-import womanwire from "../../../img/images/Lanzarote/mainslider/womanwire.svg";
+import womanwire from "../../../img/images/Lanzarote/mainslider/womanwire.png";
 
 import "./Catalog.scss";
 
