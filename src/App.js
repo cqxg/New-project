@@ -38,7 +38,7 @@ const App = (props) => {
         item.style.left = `${Math.floor(Math.random() * 75 + 5)}%`;
         item.style.top = `${Math.floor(Math.random() * 90 + 10)}%`;
       });
-    }, 2);
+    }, 4000);
   }, [locationRoute]);
 
   return (
