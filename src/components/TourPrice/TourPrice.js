@@ -1,11 +1,21 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
+
 import Cards from '../Cards/Cards';
 
-const TourPrice = () => {
-    const {t} = useTranslation()
+import './TourPrice.scss'
+
+const TourPrice = ({type, constructor}) => {
+    const { t } = useTranslation()
     return (
-        <Cards scheme="desc-card" tourname={t("grandTour")} />
+        <div className="tourPrice">
+            <div className="container">
+                <h1>{t('excursionPrice')}</h1>
+                <div className="tourPrice__flex">
+                    <Cards constructor={constructor} scheme="desc-card" tourname={t("grandTour")} />
+                </div>
+            </div>
+        </div>
     );
 }
 

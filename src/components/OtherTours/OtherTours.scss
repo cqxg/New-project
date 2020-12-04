@@ -1,0 +1,10 @@
+.otherTours {
+    margin-top: 250px;
+    & h1 {
+        margin-bottom: 42px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+}

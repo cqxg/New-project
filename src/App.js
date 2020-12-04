@@ -31,6 +31,7 @@ const App = (props) => {
 
   useEffect(() => {
     setLoading(true);
+    document.getElementsByTagName("body")[0].classList.remove("loaded");
     setTimeout(() => {
       setLoading(false);
       document.getElementsByTagName("body")[0].classList.add("loaded");
