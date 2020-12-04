@@ -41,10 +41,10 @@ const Menu = (props) => {
       </NavLink>
       <ul
         style={
-            toggleMenu
-              ? { display: 'block' }
-              : { display: 'none' }
-          }
+          toggleMenu
+            ? { display: 'block' }
+            : { display: 'none' }
+        }
         className="menu__container-submenu"
       >
         {item.subMenu.map((value, index) => (
@@ -89,11 +89,11 @@ const Menu = (props) => {
             <img src={flag} alt="flag" />
           </li>
         </ul>
-      </div>
-      <div onClick={() => setMobileMenu(!mobileMenu)} className="menu__container-hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <div onClick={() => setMobileMenu(!mobileMenu)} className="menu__container-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <div className={`menu__container-mobile ${mobileMenu ? 'active' : ''}`}>
         <ul className="menu__container-list mobile">{renderMenu()}</ul>

@@ -140,6 +140,7 @@
 @media(max-width: 768px) {
   .menu {
     &__container {
+      padding: 0 15px;
       &-mobile {
         display: none;
         &.active {

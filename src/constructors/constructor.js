@@ -251,6 +251,37 @@ const constructor = {
         },
       ],
     },
+    price: [
+      {
+        price: '5,95€',
+        title: 'grandTour',
+        points: [
+          "sights",
+          "minAudioContent",
+          "addvantage"
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+      {
+        benefit: 'Benefit 20%',
+        price: '7,95€',
+        title: 'All functions',
+        functions: true,
+        points: [
+          "allExcursions",
+          "audiobook",
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+    ]
   }
 };
 

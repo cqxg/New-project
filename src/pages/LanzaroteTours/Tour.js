@@ -12,6 +12,9 @@ import Footer from '../../components/Footer/Footer';
 import './Tour.scss'
 import constructor from '../../constructors/constructor';
 import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
+import Cards from '../../components/Cards/Cards';
+import TourPrice from '../../components/TourPrice/TourPrice';
+import OtherTours from '../../components/OtherTours/OtherTours';
 
 const Tour = ({scheme, headerTitle, headerSubtitle, appStoreIcon, googlePlay, aboutTitle, aboutLeftText, aboutRightText, featuresItems, price }) => {
     const { t } = useTranslation();
@@ -55,6 +58,8 @@ const Tour = ({scheme, headerTitle, headerSubtitle, appStoreIcon, googlePlay, ab
             <About aboutTitle={aboutTitle} aboutLeftText={aboutLeftText} aboutRightText={aboutRightText}/>
             <TourFeatures scheme={scheme}/>
             <Slider constructor={constructor[scheme]}/>
+            <TourPrice constructor={constructor[scheme]} type={scheme}/>
+            <OtherTours/>
             <Footer/>
         </div>
     )
