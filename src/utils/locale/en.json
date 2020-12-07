@@ -77,6 +77,8 @@
     "listenVoice": "Listen to an authentic voice",                
     "absorbInformation": "Absorb the best information!",
     "excursionPrice": "The cost of the tour",
-    "otherTours": "Other Tours"
+    "otherTours": "Other Tours",
+    "audioBookHeaderDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, suscipit sed ac vitae, massa. Tortor eget habitant sollicitudin velit. Mauris diam orci aliquam quisque tortor.",
+    "aboutAudiobook": "About audiobook"
     
 }

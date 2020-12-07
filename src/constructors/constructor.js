@@ -282,6 +282,225 @@ const constructor = {
         ]
       },
     ]
+  },
+  northTour: {
+    features: {
+      title: "Features",
+      items: [
+        {
+          text: 'travelOnPlace',
+          img: voice
+        },
+        {
+          text: 'listenVoice',
+          img: voice
+        },
+        {
+          text: 'absorbInformation',
+          img: voice
+        },
+      ]
+    },
+    slider: {
+      title: 'Gallery tours',
+      items: [
+        {
+          image: first,
+        },
+        {
+          image: second,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+      ],
+    },
+    price: [
+      {
+        price: '5,95€',
+        title: 'grandTour',
+        points: [
+          "sights",
+          "minAudioContent",
+          "addvantage"
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+      {
+        benefit: 'Benefit 20%',
+        price: '7,95€',
+        title: 'All functions',
+        functions: true,
+        points: [
+          "allExcursions",
+          "audiobook",
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+    ]
+  },
+  southTour: {
+    features: {
+      title: "Features",
+      items: [
+        {
+          text: 'travelOnPlace',
+          img: voice
+        },
+        {
+          text: 'listenVoice',
+          img: voice
+        },
+        {
+          text: 'absorbInformation',
+          img: voice
+        },
+      ]
+    },
+    slider: {
+      title: 'Gallery tours',
+      items: [
+        {
+          image: first,
+        },
+        {
+          image: second,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+      ],
+    },
+    price: [
+      {
+        price: '5,95€',
+        title: 'grandTour',
+        points: [
+          "sights",
+          "minAudioContent",
+          "addvantage"
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+      {
+        benefit: 'Benefit 20%',
+        price: '7,95€',
+        title: 'All functions',
+        functions: true,
+        points: [
+          "allExcursions",
+          "audiobook",
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+    ]
+  },
+  audiobook: {
+    features: {
+      title: "Features",
+      items: [
+        {
+          text: 'travelOnPlace',
+          img: voice
+        },
+        {
+          text: 'listenVoice',
+          img: voice
+        },
+        {
+          text: 'absorbInformation',
+          img: voice
+        },
+      ]
+    },
+    slider: {
+      title: 'Gallery tours',
+      items: [
+        {
+          image: first,
+        },
+        {
+          image: second,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+        {
+          image: third,
+        },
+      ],
+    },
+    price: [
+      {
+        price: '5,95€',
+        title: 'audiobook',
+        points: [
+          "sights",
+          "minAudioContent",
+          "addvantage"
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+      {
+        benefit: 'Benefit 20%',
+        price: '7,95€',
+        title: 'All functions',
+        functions: true,
+        points: [
+          "allExcursions",
+          "audiobook",
+        ],
+        description: [
+          "purchase",
+          "offlineUse",
+          "connection"
+        ]
+      },
+    ]
   }
 };
 

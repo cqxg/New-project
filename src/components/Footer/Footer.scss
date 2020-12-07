@@ -35,6 +35,9 @@
   & ul {
     list-style-type: none;
     padding-left: 0;
+    a {
+      text-decoration: none;
+    }
     & li {
       margin-bottom: 16px;
       font-size: 24px;
@@ -69,4 +72,15 @@
 
 .ticket-link:hover {
     cursor:url('../../img/images/cursor.png'),auto;
+}
+
+@media(max-width: 768px) {
+  .footer {
+    &__container {
+      flex-wrap: wrap;
+      width: auto;
+      padding: 0 15px;
+      margin-bottom: 100px;
+    }
+  }
 }

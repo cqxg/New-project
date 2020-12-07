@@ -5,22 +5,22 @@ import appStoreIcon from '../../img/svg/appStore.svg';
 import googlePlay from '../../img/svg/googlePlay.svg';
 import { useTranslation } from "react-i18next";
 
-const NorthTour = () => {
+const Audiobook = () => {
     const { t } = useTranslation();
 
     const props = {
-        headerTitle: 'North Tour',
-        headerSubtitle: t('grandTourHeaderDescription'),
+        headerTitle: 'Audiobook',
+        headerSubtitle: t('audioBookHeaderDescription'),
         appStoreIcon: appStoreIcon,
         googlePlay: googlePlay,
-        aboutTitle: t('aboutTour'),
+        aboutTitle: t('aboutAudiobook'),
         aboutLeft: t('grandTourAboutLeft'),
         aboutRight: t('grandTourAboutRight'),
-        scheme: 'northTour'
+        scheme: 'audiobook'
     }
     return (
         <Tour {...props}/>
     )
 };
 
-export default NorthTour;
+export default Audiobook;

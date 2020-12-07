@@ -1,4 +1,4 @@
-import React, { useState, useRef} from "react";
+import React, { useState, useRef } from "react";
 
 import { useTranslation } from "react-i18next";
 import Wave from "react-wavify";
@@ -15,6 +15,7 @@ import instblack from "../../img/svg/instblack.svg";
 import { FooterAnimate } from "./FooterAnimate";
 
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = (props) => {
   const { t } = useTranslation();
@@ -73,19 +74,19 @@ const Footer = (props) => {
             <div className="footer__left">
               <h3>Lanzarote</h3>
               <ul>
-                <li>{t("grandTour")}</li>
-                <li>{t("northTour")}</li>
-                <li>{t("southTour")}</li>
-                <li>{t("audiobook")}</li>
+                <Link to='/grand-tour'><li>{t("grandTour")}</li></Link>
+                <Link to='/north-tour'><li>{t("northTour")}</li></Link>
+                <Link to='/south-tour'><li>{t("southTour")}</li></Link>
+                <Link to='/audiobook'><li>{t("audiobook")}</li></Link>
               </ul>
             </div>
             <div className="footer__center">
               <h3>Site map</h3>
               <ul>
-                <li>{t("about")}</li>
-                <li>{t("aboutUs")}</li>
-                <li>{t("faq")}</li>
-                <li>{t("contacts")}</li>
+                <Link to='/about'><li>{t("about")}</li></Link>
+                <Link to='/about'><li>{t("aboutUs")}</li></Link>
+                <Link to='/faq'><li>{t("faq")}</li></Link>
+                <Link to='/contacts'><li>{t("contacts")}</li></Link>
               </ul>
             </div>
             <div className="footer__right">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Range, Direction, getTrackBackground } from 'react-range';
 
 const svgStatuses = (status) => {

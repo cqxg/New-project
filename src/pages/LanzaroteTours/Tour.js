@@ -12,7 +12,6 @@ import Footer from '../../components/Footer/Footer';
 import './Tour.scss'
 import constructor from '../../constructors/constructor';
 import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
-import Cards from '../../components/Cards/Cards';
 import TourPrice from '../../components/TourPrice/TourPrice';
 import OtherTours from '../../components/OtherTours/OtherTours';
 
