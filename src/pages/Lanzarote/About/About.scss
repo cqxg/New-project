@@ -13,3 +13,11 @@
     max-width: 690px;
   }
 }
+
+@media(max-width: 768px) {
+  .about {
+    &__flex {
+      display: block;
+    }
+  }
+}

@@ -172,13 +172,16 @@ h6 {
 }
 
 @media(max-width: 768px) {
+  .container {
+    width: auto;
+  }
   h1 {
     font-size: 36px;
     line-height: 44px;
   }
   p {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 30px;
   }
 }
                                            

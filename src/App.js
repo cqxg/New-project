@@ -48,7 +48,7 @@ const App = (props) => {
       <Menu
         changeLocale={changeLocale}
         activeLocale={activeLocale}
-        theme={locationRoute === "/about" ? "light" : "dark"}
+        theme={locationRoute === "/about" ? "dark" : "dark"}
       />
       <Routes/>
 
