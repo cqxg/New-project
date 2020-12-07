@@ -116,23 +116,24 @@
     width: 100%;
     align-items: center;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
   }
   &__muchicon {
+    width: 95%;
     display: flex;
-    justify-content: space-between;
     height: 118px;
+    align-items: center;
     border-radius: 25px;
     background-color: #ffffff;
+    justify-content: space-between;
     box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
     -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
     -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
   }
   &__muchiconinside {
-    width: 120px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 15px;
   }
 }
 
@@ -228,7 +229,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .first_block {
     &__right {
       position: absolute;
@@ -253,13 +254,22 @@
       flex-direction: column-reverse;
       align-items: center;
     }
-    .face1, .face2, .face3, .face4, .face5, .face6 {
-      width: 63px;
-      height: 63px;
+    &__muchicon {
+      height: 85px;
+      display: flex;
+      margin-bottom: 50px;
+      border-radius: 15px;
+      background-color: #ffffff;
+      justify-content: space-between;
+      box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
+      -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
+      -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
     }
-    .stage {
-      width: 63px;
-      height: 63px;
+    &__muchiconinside {
+      width: 45px;
+      height: 45px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
   .six_block {
@@ -278,7 +288,7 @@
     }
     padding-top: 155px;
     &__girl {
-      width: 288px!important;
+      width: 288px !important;
     }
     &__flex {
       flex-direction: column-reverse;
@@ -297,6 +307,29 @@
     }
     &__qr-desc {
       font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 !important;
+  }
+  .withicon_block {
+    &__muchicon {
+      height: 65px;
+      display: flex;
+      margin-bottom: 50px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      justify-content: space-between;
+      box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
+      -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
+      -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.2);
+    }
+    &__muchiconinside {
+      width: 45px;
+      height: 45px;
     }
   }
 }

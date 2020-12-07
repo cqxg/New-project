@@ -12,15 +12,15 @@
 }
 
 .side {
-  min-height: 118px;
   min-width: 118px;
   max-width: 118px;
   max-height: 118px;
-  border-radius: 25px;
+  min-height: 118px;
   position: absolute;
+  border-radius: 25px;
+  background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #ffffff;
   box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
   -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
   -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
@@ -51,3 +51,102 @@
 .bottom {
   transform: translateY(3em) rotateX(90deg);
 }
+
+@media(max-width: 768px) {
+  .side {
+    min-width: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+    position: absolute;
+    border-radius: 15px;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+  }
+
+  .cubespinner {
+    min-height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .withicon_block__right {
+    width: 60%;
+  }
+
+  .top {
+    transform: translateY(-2em) rotateX(90deg);
+  }
+  .front {
+    transform: translateZ(2em);
+  }
+  .right {
+    transform: translateX(2em) rotateY(90deg);
+  }
+  .back {
+    transform: translateZ(-2em);
+  }
+  .left {
+    transform: translateX(-2em) rotateY(90deg);
+  }
+  .bottom {
+    transform: translateY(2em) rotateX(90deg);
+  }
+}
+
+@media(max-width: 420px) {
+  .side {
+    min-width: 65px;
+    max-width: 65px;
+    max-height: 65px;
+    min-height: 65px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(130, 130, 130, 0.1);
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .cubespinner {
+    min-height: 65px;
+    min-width: 65px;
+    max-width: 65px;
+    max-height: 65px;
+  }
+
+  .withicon_block__right {
+    width: 100%;
+  }
+
+  .top {
+    transform: translateY(-2em) rotateX(90deg);
+  }
+  .front {
+    transform: translateZ(2em);
+  }
+  .right {
+    transform: translateX(2em) rotateY(90deg);
+  }
+  .back {
+    transform: translateZ(-2em);
+  }
+  .left {
+    transform: translateX(-2em) rotateY(90deg);
+  }
+  .bottom {
+    transform: translateY(2em) rotateX(90deg);
+  }
+}
+

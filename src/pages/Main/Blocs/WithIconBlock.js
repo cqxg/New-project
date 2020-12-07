@@ -1,5 +1,5 @@
 import React from "react";
- /* eslint-disable */
+/* eslint-disable */
 import Cubes from "../../../components/Cubes/Cubes";
 import Button from "../../../components/Buttons/Button";
 import bubbleGroup from "../../../components/Bubbles/BubbleGroup";
@@ -31,25 +31,30 @@ const WithIconBlock = ({ t }) => (
           <div className="withicon_block__iconblock">
             <Cubes />
             <div className="withicon_block__muchicon">
-              <div
+              <img
                 className="withicon_block__muchiconinside"
-                style={{ backgroundImage: `url(${l})` }}
+                src={l}
+                alt="icon"
               />
-              <div
+              <img
                 className="withicon_block__muchiconinside"
-                style={{ backgroundImage: `url(${m})` }}
+                src={m}
+                alt="icon"
               />
-              <div
+              <img
                 className="withicon_block__muchiconinside"
-                style={{ backgroundImage: `url(${n})` }}
+                src={n}
+                alt="icon"
               />
-              <div
+              <img
                 className="withicon_block__muchiconinside"
-                style={{ backgroundImage: `url(${o})` }}
+                src={o}
+                alt="icon"
               />
-              <div
+              <img
                 className="withicon_block__muchiconinside"
-                style={{ backgroundImage: `url(${p})` }}
+                src={p}
+                alt="icon"
               />
             </div>
           </div>
