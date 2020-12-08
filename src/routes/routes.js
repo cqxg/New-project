@@ -10,6 +10,7 @@ import NorthTour from '../pages/LanzaroteTours/NorthTour';
 import SouthTour from '../pages/LanzaroteTours/SouthTour';
 import Catalog from '../pages/LanzaroteTours/Catalog/Catalog';
 import Audiobook from '../pages/LanzaroteTours/Audiobook';
+import CookiesPage from '../pages/CookiesPage/CookiesPage';
 
 export const Routes = () => (
   <AnimatedSwitch
@@ -24,6 +25,7 @@ export const Routes = () => (
     <Route exact path="/tours/grand-tour" component={GrandTour} />
     <Route exact path="/tours/north-tour" component={NorthTour} />
     <Route exact path="/tours/south-tour" component={SouthTour} />
+    <Route exact path="/cookies" component={CookiesPage} />
     <Route exact path="/audiobook" component={Audiobook} />
     <Route exact path="/faq" component={Faq} />
   </AnimatedSwitch>

@@ -38,6 +38,11 @@ const BreadCrumbs = (props) => {
       routes.push({ text: '>'});
       routes.push({ text: 'South Tour', link: 'south-tour' });
       break;
+    case 'cookies':
+      routes.push({ text: 'Main', link: '/' });
+      routes.push({ text: '>'});
+      routes.push({ text: 'Our Policy', link: 'cookies' });
+      break;
     default:
       break;
   }
