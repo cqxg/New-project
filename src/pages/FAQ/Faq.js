@@ -18,14 +18,38 @@ const Faq = () => {
           <h1>{t("faq")}</h1>
           <div className="faq__accordeons">
             <div className="faq__left">
-              <Accordeon number="1" />
-              <Accordeon number="2" />
-              <Accordeon number="3" />
+              <Accordeon
+                accordionTitle={t("accordionTitle1")}
+                accordionText={t("accordionText1")}
+                number="1"
+              />
+              <Accordeon
+                accordionTitle={t("accordionTitle2")}
+                accordionText={t("accordionText2")}
+                number="2"
+              />
+              <Accordeon
+                accordionTitle={t("accordionTitle3")}
+                accordionText={t("accordionText3")}
+                number="3"
+              />
             </div>
             <div className="faq__right">
-              <Accordeon number="4" />
-              <Accordeon number="5" />
-              <Accordeon number="6" />
+              <Accordeon
+                accordionTitle={t("accordionTitle4")}
+                accordionText={t("accordionText4")}
+                number="4"
+              />
+              <Accordeon
+                accordionTitle={t("accordionTitle5")}
+                accordionText={t("accordionText5")}
+                number="5"
+              />
+              <Accordeon
+                accordionTitle={t("accordionTitle6")}
+                accordionText={t("accordionText6")}
+                number="6"
+              />
             </div>
           </div>
         </div>
