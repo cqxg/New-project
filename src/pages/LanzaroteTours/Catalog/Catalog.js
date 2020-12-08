@@ -117,9 +117,8 @@ const Catalog = () => {
           <p>{t("testP2")}</p>
           <p>{t("testP3")}</p>
         </div>
-
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

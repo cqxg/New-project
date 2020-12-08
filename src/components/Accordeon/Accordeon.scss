@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+.accordion {
+  position: relative;
+  margin-bottom: 40px;
+
+  label {
+    display: flex;
+    p {
+        margin: 0;
+    }
+  }
+
+  .trigger {
+    width: 100%;
+
+    #checkbox-1,
+    #checkbox-2,
+    #checkbox-3,
+    #checkbox-4,
+    #checkbox-5,
+    #checkbox-6 {
+      display: none;
+
+      &:checked + label {
+        background-color: #ffffff;
+        i {
+          &:before {
+            transform: translate(5px, 8px) rotate(45deg);
+          }
+
+          &:after {
+            transform: translate(-5px, 8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .checkbox {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      cursor: pointer;
+      position: relative;
+      align-items: flex-start;
+      background-color: #ffffff;
+      justify-content: space-between;
+
+      i {
+        width: 50px;
+        height: 20px;
+        margin-top: 10px;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: "";
+          width: 16px;
+          height: 3px;
+          color: grey;
+          position: absolute;
+          background-color: grey;
+          transition: transform 250ms ease;
+        }
+
+        &:before {
+          transform: translate(-5px, 8px) rotate(45deg);
+        }
+
+        &:after {
+          transform: translate(5px, 8px) rotate(-45deg);
+        }
+      }
+    }
+
+    .content {
+      padding: 0;
+      max-height: 1px;
+      position: relative;
+      overflow-y: hidden;
+      background-color: #ffffff;
+      transition: max-height 500ms ease-in-out;
+
+      h3 {
+        margin: 30px 0 15px 30px;
+      }
+    }
+  }
+}
+
+#checkbox-1:checked ~ .content,
+#checkbox-2:checked ~ .content,
+#checkbox-3:checked ~ .content,
+#checkbox-4:checked ~ .content,
+#checkbox-5:checked ~ .content,
+#checkbox-6:checked ~ .content {
+  max-height: 350px;
+  transition: max-height 500ms ease-in-out;
+}
+
+@media (max-width: 410px) {
+    .faq__accordeons {
+      flex-direction: column;
+    }
+  }
+  

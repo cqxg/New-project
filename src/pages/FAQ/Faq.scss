@@ -1,0 +1,27 @@
+.faq {
+  h1 {
+      margin: 20px 0 20px 0;
+  }
+
+  &__accordeons {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 47%;
+  }
+
+  &__right {
+    width: 47%;
+  }
+}
+
+@media (max-width: 410px) {
+  .faq__left,
+  .faq__right {
+    width: 100%;
+  }
+}
