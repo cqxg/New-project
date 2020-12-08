@@ -22,3 +22,22 @@
         padding-top: 130px;
     }
 }
+
+@media (max-width: 768px) {
+    .tour {
+        &__header {
+            &-buttons {
+                max-width: 288px;
+            }
+            &-right {
+                left: 50%;
+                transform: translateX(-50%);
+                position: absolute;
+                & div:first-child {
+                    width: 35vh;
+                    height: 35vh;
+                }
+            }
+        }
+    }
+}
