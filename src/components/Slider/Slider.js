@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Slider from 'react-slick';
 import { Blob } from '../Blob/Blob';
@@ -8,13 +8,53 @@ import './Slider.scss';
 const Carousel = (props) => {
   const { constructor } = props;
   const sliderConstructor = constructor.slider;
+  const [sm, setSm] = useState(false)
+
+  document.addEventListener('scroll', () => {
+    if (window.innerWidth < 700) setSm(true)
+    else setSm(false)
+  })
+
+  useEffect(() => {
+    if (window.innerWidth < 700) setSm(true)
+  }, [])
+
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    arrows: true,
+    slidesToShow: sm ? 1 : 2,
+    arrows: !sm,
     slidesToScroll: 1,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          infinite: true,
+          speed: 500,
+          slidesToShow: 2,
+          arrows: true,
+          slidesToScroll: 1,
+          centerMode: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 200,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
     <div className="slider">
