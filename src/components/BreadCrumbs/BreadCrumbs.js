@@ -43,6 +43,11 @@ const BreadCrumbs = (props) => {
       routes.push({ text: '>'});
       routes.push({ text: 'Our Policy', link: 'cookies' });
       break;
+      case 'faq':
+        routes.push({ text: 'Main', link: '/' });
+        routes.push({ text: '>'});
+        routes.push({ text: 'FAQ', link: 'faq' });
+        break;
     default:
       break;
   }
