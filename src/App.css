@@ -35,6 +35,16 @@ h6 {
   font-size: 14px;
 }
 
+.fade {
+  opacity: 0;
+  display: none;
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
+
 .slick-arrow.slick-next {
   width: 70px;
   height: 70px;
