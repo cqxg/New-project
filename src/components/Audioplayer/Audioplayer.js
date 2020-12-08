@@ -13,7 +13,7 @@ const Audioplayer = ({tourName}) => {
     const [expanded, setExpanded] = useState(false)
 
     window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 700 && !expanded) setUI(true)
+        if (window.pageYOffset > 700 && !expanded && window.innerWidth > 768) setUI(true)
         else setUI(false)
         if (window.pageYOffset < 10) setExpanded(false)
     })

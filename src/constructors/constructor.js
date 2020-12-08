@@ -501,6 +501,38 @@ const constructor = {
         ]
       },
     ]
+  },
+  cookies: {
+    cookies: [
+      {
+        subTitle: 'whatisACookie',
+        text: 'whatIsCookieText'
+      },
+      {
+        subTitle: 'howWeUseCookies',
+        text: 'howWeUseCookiesText'
+      },
+      {
+        subTitle: 'thirdPartyCookies',
+        text: 'thirdPartyCookiesText'
+      },
+      {
+        subTitle: 'managingInChrome',
+        text: 'managingInChromeText'
+      },
+      {
+        subTitle: 'managingInSafari',
+        text: 'managingInSafariText'
+      },
+      {
+        subTitle: 'managingInMozilla',
+        text: 'managingInMozillaText'
+      },
+      {
+        subTitle: 'addInfo',
+        text: 'addInfoText'
+      },
+    ]
   }
 };
 
