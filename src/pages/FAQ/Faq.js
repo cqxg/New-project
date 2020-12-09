@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import Footer from "../../components/Footer/Footer";
@@ -62,9 +63,9 @@ const Faq = () => {
             <div className="faq__inputs">
               <Inputs type="input" placeholder={t("mailOrPhone")} />
               <Inputs type="input" placeholder={t("question")} />
+              <p className="submit-desc">{t('submitDesc')} <Link to="cookies">{t("privacyPolicy")}</Link></p>
               <Button type="secondary" text={t("send")} />
             </div>
-            <p className="submit-desc">{t("submitDesc")}</p>
           </div>
         </div>
       </div>

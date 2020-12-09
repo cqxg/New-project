@@ -24,25 +24,67 @@
     border-radius: 20px;
     padding: 30px 0 30px 60px;
     background-color: #d1f1fd;
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+    }
   }
 
   &__inputs {
-    width: 100%;
+    width: 80%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
   }
 
   button {
-    margin-right: 30px;
+    min-width: 80px;
   }
 }
 
 .submit-desc {
+  order: 4;
   opacity: 0.5;
   font-size: 14px;
   line-height: 21px;
-  color: #1E2843;
+  color: #1e2843;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    &__form {
+      display: flex;
+      padding-top: 10px;
+      flex-direction: column;
+      p {
+        width: 75%;
+      }
+    }
+    &__inputs {
+      width: 55%;
+      align-items: baseline;
+      justify-content: space-between;
+      p {
+        font-size: 14px;
+      }
+    }
+
+    button {
+      margin-top: 15px;
+      order: 4;
+    }
+  }
+
+  .submit-desc {
+    order: 3;
+    max-width: 75%;
+    & a {
+      text-decoration: none;
+      
+    }
+  }
 }
 
 @media (max-width: 410px) {
