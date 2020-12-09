@@ -42,6 +42,8 @@
       margin-bottom: 16px;
       font-size: 24px;
       color: #1e2843;
+      position: relative;
+      z-index: 3;
     }
   }
   &__container {
