@@ -1,6 +1,6 @@
 .faq {
   h1 {
-      margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 
   &__accordeons {
@@ -17,6 +17,32 @@
   &__right {
     width: 47%;
   }
+
+  &__form {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 30px 0 30px 60px;
+    background-color: #d1f1fd;
+  }
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  button {
+    margin-right: 30px;
+  }
+}
+
+.submit-desc {
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1E2843;
 }
 
 @media (max-width: 410px) {
