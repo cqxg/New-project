@@ -14,3 +14,15 @@
         margin-bottom: 58px;
     }
 }
+
+@media(max-width: 1200px) {
+    .slider {
+        &__container {
+            height: 230px;
+            & div:first-child {
+                width: 230px!important;
+                height: 230px!important;
+            }
+        }
+    }
+}

@@ -121,5 +121,12 @@
   "addInfo": "Additional information",
   "addInfoText": "We hope this has clarified the situation, and as mentioned earlier, if there is something you are not sure whether you need it or not, it is usually safer to leave cookies enabled if you are interacting with one of the features You use in our page.<br/> If you are still looking for more information, you can contact us using one of your preferred communication methods or by email: info@vidodoguide.com",
   "GDPR": "GDPR",
-  "privacyPolicy": "Privacy Policy"
+  "privacyPolicy": "Privacy Policy",
+  "contactsTitle": "Contacts",
+  "adress": "Adress",
+  "phone": "Phone",
+  "email": "E-mail",
+  "contactUs": "Contact us",
+  "yourName": "Your Name",
+  "yourComment": "Your Comment"
 }

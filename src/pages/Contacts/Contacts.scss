@@ -1,0 +1,130 @@
+.contacts {
+    & h1 {
+        margin-bottom: 92px;
+        margin-top: 22px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__right {
+        background: #d1f1fd;
+        border-radius: 20px;
+        max-width: 690px;
+        width: 100%;
+        padding: 32px;
+        position: relative;
+        z-index: 3;
+        &-policy {
+            display: flex;
+            max-width: 70%;
+            width: 100%;
+            margin: 44px auto 0 auto;
+            align-items: center;
+            justify-content: space-between;
+            & span:not(.btn_text) {
+                color: #1e2843;
+                opacity: 0.5;
+                font-size: 14px;
+            }
+        }
+        & h2 {
+            font-size: 46px;
+            font-weight: 700;
+            color: #1e2843;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        &-inputs {
+            display: flex;
+            flex-direction: column;
+            margin-right: 16px;
+            & input {
+                width: 258px;
+                margin: 0;
+                &:first-child {
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        & textarea {
+            width: 352px;
+            height: 100%;
+            margin: 0;
+        }
+        &-flex {
+            display: flex;
+        }
+    }
+    &__left {
+        max-width: 690px;
+        width: 100%;
+        & img {
+            margin-right: 15px;
+        }
+        &-inst {
+            max-width: 345px;
+            margin: 0;
+            width: 100%;
+        }
+        &-socials {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            z-index: 3;
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            & span {
+                color: #1e2843;
+                opacity: 0.5;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            & p {
+                max-width: 345px;
+                margin: 0;
+                width: 100%;
+                & a {
+                    text-decoration: none;
+                    color: #1e2843;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .contacts {
+        &__left {
+            margin-bottom: 50px;
+            &-inst {
+                max-width: 120px;
+            }
+            &-item {
+                & p {
+                    max-width: 200px;
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+        &__right {
+            &-policy {
+                max-width: 75%;
+            }
+            & input {
+                width: 163px;
+                font-size: 16px;
+            }
+            & textarea {
+                font-size: 16px;
+            }
+        }
+    }
+}

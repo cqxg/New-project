@@ -2,10 +2,10 @@ import React from 'react';
 import { Parallax, useController } from "react-scroll-parallax";
 import SvgBlobs from '../utils/svgBlobs/SvgBlobs';
 
-const RenderBackgroundBubbles = () => {
+const RenderBackgroundBubbles = (numbers) => {
     const { parallaxController } = useController();
     const coordinates = [];
-    const maxNum = 12;
+    const maxNum = numbers || 12;
     const pageHeight = document.querySelector(".switch-wrapper div:first-child")?.offsetHeight;
     const max = pageHeight,
       min = document.documentElement.clientHeight;
