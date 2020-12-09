@@ -1,6 +1,6 @@
 .faq {
   h1 {
-      margin: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 
   &__accordeons {
@@ -17,6 +17,50 @@
   &__right {
     width: 47%;
   }
+
+  &__form {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 30px 0 30px 60px;
+    background-color: #d1f1fd;
+  }
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  button {
+    margin-right: 30px;
+  }
+
+  input {
+    width: 30%;
+    height: 80px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    padding-left: 30px;
+    margin: 30px 30px 30px 0;
+    border-radius: 25px;
+    color: rgba(30, 40, 67, 0.5);
+    box-shadow: 1px 10px 20px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 1px 10px 20px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 10px 20px 3px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.submit-desc {
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1E2843;
 }
 
 @media (max-width: 410px) {

@@ -6,6 +6,7 @@ import Accordeon from "../../components/Accordeon/Accordeon";
 import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs";
 
 import "./Faq.scss";
+import Button from "../../components/Buttons/Button";
 
 const Faq = () => {
   const { t } = useTranslation();
@@ -51,6 +52,17 @@ const Faq = () => {
                 number="6"
               />
             </div>
+          </div>
+
+          <div className="faq__form">
+            <h1>{t("asks")}</h1>
+            <p>{t("asksDesc")}</p>
+            <div className="faq__inputs">
+              <input placeholder={t("mailOrPhone")} />
+              <input placeholder={t("question")} />
+              <Button type="secondary" text={t("send")} />
+            </div>
+            <p className="submit-desc">{t("submitDesc")}</p>
           </div>
         </div>
       </div>
