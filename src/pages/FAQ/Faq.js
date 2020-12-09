@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import Footer from "../../components/Footer/Footer";
 import Accordeon from "../../components/Accordeon/Accordeon";
 import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs";
+import RenderBackgroundBubbles from "../../components/RenderBgBubbles";
 
 import Inputs from "../../components/Inputs/Inputs";
 import Button from "../../components/Buttons/Button";
@@ -17,6 +18,7 @@ const Faq = () => {
   return (
     <>
       <BreadCrumbs scheme="faq" />
+      {RenderBackgroundBubbles(10)}
       <div className="container">
         <div className="faq">
           <h1>{t("faq")}</h1>
@@ -63,7 +65,9 @@ const Faq = () => {
             <div className="faq__inputs">
               <Inputs type="input" placeholder={t("mailOrPhone")} />
               <Inputs type="input" placeholder={t("question")} />
-              <p className="submit-desc">{t('submitDesc')} <Link to="cookies">{t("privacyPolicy")}</Link></p>
+              <p className="submit-desc">
+                {t("submitDesc")} <Link to="cookies">{t("privacyPolicy")}</Link>
+              </p>
               <Button type="secondary" text={t("send")} />
             </div>
           </div>

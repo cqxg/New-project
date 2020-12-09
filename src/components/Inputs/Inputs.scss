@@ -24,3 +24,9 @@ input, textarea {
         margin: 10px 0px 10px 0;
     }
   }
+
+  @media (max-width: 410px) {
+    input {
+        border-radius: 17px;
+    }
+  }
