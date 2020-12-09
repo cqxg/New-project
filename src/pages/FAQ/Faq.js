@@ -5,8 +5,10 @@ import Footer from "../../components/Footer/Footer";
 import Accordeon from "../../components/Accordeon/Accordeon";
 import BreadCrumbs from "../../components/BreadCrumbs/BreadCrumbs";
 
-import "./Faq.scss";
+import Inputs from "../../components/Inputs/Inputs";
 import Button from "../../components/Buttons/Button";
+
+import "./Faq.scss";
 
 const Faq = () => {
   const { t } = useTranslation();
@@ -58,8 +60,8 @@ const Faq = () => {
             <h1>{t("asks")}</h1>
             <p>{t("asksDesc")}</p>
             <div className="faq__inputs">
-              <input placeholder={t("mailOrPhone")} />
-              <input placeholder={t("question")} />
+              <Inputs type="input" placeholder={t("mailOrPhone")} />
+              <Inputs type="input" placeholder={t("question")} />
               <Button type="secondary" text={t("send")} />
             </div>
             <p className="submit-desc">{t("submitDesc")}</p>

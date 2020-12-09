@@ -13,7 +13,7 @@ const Cards = ({ scheme, constructor, icon, tourname, bgimage }) => {
   const renderCard = () => {
     if (constructor && cardConstructor) {
       return cardConstructor.map((item) => {
-        console.log(item)
+
         return (
           <div className={`card__desc ${item.functions ? 'card__desc-functions' : ''}`}>
             <div className="card__desc--wrapper">
