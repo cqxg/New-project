@@ -11,6 +11,7 @@ import SouthTour from '../pages/LanzaroteTours/SouthTour';
 import Catalog from '../pages/LanzaroteTours/Catalog/Catalog';
 import Audiobook from '../pages/LanzaroteTours/Audiobook';
 import CookiesPage from '../pages/CookiesPage/CookiesPage';
+import Contacts from '../pages/Contacts/Contacts';
 
 export const Routes = () => (
   <AnimatedSwitch
@@ -28,5 +29,6 @@ export const Routes = () => (
     <Route exact path="/cookies" component={CookiesPage} />
     <Route exact path="/audiobook" component={Audiobook} />
     <Route exact path="/faq" component={Faq} />
+    <Route exact path="/contacts" component={Contacts} />
   </AnimatedSwitch>
 );
