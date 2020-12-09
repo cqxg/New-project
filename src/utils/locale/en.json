@@ -125,5 +125,8 @@
   "contactsTitle": "Contacts",
   "adress": "Adress",
   "phone": "Phone",
-  "email": "E-mail"
+  "email": "E-mail",
+  "contactUs": "Contact us",
+  "yourName": "Your Name",
+  "yourComment": "Your Comment"
 }

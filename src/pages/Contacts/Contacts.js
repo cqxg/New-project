@@ -1,8 +1,11 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom';
 
 import BreadCrumbs from '../../components/BreadCrumbs/BreadCrumbs'
+import Button from '../../components/Buttons/Button';
 import Footer from '../../components/Footer/Footer'
+import Inputs from '../../components/Inputs/Inputs';
 import RenderBackgroundBubbles from '../../components/RenderBgBubbles';
 
 import appStore from "../../img/images/appstore.svg";
@@ -45,6 +48,22 @@ const Contacts = () => {
                                 <img src={fbblack} alt="" />
                                 <img src={instblack} alt="" />
                             </div>
+                        </div>
+                    </div>
+                    <div className="contacts__right">
+                        <h2>{t('contactUs')}</h2>
+                        <div className="contacts__right-flex">
+                            <div className="contacts__right-inputs">
+                                <Inputs type="input" placeholder={t('yourName')} />
+                                <Inputs type="input" placeholder={t('email')} />
+                            </div>
+                            <div className="contacts__right-textarea">
+                                <Inputs type="textarea" placeholder={t('yourComment')} />
+                            </div>
+                        </div>
+                        <div className="contacts__right-policy">
+                            <span>By clicking "Submit" I agree to the <Link to="cookies">privacy policy.</Link></span>
+                            <Button text="Send" type="secondary"/>
                         </div>
                     </div>
                 </div>
