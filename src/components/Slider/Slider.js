@@ -39,11 +39,11 @@ const Carousel = (props) => {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2
+          arrows: true,
+          slidesToScroll: 1
         }
       },
       {

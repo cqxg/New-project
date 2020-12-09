@@ -1,5 +1,27 @@
 .mainslider {
   padding-top: 206px;
+  padding-bottom: 50px;
+  &__slide {
+    max-width: 690px;
+    min-height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgb(218, 218, 218);
+    margin-bottom: 20px;
+    &.empty {
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: "";
+        background: #D5EFFB;
+        width: 500px;
+        height: 500px;
+        left: -15%;
+        top: -35%;
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+  }
   .container {
     margin: 0 0 0 auto;
     max-width: 1640px;
@@ -9,6 +31,7 @@
   }
   &__lanzarote {
     position: relative;
+    background: url('../../img/images/Lanzarote/mainslider/grand.png');
     outline: none;
     p {
       color: #ffffff;
@@ -27,6 +50,7 @@
   &__gomera {
     position: relative;
     outline: none;
+    background: url('../../img/images/Lanzarote/mainslider/north.png');
     p {
       color: #1e2843;
       position: absolute;
@@ -58,5 +82,31 @@
   img {
     z-index: -25;
     border-radius: 25px;
+  }
+}
+
+@media(max-width: 768px) {
+  .mainslider {
+    &__slide {
+      max-width: 381px;
+      min-height: 165px;
+      max-height: 166px;
+      &.empty {
+        &:before {
+          content: "";
+          background: #D5EFFB;
+          width: 500px;
+          height: 500px;
+          left: -80%;
+          top: -100%;
+          border-radius: 50%;
+          position: absolute;
+        }
+      }
+      & h1 {
+        font-size: 24px;
+        line-height: 27.6px;
+      }
+    }
   }
 }
